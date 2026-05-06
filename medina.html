@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Old Medina of Taza - Visit Taza</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkgreen: "#12372A",
+            olive: "#436850",
+            beige: "#FBF8EF",
+            gold: "#C8A15A",
+            surface: "#F7F1E8"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="min-h-screen bg-beige text-stone-900 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur-xl">
+    <div class="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex shrink-0 items-center gap-3">
+        <span class="flex h-12 w-12 items-center justify-center rounded-full bg-darkgreen text-lg font-black text-beige shadow">
+          VT
+        </span>
+        <span>
+          <span class="block text-lg font-semibold tracking-tight text-darkgreen">Visit Taza</span>
+          <span class="block text-xs font-semibold uppercase tracking-[0.32em] text-stone-500">MOROCCO</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="flex flex-1 items-center justify-center gap-12 text-sm font-semibold tracking-wide text-darkgreen">
+        <a href="index.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_home">Accueil</a>
+        <a href="places.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_places">À visiter</a>
+        <a href="index.html#things-to-do" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_things">À faire</a>
+        <a href="index.html#tips" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_tips">Astuces de voyage</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="flex items-center gap-3">
+        <div class="hidden items-center gap-2 md:flex">
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">
+            AR
+          </button>
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="en">
+            EN
+          </button>
+          <button class="lang-btn rounded-full bg-darkgreen px-3 py-2 text-xs font-bold text-white transition hover:bg-olive" data-lang="fr">
+            FR
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Image -->
+    <section class="relative h-96 overflow-hidden bg-darkgreen">
+      <div class="absolute inset-0 bg-[url('assets/images/lmdina-1.jpg')] bg-cover bg-center"></div>
+      <div class="absolute inset-0 bg-darkgreen/50"></div>
+
+      <div class="relative mx-auto max-w-7xl flex h-full items-end px-4 py-12 sm:px-6 lg:px-8">
+        <div>
+          <a href="places.html" class="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-gold transition hover:text-white">
+            <span>←</span>
+            <span data-i18n="detail_back_to_places">Retour aux lieux</span>
+          </a>
+          <h1 class="text-5xl font-black leading-tight text-white sm:text-6xl" data-i18n="medina_title">Ancienne médina de Taza</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="bg-white py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="detail_intro_label">Introduction</p>
+        
+        <h2 class="mt-4 text-3xl font-bold text-darkgreen" data-i18n="medina_intro_title">Un labyrinthe historique</h2>
+        
+        <div class="mt-6 space-y-4 text-lg leading-8 text-stone-700">
+          <p data-i18n="medina_intro_p1">L'ancienne médina de Taza est un quartier historique aux ruelles étroites, marchés colorés et portes traditionnelles. Elle offre une immersion authentique dans l'architecture et la vie locale marocaine.</p>
+          <p data-i18n="medina_intro_p2">Les visiteurs peuvent flâner entre artisans, cafés anciens et monuments historiques, découvrir le savoir-faire local et ressentir l'ambiance vibrante de cette vieille cité.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="bg-beige py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="mb-12 text-center text-3xl font-bold text-darkgreen" data-i18n="detail_gallery">Galerie</h2>
+        
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="overflow-hidden rounded-[1.5rem] shadow-lg ring-1 ring-stone-200">
+            <img src="assets/images/lmdina-1.jpg" alt="Rue animée de l'ancienne médina de Taza" class="h-64 w-full object-cover hover:scale-105 transition duration-300">
+          </div>
+
+          <div class="overflow-hidden rounded-[1.5rem] shadow-lg ring-1 ring-stone-200">
+            <img src="assets/images/lmdina-2.jpg" alt="Artisanat traditionnel dans la médina de Taza" class="h-64 w-full object-cover hover:scale-105 transition duration-300">
+          </div>
+
+          <div class="overflow-hidden rounded-[1.5rem] shadow-lg ring-1 ring-stone-200">
+            <img src="assets/images/lmdina-3.jpg" alt="Porte historique de l'ancienne médina de Taza" class="h-64 w-full object-cover hover:scale-105 transition duration-300">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical Information -->
+    <section class="bg-white py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2 class="mb-8 text-3xl font-bold text-darkgreen" data-i18n="detail_practical_info">Informations pratiques</h2>
+
+        <div class="grid gap-8 sm:grid-cols-2">
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_location">Localisation</h3>
+            <p class="text-stone-700" data-i18n="medina_location">Centre-ville de Taza, parmi les remparts historiques</p>
+          </div>
+
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_access">Accès</h3>
+            <p class="text-stone-700" data-i18n="medina_access">Accès à pied via la médina, stationnement à proximité</p>
+          </div>
+
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_best_time">Meilleure période</h3>
+            <p class="text-stone-700" data-i18n="medina_best_time">Printemps et automne pour des températures agréables</p>
+          </div>
+
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_entry_fee">Tarifs</h3>
+            <p class="text-stone-700" data-i18n="medina_entry_fee">Visite libre gratuite, visites guidées possibles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips for Visitors -->
+    <section class="bg-beige py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2 class="mb-8 text-3xl font-bold text-darkgreen" data-i18n="detail_tips_title">Conseils pour les visiteurs</h2>
+
+        <div class="space-y-4">
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">👟</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="medina_tip_1_title">Portez des chaussures confortables</h3>
+              <p class="mt-1 text-stone-700" data-i18n="medina_tip_1_desc">Les ruelles sont pavées et souvent étroites. Des chaussures stables sont recommandées.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">🛍️</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="medina_tip_2_title">Négociez avec respect</h3>
+              <p class="mt-1 text-stone-700" data-i18n="medina_tip_2_desc">Les vendeurs locaux apprécient les échanges amicaux et respectueux.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">📸</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="medina_tip_3_title">Photographiez avec discrétion</h3>
+              <p class="mt-1 text-stone-700" data-i18n="medina_tip_3_desc">Demandez la permission avant de prendre des photos des commerçants et des habitants.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">🎁</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="medina_tip_4_title">Soutenez l'artisanat local</h3>
+              <p class="mt-1 text-stone-700" data-i18n="medina_tip_4_desc">Achetez des produits faits main pour aider les artisans de la médina.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-white/10 bg-darkgreen text-white">
+    <div class="mx-auto max-w-7xl space-y-12 px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-4">
+          <a href="index.html" class="inline-flex items-center gap-3 text-xl font-black text-white">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-beige text-darkgreen">VT</span>
+            <span>
+              <span class="block text-lg font-semibold text-white">Visit Taza</span>
+              <span class="block text-xs uppercase tracking-[0.32em] text-stone-300">MOROCCO</span>
+            </span>
+          </a>
+          <p class="max-w-sm text-sm leading-7 text-stone-200" id="footer-brand-desc">
+            Découvrez Taza, ses paysages naturels, son patrimoine et son accueil chaleureux.
+          </p>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold">Liens rapides</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="index.html" class="transition hover:text-gold" data-footer-i18n="footer_nav_home">Accueil</a></li>
+            <li><a href="places.html" class="transition hover:text-gold" data-footer-i18n="footer_nav_places">À visiter</a></li>
+            <li><a href="index.html#things-to-do" class="transition hover:text-gold" data-footer-i18n="footer_nav_things">À faire</a></li>
+            <li><a href="index.html#tips" class="transition hover:text-gold" data-footer-i18n="footer_nav_tips">Astuces de voyage</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold">Informations pratiques</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_map">Carte & Infos</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_transport">Transport</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_weather">Météo</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold" data-footer-i18n="footer_contact_title">Contact</p>
+          <div class="space-y-3 text-sm leading-7 text-stone-200">
+            <p>Taza, Morocco</p>
+            <p><a href="mailto:contact@visittaza.ma" class="transition hover:text-gold">contact@visittaza.ma</a></p>
+            <p><a href="tel:+212000000000" class="transition hover:text-gold">+212 000 000 000</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-stone-300 sm:flex-row sm:items-center sm:justify-between">
+        <p id="footer-copy">© 2026 Visit Taza. All rights reserved.</p>
+        <p id="footer-made">Made with HTML & Tailwind CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script>
+    const detailTranslations = {
+      fr: {
+        detail_back_to_places: "Retour aux lieux",
+        medina_title: "Ancienne médina de Taza",
+        detail_intro_label: "Introduction",
+        medina_intro_title: "Un labyrinthe historique",
+        medina_intro_p1: "L'ancienne médina de Taza est un quartier historique aux ruelles étroites, marchés colorés et portes traditionnelles. Elle offre une immersion authentique dans l'architecture et la vie locale marocaine.",
+        medina_intro_p2: "Les visiteurs peuvent flâner entre artisans, cafés anciens et monuments historiques, découvrir le savoir-faire local et ressentir l'ambiance vibrante de cette vieille cité.",
+        detail_gallery: "Galerie",
+        detail_practical_info: "Informations pratiques",
+        detail_location: "Localisation",
+        medina_location: "Centre-ville de Taza, parmi les remparts historiques",
+        detail_access: "Accès",
+        medina_access: "Accès à pied via la médina, stationnement à proximité",
+        detail_best_time: "Meilleure période",
+        medina_best_time: "Printemps et automne pour des températures agréables",
+        detail_entry_fee: "Tarifs",
+        medina_entry_fee: "Visite libre gratuite, visites guidées possibles",
+        detail_tips_title: "Conseils pour les visiteurs",
+        medina_tip_1_title: "Portez des chaussures confortables",
+        medina_tip_1_desc: "Les ruelles sont pavées et souvent étroites. Des chaussures stables sont recommandées.",
+        medina_tip_2_title: "Négociez avec respect",
+        medina_tip_2_desc: "Les vendeurs locaux apprécient les échanges amicaux et respectueux.",
+        medina_tip_3_title: "Photographiez avec discrétion",
+        medina_tip_3_desc: "Demandez la permission avant de prendre des photos des commerçants et des habitants.",
+        medina_tip_4_title: "Soutenez l'artisanat local",
+        medina_tip_4_desc: "Achetez des produits faits main pour aider les artisans de la médina."
+      },
+      en: {
+        detail_back_to_places: "Back to Places",
+        medina_title: "Old Medina of Taza",
+        detail_intro_label: "Introduction",
+        medina_intro_title: "A historic maze",
+        medina_intro_p1: "The Old Medina of Taza is a historic quarter with narrow alleys, colorful markets, and traditional gates. It offers an authentic immersion in Moroccan architecture and local life.",
+        medina_intro_p2: "Visitors can wander between artisans, old cafes, and historic sites, discover local craftsmanship, and feel the vibrant atmosphere of this ancient city.",
+        detail_gallery: "Gallery",
+        detail_practical_info: "Practical Information",
+        detail_location: "Location",
+        medina_location: "Downtown Taza, within the historic city walls",
+        detail_access: "Access",
+        medina_access: "Walk-in access through the medina, parking nearby",
+        detail_best_time: "Best Time to Visit",
+        medina_best_time: "Spring and autumn for pleasant temperatures",
+        detail_entry_fee: "Entry Fee",
+        medina_entry_fee: "Free self-guided visit, guided tours available",
+        detail_tips_title: "Tips for Visitors",
+        medina_tip_1_title: "Wear comfortable shoes",
+        medina_tip_1_desc: "The streets are paved and often narrow. Stable footwear is recommended.",
+        medina_tip_2_title: "Negotiate respectfully",
+        medina_tip_2_desc: "Local vendors appreciate friendly, respectful bargaining.",
+        medina_tip_3_title: "Photograph discreetly",
+        medina_tip_3_desc: "Ask permission before photographing merchants and residents.",
+        medina_tip_4_title: "Support local artisans",
+        medina_tip_4_desc: "Buy handmade goods to help medina artisans."
+      },
+      ar: {
+        detail_back_to_places: "العودة إلى الأماكن",
+        medina_title: "المدينة القديمة لتازة",
+        detail_intro_label: "مقدمة",
+        medina_intro_title: "متاهة تاريخية",
+        medina_intro_p1: "المدينة القديمة لتازة هي حي تاريخي ذو أزقة ضيقة، وأسواق ملونة، وأبواب تقليدية. توفر تجربة غامرة أصيلة في العمارة والحياة المحلية المغربية.",
+        medina_intro_p2: "يمكن للزوار التجول بين الحرفيين والمقاهي القديمة والمعالم التاريخية، واكتشاف الحرف المحلية والشعور بأجواء هذه المدينة القديمة النابضة.",
+        detail_gallery: "المعرض",
+        detail_practical_info: "المعلومات العملية",
+        detail_location: "الموقع",
+        medina_location: "وسط مدينة تازة، داخل الأسوار التاريخية",
+        detail_access: "الوصول",
+        medina_access: "الوصول سيراً عبر المدينة القديمة، موقف سيارات بالقرب من الموقع",
+        detail_best_time: "أفضل وقت للزيارة",
+        medina_best_time: "الربيع والخريف لدرجات حرارة مريحة",
+        detail_entry_fee: "رسوم الدخول",
+        medina_entry_fee: "زيارة ذاتية مجانية، جولات إرشادية متاحة",
+        detail_tips_title: "نصائح للزوار",
+        medina_tip_1_title: "ارتدِ أحذية مريحة",
+        medina_tip_1_desc: "الشوارع مرصوفة وغالباً ما تكون ضيقة. يُنصح بارتداء أحذية ثابتة.",
+        medina_tip_2_title: "فاوض باحترام",
+        medina_tip_2_desc: "البائعون المحليون يقدرون التفاوض الودي والمحترم.",
+        medina_tip_3_title: "التقط الصور بحساسية",
+        medina_tip_3_desc: "اطلب الإذن قبل تصوير التجار والسكان.",
+        medina_tip_4_title: "ادعم الحرفيين المحليين",
+        medina_tip_4_desc: "اشترِ منتجات مصنوعة يدوياً لدعم حرفيي المدينة القديمة."
+      }
+    };
+
+    const footerTranslations = {
+      fr: {
+        footer_brand_desc: "Découvrez Taza, ses paysages naturels, son patrimoine et son accueil chaleureux.",
+        footer_nav_home: "Accueil",
+        footer_nav_places: "À visiter",
+        footer_nav_things: "À faire",
+        footer_nav_tips: "Astuces de voyage",
+        footer_info_map: "Carte & Infos",
+        footer_info_transport: "Transport",
+        footer_info_weather: "Météo",
+        footer_info_contact: "Contact",
+        footer_contact_title: "Contact",
+        footer_copy: "© 2026 Visit Taza. Tous droits réservés.",
+        footer_made: "Réalisé avec HTML & Tailwind CSS."
+      },
+      en: {
+        footer_brand_desc: "Discover Taza, its natural landscapes, heritage, and warm welcome.",
+        footer_nav_home: "Home",
+        footer_nav_places: "Places to Visit",
+        footer_nav_things: "Things to Do",
+        footer_nav_tips: "Travel Tips",
+        footer_info_map: "Map & Info",
+        footer_info_transport: "Transport",
+        footer_info_weather: "Weather",
+        footer_info_contact: "Contact",
+        footer_contact_title: "Contact",
+        footer_copy: "© 2026 Visit Taza. All rights reserved.",
+        footer_made: "Made with HTML & Tailwind CSS."
+      },
+      ar: {
+        footer_brand_desc: "اكتشف تازة، مناظرها الطبيعية، تراثها ودفء ضيافتها.",
+        footer_nav_home: "الصفحة الرئيسية",
+        footer_nav_places: "أماكن للزيارة",
+        footer_nav_things: "أشياء للقيام بها",
+        footer_nav_tips: "نصائح السفر",
+        footer_info_map: "الخريطة والمعلومات",
+        footer_info_transport: "النقل",
+        footer_info_weather: "الطقس",
+        footer_info_contact: "تواصل معنا",
+        footer_contact_title: "تواصل",
+        footer_copy: "© 2026 تازة. جميع الحقوق محفوظة.",
+        footer_made: "مصنوع بـ HTML و Tailwind CSS."
+      }
+    };
+
+    function updateDetailLanguage() {
+      const current = typeof currentLang === "string" ? currentLang : "fr";
+      const detailData = detailTranslations[current] || detailTranslations.fr;
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.dataset.i18n;
+        if (detailData[key]) {
+          element.textContent = detailData[key];
+        }
+      });
+
+      updateFooterLanguage();
+    }
+
+    function updateFooterLanguage() {
+      const current = typeof currentLang === "string" ? currentLang : "fr";
+      const footerData = footerTranslations[current] || footerTranslations.fr;
+
+      document.getElementById("footer-brand-desc").textContent = footerData.footer_brand_desc;
+      document.querySelectorAll("[data-footer-i18n]").forEach((element) => {
+        const key = element.dataset.footerI18n;
+        if (footerData[key]) {
+          element.textContent = footerData[key];
+        }
+      });
+      document.getElementById("footer-copy").textContent = footerData.footer_copy;
+      document.getElementById("footer-made").textContent = footerData.footer_made;
+    }
+
+    updateDetailLanguage();
+    document.querySelectorAll(".lang-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        updateDetailLanguage();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Friouato Cave - Visit Taza</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkgreen: "#12372A",
+            olive: "#436850",
+            beige: "#FBF8EF",
+            gold: "#C8A15A",
+            surface: "#F7F1E8"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="min-h-screen bg-beige text-stone-900 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur-xl">
+    <div class="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex shrink-0 items-center gap-3">
+        <span class="flex h-12 w-12 items-center justify-center rounded-full bg-darkgreen text-lg font-black text-beige shadow">
+          VT
+        </span>
+        <span>
+          <span class="block text-lg font-semibold tracking-tight text-darkgreen">Visit Taza</span>
+          <span class="block text-xs font-semibold uppercase tracking-[0.32em] text-stone-500">MOROCCO</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="flex flex-1 items-center justify-center gap-12 text-sm font-semibold tracking-wide text-darkgreen">
+        <a href="index.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_home">Accueil</a>
+        <a href="places.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_places">À visiter</a>
+        <a href="index.html#things-to-do" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_things">À faire</a>
+        <a href="index.html#tips" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_tips">Astuces de voyage</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="flex items-center gap-3">
+        <!-- Language buttons -->
+        <div class="hidden items-center gap-2 md:flex">
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">
+            AR
+          </button>
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="en">
+            EN
+          </button>
+          <button class="lang-btn rounded-full bg-darkgreen px-3 py-2 text-xs font-bold text-white transition hover:bg-olive" data-lang="fr">
+            FR
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Image -->
+    <section class="relative h-96 overflow-hidden bg-darkgreen">
+      <div class="absolute inset-0 bg-[url('assets/images/Friouato-1.jpg')] bg-cover bg-center"></div>
+      <div class="absolute inset-0 bg-darkgreen/50"></div>
+
+      <div class="relative mx-auto max-w-7xl flex h-full items-end px-4 py-12 sm:px-6 lg:px-8">
+        <div>
+          <a href="places.html" class="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-gold transition hover:text-white">
+            <span>←</span>
+            <span data-i18n="detail_back_to_places">Retour aux lieux</span>
+          </a>
+          <h1 class="text-5xl font-black leading-tight text-white sm:text-6xl" data-i18n="friouato_title">Gouffre de Friouato</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="bg-white py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="detail_intro_label">Introduction</p>
+        
+        <h2 class="mt-4 text-3xl font-bold text-darkgreen" data-i18n="friouato_intro_title">Un spectacle souterrain unique</h2>
+        
+        <div class="mt-6 space-y-4 text-lg leading-8 text-stone-700">
+          <p data-i18n="friouato_intro_p1">Le Gouffre de Friouato est l'une des formations géologiques les plus impressionnantes du Maroc. Situé dans le parc national de Tazekka, cette merveille naturelle offre une expérience inoubliable aux aventuriers et aux amateurs de géologie.</p>
+          <p data-i18n="friouato_intro_p2">Avec ses cavités profondes et ses formations rocheuses remarquables, Friouato raconte l'histoire géologique riche de la région de Taza. Les visiteurs peuvent explorer les passages souterrains et admirer les stalactites et stalagmites formées au fil des millénaires.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="bg-beige py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="mb-12 text-center text-3xl font-bold text-darkgreen" data-i18n="detail_gallery">Galerie</h2>
+        
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- GALLERY IMAGE 1: Replace 'assets/images/friouato-1.jpg' with a high-quality interior cave photo -->
+          <div class="overflow-hidden rounded-[1.5rem] shadow-lg ring-1 ring-stone-200">
+            <img src="assets/images/Friouato-1.jpg" alt="Interior view of Friouato Cave" class="h-64 w-full object-cover hover:scale-105 transition duration-300">
+          </div>
+
+          <!-- GALLERY IMAGE 2: Replace 'assets/images/friouato-2.jpg' with stalactites/stalagmites photo -->
+          <div class="overflow-hidden rounded-[1.5rem] shadow-lg ring-1 ring-stone-200">
+            <img src="assets/images/Friouato-2.jpg" alt="Stalactites and stalagmites in Friouato Cave" class="h-64 w-full object-cover hover:scale-105 transition duration-300">
+          </div>
+
+          <!-- GALLERY IMAGE 3: Replace 'assets/images/friouato-3.jpg' with cave formations or entrance photo -->
+          <div class="overflow-hidden rounded-[1.5rem] shadow-lg ring-1 ring-stone-200">
+            <img src="assets/images/friouato-3.jpg" alt="Entrance of Friouato Cave" class="h-64 w-full object-cover hover:scale-105 transition duration-300">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical Information -->
+    <section class="bg-white py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2 class="mb-8 text-3xl font-bold text-darkgreen" data-i18n="detail_practical_info">Informations pratiques</h2>
+
+        <div class="grid gap-8 sm:grid-cols-2">
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_location">Localisation</h3>
+            <p class="text-stone-700" data-i18n="friouato_location">Parc National de Tazekka, région de Fès-Meknès</p>
+          </div>
+
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_access">Accès</h3>
+            <p class="text-stone-700" data-i18n="friouato_access">Route goudronnée jusqu'à l'entrée du parc, puis sentier balisé</p>
+          </div>
+
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_best_time">Meilleure période</h3>
+            <p class="text-stone-700" data-i18n="friouato_best_time">Avril à octobre pour des conditions climatiques optimales</p>
+          </div>
+
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_entry_fee">Tarifs</h3>
+            <p class="text-stone-700" data-i18n="friouato_entry_fee">Entrée gratuite au parc, guide local recommandé</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips for Visitors -->
+    <section class="bg-beige py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2 class="mb-8 text-3xl font-bold text-darkgreen" data-i18n="detail_tips_title">Conseils pour les visiteurs</h2>
+
+        <div class="space-y-4">
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">💡</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="friouato_tip_1_title">Portez des chaussures adaptées</h3>
+              <p class="mt-1 text-stone-700" data-i18n="friouato_tip_1_desc">Les sentiers peuvent être glissants. Des chaussures de randonnée robustes sont fortement recommandées.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">🔦</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="friouato_tip_2_title">Apportez une lampe de poche</h3>
+              <p class="mt-1 text-stone-700" data-i18n="friouato_tip_2_desc">La lumière naturelle est limitée à l'intérieur de la grotte. Une lampe frontale est utile.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">🌡️</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="friouato_tip_3_title">La température reste fraîche</h3>
+              <p class="mt-1 text-stone-700" data-i18n="friouato_tip_3_desc">À l'intérieur de la grotte, la température est constante autour de 12°C. Apportez une veste.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">👥</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="friouato_tip_4_title">Engagez un guide local</h3>
+              <p class="mt-1 text-stone-700" data-i18n="friouato_tip_4_desc">Un guide expérimenté enrichira votre expérience et garantira votre sécurité.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-white/10 bg-darkgreen text-white">
+    <div class="mx-auto max-w-7xl space-y-12 px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-4">
+          <a href="index.html" class="inline-flex items-center gap-3 text-xl font-black text-white">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-beige text-darkgreen">VT</span>
+            <span>
+              <span class="block text-lg font-semibold text-white">Visit Taza</span>
+              <span class="block text-xs uppercase tracking-[0.32em] text-stone-300">MOROCCO</span>
+            </span>
+          </a>
+          <p class="max-w-sm text-sm leading-7 text-stone-200" id="footer-brand-desc">
+            Découvrez Taza, ses paysages naturels, son patrimoine et son accueil chaleureux.
+          </p>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold">Liens rapides</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="index.html" class="transition hover:text-gold" data-footer-i18n="footer_nav_home">Accueil</a></li>
+            <li><a href="places.html" class="transition hover:text-gold" data-footer-i18n="footer_nav_places">À visiter</a></li>
+            <li><a href="index.html#things-to-do" class="transition hover:text-gold" data-footer-i18n="footer_nav_things">À faire</a></li>
+            <li><a href="index.html#tips" class="transition hover:text-gold" data-footer-i18n="footer_nav_tips">Astuces de voyage</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold">Informations pratiques</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_map">Carte & Infos</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_transport">Transport</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_weather">Météo</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold" data-footer-i18n="footer_contact_title">Contact</p>
+          <div class="space-y-3 text-sm leading-7 text-stone-200">
+            <p>Taza, Morocco</p>
+            <p><a href="mailto:contact@visittaza.ma" class="transition hover:text-gold">contact@visittaza.ma</a></p>
+            <p><a href="tel:+212000000000" class="transition hover:text-gold">+212 000 000 000</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-stone-300 sm:flex-row sm:items-center sm:justify-between">
+        <p id="footer-copy">© 2026 Visit Taza. All rights reserved.</p>
+        <p id="footer-made">Made with HTML & Tailwind CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script>
+    const detailTranslations = {
+      fr: {
+        detail_back_to_places: "Retour aux lieux",
+        friouato_title: "Gouffre de Friouato",
+        detail_intro_label: "Introduction",
+        friouato_intro_title: "Un spectacle souterrain unique",
+        friouato_intro_p1: "Le Gouffre de Friouato est l'une des formations géologiques les plus impressionnantes du Maroc. Situé dans le parc national de Tazekka, cette merveille naturelle offre une expérience inoubliable aux aventuriers et aux amateurs de géologie.",
+        friouato_intro_p2: "Avec ses cavités profondes et ses formations rocheuses remarquables, Friouato raconte l'histoire géologique riche de la région de Taza. Les visiteurs peuvent explorer les passages souterrains et admirer les stalactites et stalagmites formées au fil des millénaires.",
+        detail_gallery: "Galerie",
+        detail_practical_info: "Informations pratiques",
+        detail_location: "Localisation",
+        friouato_location: "Parc National de Tazekka, région de Fès-Meknès",
+        detail_access: "Accès",
+        friouato_access: "Route goudronnée jusqu'à l'entrée du parc, puis sentier balisé",
+        detail_best_time: "Meilleure période",
+        friouato_best_time: "Avril à octobre pour des conditions climatiques optimales",
+        detail_entry_fee: "Tarifs",
+        friouato_entry_fee: "Entrée gratuite au parc, guide local recommandé",
+        detail_tips_title: "Conseils pour les visiteurs",
+        friouato_tip_1_title: "Portez des chaussures adaptées",
+        friouato_tip_1_desc: "Les sentiers peuvent être glissants. Des chaussures de randonnée robustes sont fortement recommandées.",
+        friouato_tip_2_title: "Apportez une lampe de poche",
+        friouato_tip_2_desc: "La lumière naturelle est limitée à l'intérieur de la grotte. Une lampe frontale est utile.",
+        friouato_tip_3_title: "La température reste fraîche",
+        friouato_tip_3_desc: "À l'intérieur de la grotte, la température est constante autour de 12°C. Apportez une veste.",
+        friouato_tip_4_title: "Engagez un guide local",
+        friouato_tip_4_desc: "Un guide expérimenté enrichira votre expérience et garantira votre sécurité."
+      },
+      en: {
+        detail_back_to_places: "Back to Places",
+        friouato_title: "Friouato Cave",
+        detail_intro_label: "Introduction",
+        friouato_intro_title: "A unique underground spectacle",
+        friouato_intro_p1: "Friouato Cave is one of the most impressive geological formations in Morocco. Located in Tazekka National Park, this natural wonder offers an unforgettable experience for adventurers and geology enthusiasts.",
+        friouato_intro_p2: "With its deep cavities and remarkable rock formations, Friouato tells the rich geological story of the Taza region. Visitors can explore underground passages and admire stalactites and stalagmites formed over millennia.",
+        detail_gallery: "Gallery",
+        detail_practical_info: "Practical Information",
+        detail_location: "Location",
+        friouato_location: "Tazekka National Park, Fès-Meknès region",
+        detail_access: "Access",
+        friouato_access: "Paved road to park entrance, then marked trail",
+        detail_best_time: "Best Time to Visit",
+        friouato_best_time: "April to October for optimal weather conditions",
+        detail_entry_fee: "Entry Fee",
+        friouato_entry_fee: "Free park entry, local guide recommended",
+        detail_tips_title: "Tips for Visitors",
+        friouato_tip_1_title: "Wear appropriate footwear",
+        friouato_tip_1_desc: "Trails can be slippery. Sturdy hiking shoes are highly recommended.",
+        friouato_tip_2_title: "Bring a flashlight",
+        friouato_tip_2_desc: "Natural light is limited inside the cave. A headlamp is useful.",
+        friouato_tip_3_title: "The temperature stays cool",
+        friouato_tip_3_desc: "Inside the cave, the temperature remains constant around 12°C. Bring a jacket.",
+        friouato_tip_4_title: "Hire a local guide",
+        friouato_tip_4_desc: "An experienced guide will enrich your experience and ensure your safety."
+      },
+      ar: {
+        detail_back_to_places: "العودة إلى الأماكن",
+        friouato_title: "كهف فريواطو",
+        detail_intro_label: "مقدمة",
+        friouato_intro_title: "منظر تحت الأرض فريد",
+        friouato_intro_p1: "كهف فريواطو هو أحد أكثر التكوينات الجيولوجية إثارة للإعجاب في المغرب. يقع في الحديقة الوطنية تازكة، وهذه العجيبة الطبيعية توفر تجربة لا تُنسى لعشاق المغامرة والجيولوجيا.",
+        friouato_intro_p2: "بفضل تجاويفه العميقة وتشكيلاته الصخرية الرائعة، يسرد فريواطو قصة تاريخ جيولوجيا غني لمنطقة تازة. يمكن للزوار استكشاف الممرات تحت الأرض والإعجاب بالأنوار واللولب المتشكلة عبر آلاف السنين.",
+        detail_gallery: "المعرض",
+        detail_practical_info: "المعلومات العملية",
+        detail_location: "الموقع",
+        friouato_location: "الحديقة الوطنية تازكة، منطقة فاس-مكناس",
+        detail_access: "الوصول",
+        friouato_access: "طريق معبد إلى مدخل الحديقة، ثم درب مميز",
+        detail_best_time: "أفضل وقت للزيارة",
+        friouato_best_time: "من أبريل إلى أكتوبر للحصول على ظروف مناخية مثلى",
+        detail_entry_fee: "رسوم الدخول",
+        friouato_entry_fee: "دخول الحديقة مجاني، يُنصح بدليل محلي",
+        detail_tips_title: "نصائح للزوار",
+        friouato_tip_1_title: "ارتدِ أحذية مناسبة",
+        friouato_tip_1_desc: "قد تكون الممرات زلقة. أحذية الرحلات القوية موصى بها بشدة.",
+        friouato_tip_2_title: "احضر مصباح يدوي",
+        friouato_tip_2_desc: "الضوء الطبيعي محدود داخل الكهف. مصباح الرأس مفيد.",
+        friouato_tip_3_title: "درجة الحرارة تبقى باردة",
+        friouato_tip_3_desc: "داخل الكهف، تبقى درجة الحرارة ثابتة حول 12 درجة مئوية. احضر سترة.",
+        friouato_tip_4_title: "وظف دليلاً محلياً",
+        friouato_tip_4_desc: "سيثري الدليل ذو الخبرة تجربتك ويضمن سلامتك."
+      }
+    };
+
+    const footerTranslations = {
+      fr: {
+        footer_brand_desc: "Découvrez Taza, ses paysages naturels, son patrimoine et son accueil chaleureux.",
+        footer_nav_home: "Accueil",
+        footer_nav_places: "À visiter",
+        footer_nav_things: "À faire",
+        footer_nav_tips: "Astuces de voyage",
+        footer_info_map: "Carte & Infos",
+        footer_info_transport: "Transport",
+        footer_info_weather: "Météo",
+        footer_info_contact: "Contact",
+        footer_contact_title: "Contact",
+        footer_copy: "© 2026 Visit Taza. Tous droits réservés.",
+        footer_made: "Réalisé avec HTML & Tailwind CSS."
+      },
+      en: {
+        footer_brand_desc: "Discover Taza, its natural landscapes, heritage, and warm welcome.",
+        footer_nav_home: "Home",
+        footer_nav_places: "Places to Visit",
+        footer_nav_things: "Things to Do",
+        footer_nav_tips: "Travel Tips",
+        footer_info_map: "Map & Info",
+        footer_info_transport: "Transport",
+        footer_info_weather: "Weather",
+        footer_info_contact: "Contact",
+        footer_contact_title: "Contact",
+        footer_copy: "© 2026 Visit Taza. All rights reserved.",
+        footer_made: "Made with HTML & Tailwind CSS."
+      },
+      ar: {
+        footer_brand_desc: "اكتشف تازة، مناظرها الطبيعية، تراثها ودفء ضيافتها.",
+        footer_nav_home: "الصفحة الرئيسية",
+        footer_nav_places: "أماكن للزيارة",
+        footer_nav_things: "أشياء للقيام بها",
+        footer_nav_tips: "نصائح السفر",
+        footer_info_map: "الخريطة والمعلومات",
+        footer_info_transport: "النقل",
+        footer_info_weather: "الطقس",
+        footer_info_contact: "تواصل معنا",
+        footer_contact_title: "تواصل",
+        footer_copy: "© 2026 تازة. جميع الحقوق محفوظة.",
+        footer_made: "مصنوع بـ HTML و Tailwind CSS."
+      }
+    };
+
+    function updateDetailLanguage() {
+      const current = typeof currentLang === "string" ? currentLang : "fr";
+      const detailData = detailTranslations[current] || detailTranslations.fr;
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.dataset.i18n;
+        if (detailData[key]) {
+          element.textContent = detailData[key];
+        }
+      });
+
+      updateFooterLanguage();
+    }
+
+    function updateFooterLanguage() {
+      const current = typeof currentLang === "string" ? currentLang : "fr";
+      const footerData = footerTranslations[current] || footerTranslations.fr;
+
+      document.getElementById("footer-brand-desc").textContent = footerData.footer_brand_desc;
+      document.querySelectorAll("[data-footer-i18n]").forEach((element) => {
+        const key = element.dataset.footerI18n;
+        if (footerData[key]) {
+          element.textContent = footerData[key];
+        }
+      });
+      document.getElementById("footer-copy").textContent = footerData.footer_copy;
+      document.getElementById("footer-made").textContent = footerData.footer_made;
+    }
+
+    updateDetailLanguage();
+    document.querySelectorAll(".lang-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        updateDetailLanguage();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bab Boudir - Visit Taza</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkgreen: "#12372A",
+            olive: "#436850",
+            beige: "#FBF8EF",
+            gold: "#C8A15A",
+            surface: "#F7F1E8"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="min-h-screen bg-beige text-stone-900 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur-xl">
+    <div class="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex shrink-0 items-center gap-3">
+        <span class="flex h-12 w-12 items-center justify-center rounded-full bg-darkgreen text-lg font-black text-beige shadow">
+          VT
+        </span>
+        <span>
+          <span class="block text-lg font-semibold tracking-tight text-darkgreen">Visit Taza</span>
+          <span class="block text-xs font-semibold uppercase tracking-[0.32em] text-stone-500">MOROCCO</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="flex flex-1 items-center justify-center gap-12 text-sm font-semibold tracking-wide text-darkgreen">
+        <a href="index.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_home">Accueil</a>
+        <a href="places.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_places">À visiter</a>
+        <a href="index.html#things-to-do" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_things">À faire</a>
+        <a href="index.html#tips" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_tips">Astuces de voyage</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="flex items-center gap-3">
+        <div class="hidden items-center gap-2 md:flex">
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">
+            AR
+          </button>
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="en">
+            EN
+          </button>
+          <button class="lang-btn rounded-full bg-darkgreen px-3 py-2 text-xs font-bold text-white transition hover:bg-olive" data-lang="fr">
+            FR
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Image -->
+    <section class="relative h-96 overflow-hidden bg-darkgreen">
+      <div class="absolute inset-0 bg-[url('assets/images/bab-boudir-1.jpg')] bg-cover bg-center"></div>
+      <div class="absolute inset-0 bg-darkgreen/50"></div>
+
+      <div class="relative mx-auto max-w-7xl flex h-full items-end px-4 py-12 sm:px-6 lg:px-8">
+        <div>
+          <a href="places.html" class="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-gold transition hover:text-white">
+            <span>←</span>
+            <span data-i18n="detail_back_to_places">Retour aux lieux</span>
+          </a>
+          <h1 class="text-5xl font-black leading-tight text-white sm:text-6xl" data-i18n="babboudir_title">Bab Boudir</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="bg-white py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="detail_intro_label">Introduction</p>
+        
+        <h2 class="mt-4 text-3xl font-bold text-darkgreen" data-i18n="babboudir_intro_title">Une porte de montagne</h2>
+        
+        <div class="mt-6 space-y-4 text-lg leading-8 text-stone-700">
+          <p data-i18n="babboudir_intro_p1">Bab Boudir est un lieu de montagne paisible à proximité de Taza, connu pour ses paysages rocheux et ses sentiers naturels. Cette destination est parfaite pour les amoureux de randonnées et de panoramas calmes.</p>
+          <p data-i18n="babboudir_intro_p2">Le site offre des vues sur les montagnes environnantes et une atmosphère authentique, avec des possibilités d'exploration en plein air et de découverte de la nature locale.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="bg-beige py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="mb-12 text-center text-3xl font-bold text-darkgreen" data-i18n="detail_gallery">Galerie</h2>
+        
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="overflow-hidden rounded-[1.5rem] shadow-lg ring-1 ring-stone-200">
+            <img src="assets/images/bab-boudir-1.jpg" alt="Vue naturelle de Bab Boudir" class="h-64 w-full object-cover hover:scale-105 transition duration-300">
+          </div>
+
+          <div class="overflow-hidden rounded-[1.5rem] shadow-lg ring-1 ring-stone-200">
+            <img src="assets/images/bab-boudir-2.jpg" alt="Sentier de montagne à Bab Boudir" class="h-64 w-full object-cover hover:scale-105 transition duration-300">
+          </div>
+
+          <div class="overflow-hidden rounded-[1.5rem] shadow-lg ring-1 ring-stone-200">
+            <img src="assets/images/bab-boudir-3.jpg" alt="Paysage rocheux de Bab Boudir" class="h-64 w-full object-cover hover:scale-105 transition duration-300">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical Information -->
+    <section class="bg-white py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2 class="mb-8 text-3xl font-bold text-darkgreen" data-i18n="detail_practical_info">Informations pratiques</h2>
+
+        <div class="grid gap-8 sm:grid-cols-2">
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_location">Localisation</h3>
+            <p class="text-stone-700" data-i18n="babboudir_location">Région montagneuse près de Taza, accessible depuis la route principale</p>
+          </div>
+
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_access">Accès</h3>
+            <p class="text-stone-700" data-i18n="babboudir_access">Accès par route secondaire, sentiers bien visibles</p>
+          </div>
+
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_best_time">Meilleure période</h3>
+            <p class="text-stone-700" data-i18n="babboudir_best_time">Printemps et automne pour des températures agréables</p>
+          </div>
+
+          <div class="rounded-[1.5rem] bg-beige p-6">
+            <h3 class="mb-4 text-lg font-bold text-darkgreen" data-i18n="detail_entry_fee">Tarifs</h3>
+            <p class="text-stone-700" data-i18n="babboudir_entry_fee">Accès libre, activité de randonnée gratuite</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips for Visitors -->
+    <section class="bg-beige py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2 class="mb-8 text-3xl font-bold text-darkgreen" data-i18n="detail_tips_title">Conseils pour les visiteurs</h2>
+
+        <div class="space-y-4">
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">🥾</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="babboudir_tip_1_title">Portez des chaussures de randonnée</h3>
+              <p class="mt-1 text-stone-700" data-i18n="babboudir_tip_1_desc">Le terrain est rocheux. Des chaussures robustes offrent plus de confort et de stabilité.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">🌿</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="babboudir_tip_2_title">Respectez la nature</h3>
+              <p class="mt-1 text-stone-700" data-i18n="babboudir_tip_2_desc">Ne laissez aucun déchet et protégez les plantes locales pendant votre visite.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">☀️</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="babboudir_tip_3_title">Protégez-vous du soleil</h3>
+              <p class="mt-1 text-stone-700" data-i18n="babboudir_tip_3_desc">Emportez un chapeau et de l'eau, car les espaces ouverts peuvent être ensoleillés.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-2xl text-gold">👥</span>
+            <div>
+              <h3 class="font-bold text-darkgreen" data-i18n="babboudir_tip_4_title">Voyagez en groupe si possible</h3>
+              <p class="mt-1 text-stone-700" data-i18n="babboudir_tip_4_desc">Une randonnée en groupe est plus sûre et plus agréable, surtout sur terrain montagneux.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-white/10 bg-darkgreen text-white">
+    <div class="mx-auto max-w-7xl space-y-12 px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-4">
+          <a href="index.html" class="inline-flex items-center gap-3 text-xl font-black text-white">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-beige text-darkgreen">VT</span>
+            <span>
+              <span class="block text-lg font-semibold text-white">Visit Taza</span>
+              <span class="block text-xs uppercase tracking-[0.32em] text-stone-300">MOROCCO</span>
+            </span>
+          </a>
+          <p class="max-w-sm text-sm leading-7 text-stone-200" id="footer-brand-desc">
+            Découvrez Taza, ses paysages naturels, son patrimoine et son accueil chaleureux.
+          </p>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold">Liens rapides</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="index.html" class="transition hover:text-gold" data-footer-i18n="footer_nav_home">Accueil</a></li>
+            <li><a href="places.html" class="transition hover:text-gold" data-footer-i18n="footer_nav_places">À visiter</a></li>
+            <li><a href="index.html#things-to-do" class="transition hover:text-gold" data-footer-i18n="footer_nav_things">À faire</a></li>
+            <li><a href="index.html#tips" class="transition hover:text-gold" data-footer-i18n="footer_nav_tips">Astuces de voyage</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold">Informations pratiques</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_map">Carte & Infos</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_transport">Transport</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_weather">Météo</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-footer-i18n="footer_info_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold" data-footer-i18n="footer_contact_title">Contact</p>
+          <div class="space-y-3 text-sm leading-7 text-stone-200">
+            <p>Taza, Morocco</p>
+            <p><a href="mailto:contact@visittaza.ma" class="transition hover:text-gold">contact@visittaza.ma</a></p>
+            <p><a href="tel:+212000000000" class="transition hover:text-gold">+212 000 000 000</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-stone-300 sm:flex-row sm:items-center sm:justify-between">
+        <p id="footer-copy">© 2026 Visit Taza. All rights reserved.</p>
+        <p id="footer-made">Made with HTML & Tailwind CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script>
+    const detailTranslations = {
+      fr: {
+        detail_back_to_places: "Retour aux lieux",
+        babboudir_title: "Bab Boudir",
+        detail_intro_label: "Introduction",
+        babboudir_intro_title: "Une porte de montagne",
+        babboudir_intro_p1: "Bab Boudir est un lieu de montagne paisible à proximité de Taza, connu pour ses paysages rocheux et ses sentiers naturels. Cette destination est parfaite pour les amoureux de randonnées et de panoramas calmes.",
+        babboudir_intro_p2: "Le site offre des vues sur les montagnes environnantes et une atmosphère authentique, avec des possibilités d'exploration en plein air et de découverte de la nature locale.",
+        detail_gallery: "Galerie",
+        detail_practical_info: "Informations pratiques",
+        detail_location: "Localisation",
+        babboudir_location: "Région montagneuse près de Taza, accessible depuis la route principale",
+        detail_access: "Accès",
+        babboudir_access: "Accès par route secondaire, sentiers bien visibles",
+        detail_best_time: "Meilleure période",
+        babboudir_best_time: "Printemps et automne pour des températures agréables",
+        detail_entry_fee: "Tarifs",
+        babboudir_entry_fee: "Accès libre, activité de randonnée gratuite",
+        detail_tips_title: "Conseils pour les visiteurs",
+        babboudir_tip_1_title: "Portez des chaussures de randonnée",
+        babboudir_tip_1_desc: "Le terrain est rocheux. Des chaussures robustes offrent plus de confort et de stabilité.",
+        babboudir_tip_2_title: "Respectez la nature",
+        babboudir_tip_2_desc: "Ne laissez aucun déchet et protégez les plantes locales pendant votre visite.",
+        babboudir_tip_3_title: "Protégez-vous du soleil",
+        babboudir_tip_3_desc: "Emportez un chapeau et de l'eau, car les espaces ouverts peuvent être ensoleillés.",
+        babboudir_tip_4_title: "Voyagez en groupe si possible",
+        babboudir_tip_4_desc: "Une randonnée en groupe est plus sûre et plus agréable, surtout sur terrain montagneux."
+      },
+      en: {
+        detail_back_to_places: "Back to Places",
+        babboudir_title: "Bab Boudir",
+        detail_intro_label: "Introduction",
+        babboudir_intro_title: "A mountain gateway",
+        babboudir_intro_p1: "Bab Boudir is a peaceful mountain spot near Taza, known for rocky landscapes and natural trails. It is perfect for hiking lovers and calm panoramic views.",
+        babboudir_intro_p2: "The site offers views of surrounding mountains and an authentic atmosphere, with outdoor exploration and local nature discovery opportunities.",
+        detail_gallery: "Gallery",
+        detail_practical_info: "Practical Information",
+        detail_location: "Location",
+        babboudir_location: "Mountain region near Taza, accessible from the main road",
+        detail_access: "Access",
+        babboudir_access: "Access by secondary road, visible trails",
+        detail_best_time: "Best Time to Visit",
+        babboudir_best_time: "Spring and autumn for pleasant temperatures",
+        detail_entry_fee: "Entry Fee",
+        babboudir_entry_fee: "Free access, hiking is free",
+        detail_tips_title: "Tips for Visitors",
+        babboudir_tip_1_title: "Wear hiking shoes",
+        babboudir_tip_1_desc: "The terrain is rocky. Sturdy shoes provide better comfort and stability.",
+        babboudir_tip_2_title: "Respect nature",
+        babboudir_tip_2_desc: "Leave no trash and protect local plants during your visit.",
+        babboudir_tip_3_title: "Protect yourself from the sun",
+        babboudir_tip_3_desc: "Bring a hat and water, as open areas can be sunny.",
+        babboudir_tip_4_title: "Travel in a group if possible",
+        babboudir_tip_4_desc: "Group hiking is safer and more enjoyable, especially on mountain terrain."
+      },
+      ar: {
+        detail_back_to_places: "العودة إلى الأماكن",
+        babboudir_title: "باب بودير",
+        detail_intro_label: "مقدمة",
+        babboudir_intro_title: "بوابة جبلية",
+        babboudir_intro_p1: "باب بودير هو مكان جبلي هادئ بالقرب من تازة، معروف بمناظره الصخرية ومساراته الطبيعية. إنه مثالي لعشاق المشي والمناظر الهادئة.",
+        babboudir_intro_p2: "يقدم الموقع إطلالات على الجبال المحيطة وجواً أصيلاً، مع فرص للاستكشاف في الهواء الطلق واكتشاف الطبيعة المحلية.",
+        detail_gallery: "المعرض",
+        detail_practical_info: "المعلومات العملية",
+        detail_location: "الموقع",
+        babboudir_location: "منطقة جبلية بالقرب من تازة، يمكن الوصول إليها من الطريق الرئيسي",
+        detail_access: "الوصول",
+        babboudir_access: "الوصول عبر طريق ثانوي، مع مسارات واضحة",
+        detail_best_time: "أفضل وقت للزيارة",
+        babboudir_best_time: "الربيع والخريف لدرجات حرارة مريحة",
+        detail_entry_fee: "رسوم الدخول",
+        babboudir_entry_fee: "الوصول مجاني، المشي مجاني",
+        detail_tips_title: "نصائح للزوار",
+        babboudir_tip_1_title: "ارتدِ أحذية المشي",
+        babboudir_tip_1_desc: "الأرضية صخرية. الأحذية المتينة توفر راحة وثباتاً أفضل.",
+        babboudir_tip_2_title: "احترم الطبيعة",
+        babboudir_tip_2_desc: "لا تترك قمامة واحمِ النباتات المحلية أثناء زيارتك.",
+        babboudir_tip_3_title: "احمِ نفسك من الشمس",
+        babboudir_tip_3_desc: "أحضر قبعة وماء، لأن المناطق المفتوحة يمكن أن تكون مشمسة.",
+        babboudir_tip_4_title: "سافر في مجموعة إن أمكن",
+        babboudir_tip_4_desc: "المشي في مجموعة أكثر أماناً وأكثر متعة، خاصة في التضاريس الجبلية."
+      }
+    };
+
+    const footerTranslations = {
+      fr: {
+        footer_brand_desc: "Découvrez Taza, ses paysages naturels, son patrimoine et son accueil chaleureux.",
+        footer_nav_home: "Accueil",
+        footer_nav_places: "À visiter",
+        footer_nav_things: "À faire",
+        footer_nav_tips: "Astuces de voyage",
+        footer_info_map: "Carte & Infos",
+        footer_info_transport: "Transport",
+        footer_info_weather: "Météo",
+        footer_info_contact: "Contact",
+        footer_contact_title: "Contact",
+        footer_copy: "© 2026 Visit Taza. Tous droits réservés.",
+        footer_made: "Réalisé avec HTML & Tailwind CSS."
+      },
+      en: {
+        footer_brand_desc: "Discover Taza, its natural landscapes, heritage, and warm welcome.",
+        footer_nav_home: "Home",
+        footer_nav_places: "Places to Visit",
+        footer_nav_things: "Things to Do",
+        footer_nav_tips: "Travel Tips",
+        footer_info_map: "Map & Info",
+        footer_info_transport: "Transport",
+        footer_info_weather: "Weather",
+        footer_info_contact: "Contact",
+        footer_contact_title: "Contact",
+        footer_copy: "© 2026 Visit Taza. All rights reserved.",
+        footer_made: "Made with HTML & Tailwind CSS."
+      },
+      ar: {
+        footer_brand_desc: "اكتشف تازة، مناظرها الطبيعية، تراثها ودفء ضيافتها.",
+        footer_nav_home: "الصفحة الرئيسية",
+        footer_nav_places: "أماكن للزيارة",
+        footer_nav_things: "أشياء للقيام بها",
+        footer_nav_tips: "نصائح السفر",
+        footer_info_map: "الخريطة والمعلومات",
+        footer_info_transport: "النقل",
+        footer_info_weather: "الطقس",
+        footer_info_contact: "تواصل معنا",
+        footer_contact_title: "تواصل",
+        footer_copy: "© 2026 تازة. جميع الحقوق محفوظة.",
+        footer_made: "مصنوع بـ HTML و Tailwind CSS."
+      }
+    };
+
+    function updateDetailLanguage() {
+      const current = typeof currentLang === "string" ? currentLang : "fr";
+      const detailData = detailTranslations[current] || detailTranslations.fr;
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.dataset.i18n;
+        if (detailData[key]) {
+          element.textContent = detailData[key];
+        }
+      });
+
+      updateFooterLanguage();
+    }
+
+    function updateFooterLanguage() {
+      const current = typeof currentLang === "string" ? currentLang : "fr";
+      const footerData = footerTranslations[current] || footerTranslations.fr;
+
+      document.getElementById("footer-brand-desc").textContent = footerData.footer_brand_desc;
+      document.querySelectorAll("[data-footer-i18n]").forEach((element) => {
+        const key = element.dataset.footerI18n;
+        if (footerData[key]) {
+          element.textContent = footerData[key];
+        }
+      });
+      document.getElementById("footer-copy").textContent = footerData.footer_copy;
+      document.getElementById("footer-made").textContent = footerData.footer_made;
+    }
+
+    updateDetailLanguage();
+    document.querySelectorAll(".lang-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        updateDetailLanguage();
+      });
+    });
+  </script>
+</body>
+</html>
