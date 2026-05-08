@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À faire - Visit Taza</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkgreen: "#12372A",
+            olive: "#436850",
+            beige: "#FBF8EF",
+            gold: "#C8A15A",
+            surface: "#F7F1E8"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="min-h-screen bg-beige text-stone-900 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur-xl">
+    <div class="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex shrink-0 items-center gap-3">
+        <span class="flex h-12 w-12 items-center justify-center rounded-full bg-darkgreen text-lg font-black text-beige shadow">
+          VT
+        </span>
+        <span>
+          <span class="block text-lg font-semibold tracking-tight text-darkgreen">Visit Taza</span>
+          <span class="block text-xs font-semibold uppercase tracking-[0.32em] text-stone-500">MOROCCO</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden items-center justify-center gap-10 text-sm font-medium tracking-wide text-darkgreen lg:flex">
+        <a href="index.html" class="transition hover:text-gold" data-i18n="nav_home">Accueil</a>
+        <a href="places.html" class="transition hover:text-gold" data-i18n="nav_places">À visiter</a>
+        <div class="relative group">
+          <a href="activities.html" class="transition hover:text-gold" data-i18n="nav_things">À faire</a>
+          <div class="absolute top-full left-0 mt-2 w-96 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg border border-stone-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="p-6">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-3">
+                  <a href="activities.html#inspiration" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_inspiration">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Inspirations de voyage
+                  </a>
+                  <a href="activities.html#festivals" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_festivals">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Festivals et événements
+                  </a>
+                  <a href="activities.html#activities" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_activities">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Activités
+                  </a>
+                  <a href="activities.html#history" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_history">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Histoire et religion
+                  </a>
+                  <a href="activities.html#culture" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_culture">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Art et culture
+                  </a>
+                </div>
+                <div class="space-y-3">
+                  <a href="activities.html#food" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_food">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Manger, boire
+                  </a>
+                  <a href="activities.html#morning" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_morning">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Matin et soir
+                  </a>
+                  <a href="activities.html#nature" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_nature">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Nature et plein air
+                  </a>
+                  <a href="activities.html#accommodation" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_accommodation">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Hébergement
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="tips.html" class="transition hover:text-gold" data-i18n="nav_tips">Astuces de voyage</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="flex items-center gap-3">
+        <!-- Language buttons -->
+        <div class="hidden items-center gap-2 md:flex">
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">
+            AR
+          </button>
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="en">
+            EN
+          </button>
+          <button class="lang-btn rounded-full bg-darkgreen px-3 py-2 text-xs font-bold text-white transition hover:bg-olive" data-lang="fr">
+            FR
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <details class="relative lg:hidden">
+          <summary class="cursor-pointer rounded-full border border-stone-200 px-4 py-2 text-sm font-semibold text-darkgreen" data-i18n="menu_label">
+            Menu
+          </summary>
+
+          <nav class="absolute right-0 top-14 z-50 grid w-72 gap-2 rounded-[1.25rem] bg-white p-4 text-sm font-medium text-darkgreen shadow-2xl ring-1 ring-stone-200">
+            <a href="index.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_home">Accueil</a>
+            <a href="places.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_places">À visiter</a>
+            <a href="activities.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_things">À faire</a>
+            <a href="tips.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_tips">Astuces de voyage</a>
+
+            <div class="mt-2 flex gap-2 border-t border-stone-200 pt-4">
+              <button class="lang-btn flex-1 rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">
+                AR
+              </button>
+              <button class="lang-btn flex-1 rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="en">
+                EN
+              </button>
+              <button class="lang-btn flex-1 rounded-full bg-darkgreen px-3 py-2 text-xs font-bold text-white transition hover:bg-olive" data-lang="fr">
+                FR
+              </button>
+            </div>
+          </nav>
+        </details>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-beige py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="activities_kicker">À faire</p>
+          <h1 class="mt-4 text-4xl font-black tracking-tight text-darkgreen" data-i18n="activities_title">À faire</h1>
+          <p class="mt-5 text-lg leading-8 text-stone-700" data-i18n="activities_desc">Explorez les meilleures activités à Taza grâce à ces idées inspirantes.</p>
+        </div>
+
+        <!-- Default message section -->
+        <div id="default-message" class="mt-12 p-12 text-center bg-white rounded-[2rem] shadow-lg ring-1 ring-stone-200">
+          <svg class="mx-auto h-16 w-16 text-gold/50 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4l8-8v12m0 0l4-4m-4 4l-4-4"></path>
+          </svg>
+          <h2 class="text-2xl font-bold text-darkgreen mb-4" data-i18n="select_category_title">Choisissez une catégorie</h2>
+          <p class="text-lg text-stone-700" data-i18n="select_category_desc">Sélectionnez une catégorie dans le menu ci-dessus pour afficher les suggestions appropriées.</p>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-section" class="mt-16 hidden">
+          <h2 class="text-2xl font-bold text-darkgreen mb-8" data-i18n="suggested_results">Résultats suggérés</h2>
+          <div id="results-grid" class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+            <!-- Results will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Food & Drinks Section -->
+        <div id="food-section" class="mt-16 hidden">
+          <!-- Section Header -->
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-black text-darkgreen mb-4" data-i18n="food_title">Manger & Boire à Taza</h2>
+            <p class="text-lg text-stone-700 max-w-3xl mx-auto" data-i18n="food_intro">Découvrez les saveurs de Taza à travers les plats locaux, les marchés traditionnels, les cafés paisibles et les expériences culinaires qui reflètent l'hospitalité marocaine.</p>
+          </div>
+
+          <!-- Food Content Blocks -->
+          <div class="space-y-12">
+            <!-- Food Block 1 -->
+            <div class="bg-white rounded-[2rem] shadow-xl ring-1 ring-stone-200 overflow-hidden">
+              <div class="grid md:grid-cols-2 gap-0">
+                <div class="relative h-80 md:h-auto">
+                  <img src="assets/images/food-1.jpg" alt="Traditional Moroccan Tagine" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-8 flex flex-col justify-center">
+                  <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-4" data-i18n="food_category_traditional">Cuisine Traditionnelle</span>
+                  <h3 class="text-2xl font-bold text-darkgreen mb-4" data-i18n="food_tagine_title">Le Tajine Marocain Authentique</h3>
+                  <p class="text-stone-700 mb-6 leading-relaxed" data-i18n="food_tagine_desc">Découvrez l'art du tajine, ce plat mijoté lentement qui marie viandes tendres, légumes frais et épices aromatiques. Chaque bouchée raconte l'histoire culinaire du Maroc, où la patience et les ingrédients de qualité créent une symphonie de saveurs.</p>
+                  <div class="text-sm text-stone-600 italic" data-i18n="food_tagine_tip">Conseil au visiteur: Commandez un tajine d'agneau aux pruneaux pour une expérience authentique.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Food Block 2 -->
+            <div class="bg-white rounded-[2rem] shadow-xl ring-1 ring-stone-200 overflow-hidden">
+              <div class="grid md:grid-cols-2 gap-0">
+                <div class="p-8 flex flex-col justify-center order-2 md:order-1">
+                  <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-4" data-i18n="food_category_bread">Aliments de Base</span>
+                  <h3 class="text-2xl font-bold text-darkgreen mb-4" data-i18n="food_bread_title">Pain marocain traditionnel</h3>
+                  <p class="text-stone-700 mb-6 leading-relaxed" data-i18n="food_bread_desc">Le pain marocain traditionnel est un élément essentiel de la table marocaine. Il accompagne le tajine, la harira, les olives, le fromage et plusieurs plats locaux. À Taza, le visiteur peut le découvrir dans les marchés et les boulangeries traditionnelles.</p>
+                  <div class="text-sm text-stone-600 italic" data-i18n="food_bread_tip">Conseil au visiteur: Goûtez-le frais avec du beurre artisanal et du miel local.</div>
+                </div>
+                <div class="relative h-80 md:h-auto order-1 md:order-2">
+                  <img src="assets/images/food-2.jpg" alt="Traditional Moroccan Bread" class="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Food Block 3 -->
+            <div class="bg-white rounded-[2rem] shadow-xl ring-1 ring-stone-200 overflow-hidden">
+              <div class="grid md:grid-cols-2 gap-0">
+                <div class="relative h-80 md:h-auto">
+                  <img src="assets/images/food-3.jpg" alt="Moroccan Chebakia" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-8 flex flex-col justify-center">
+                  <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-4" data-i18n="food_category_pastries">Pâtisseries et Douceurs</span>
+                  <h3 class="text-2xl font-bold text-darkgreen mb-4" data-i18n="food_chebakia_title">Chebakia marocaine</h3>
+                  <p class="text-stone-700 mb-6 leading-relaxed" data-i18n="food_chebakia_desc">La chebakia est l'une des pâtisseries marocaines traditionnelles les plus connues. Préparée avec du miel, du sésame et des épices parfumées, elle accompagne souvent la harira, surtout pendant le mois de Ramadan. À Taza, les visiteurs peuvent la goûter dans les pâtisseries et les boulangeries traditionnelles.</p>
+                  <div class="text-sm text-stone-600 italic" data-i18n="food_chebakia_tip">Essayez-la avec un verre de thé marocain ou avec la harira.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Food Block 4 -->
+            <div class="bg-white rounded-[2rem] shadow-xl ring-1 ring-stone-200 overflow-hidden">
+              <div class="grid md:grid-cols-2 gap-0">
+                <div class="p-8 flex flex-col justify-center order-2 md:order-1">
+                  <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-4" data-i18n="food_category_traditional">Cuisine Traditionnelle</span>
+                  <h3 class="text-2xl font-bold text-darkgreen mb-4" data-i18n="food_seffa_title">Seffa marocaine</h3>
+                  <p class="text-stone-700 mb-6 leading-relaxed" data-i18n="food_seffa_desc">La seffa marocaine est un plat traditionnel très connu au Maroc. Elle est généralement préparée avec des vermicelles ou du couscous, puis décorée avec du sucre glace, de la cannelle et des amandes. La seffa est souvent servie lors des fêtes et des occasions familiales, et elle est appréciée pour son goût délicat et sa présentation élégante. À Taza, les visiteurs peuvent découvrir ce plat dans certains restaurants locaux et cadres traditionnels.</p>
+                  <div class="text-sm text-stone-600 italic" data-i18n="food_seffa_tip">Il est conseillé de goûter la seffa avec un thé marocain pour une expérience locale authentique.</div>
+                </div>
+                <div class="relative h-80 md:h-auto order-1 md:order-2">
+                  <img src="assets/images/food-4.jpg" alt="Moroccan Seffa" class="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Food Block 5 -->
+            <div class="bg-white rounded-[2rem] shadow-xl ring-1 ring-stone-200 overflow-hidden">
+              <div class="grid md:grid-cols-2 gap-0">
+                <div class="relative h-80 md:h-auto">
+                  <img src="assets/images/food-5.jpg" alt="Moroccan Couscous" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-8 flex flex-col justify-center">
+                  <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-4" data-i18n="food_category_traditional">Cuisine Traditionnelle</span>
+                  <h3 class="text-2xl font-bold text-darkgreen mb-4" data-i18n="food_couscous_title">Couscous marocain</h3>
+                  <p class="text-stone-700 mb-6 leading-relaxed" data-i18n="food_couscous_desc">Le couscous marocain est l’un des plats traditionnels les plus célèbres du Maroc. Il est généralement préparé avec des légumes et de la viande ou du poulet, puis servi lors des repas familiaux et le vendredi. À Taza, les visiteurs peuvent savourer ce plat dans les restaurants locaux ou dans des cadres traditionnels reflétant l’hospitalité marocaine.</p>
+                  <div class="text-sm text-stone-600 italic" data-i18n="food_couscous_tip">Il est conseillé de goûter le couscous à l’heure du déjeuner pour une expérience locale authentique.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Food Block 6 -->
+            <div class="bg-white rounded-[2rem] shadow-xl ring-1 ring-stone-200 overflow-hidden">
+              <div class="grid md:grid-cols-2 gap-0">
+                <div class="p-8 flex flex-col justify-center order-2 md:order-1">
+                  <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-4" data-i18n="food_category_soup">Soupe Traditionnelle</span>
+                  <h3 class="text-2xl font-bold text-darkgreen mb-4" data-i18n="food_harira_title">Harira marocaine</h3>
+                  <p class="text-stone-700 mb-6 leading-relaxed" data-i18n="food_harira_desc">La harira marocaine est une soupe traditionnelle très connue, préparée avec des tomates, des lentilles, des pois chiches et des épices. Elle est particulièrement appréciée pendant le mois de Ramadan. À Taza, les visiteurs peuvent découvrir ce plat dans les restaurants locaux et les cuisines traditionnelles qui préservent les saveurs marocaines authentiques.</p>
+                  <div class="text-sm text-stone-600 italic" data-i18n="food_harira_tip">Essayez la harira avec de la chebakia ou du pain marocain traditionnel.</div>
+                </div>
+                <div class="relative h-80 md:h-auto order-1 md:order-2">
+                  <img src="assets/images/food-6.jpg" alt="Moroccan Harira" class="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Food Block 7 -->
+            <div class="bg-white rounded-[2rem] shadow-xl ring-1 ring-stone-200 overflow-hidden">
+              <div class="grid md:grid-cols-2 gap-0">
+                <div class="relative h-80 md:h-auto">
+                  <img src="assets/images/food-7.jpg" alt="Moroccan Grilled Food" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-8 flex flex-col justify-center">
+                  <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-4" data-i18n="food_category_grilled">Grillades Marocaines</span>
+                  <h3 class="text-2xl font-bold text-darkgreen mb-4" data-i18n="food_grilled_title">Grillades marocaines</h3>
+                  <p class="text-stone-700 mb-6 leading-relaxed" data-i18n="food_grilled_desc">Les grillades marocaines comptent parmi les expériences culinaires appréciées par les visiteurs grâce à leurs saveurs riches et à leur préparation traditionnelle. Elles comprennent souvent de la viande, du poulet ou de la kefta grillée avec des épices marocaines, servies avec du pain local ou des salades. À Taza, les visiteurs peuvent les déguster dans les restaurants populaires et les lieux réputés pour la cuisine locale.</p>
+                  <div class="text-sm text-stone-600 italic" data-i18n="food_grilled_tip">Il est conseillé de savourer les grillades fraîches avec des salades marocaines et des boissons locales.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Food Block 8 -->
+            <div class="bg-white rounded-[2rem] shadow-xl ring-1 ring-stone-200 overflow-hidden">
+              <div class="grid md:grid-cols-2 gap-0">
+                <div class="p-8 flex flex-col justify-center order-2 md:order-1">
+                  <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-4" data-i18n="food_category_tea">Thé Marocain</span>
+                  <h3 class="text-2xl font-bold text-darkgreen mb-4" data-i18n="food_mint_title">Thé marocain à la menthe</h3>
+                  <p class="text-stone-700 mb-6 leading-relaxed" data-i18n="food_mint_desc">Le thé marocain à la menthe est un symbole de l’hospitalité marocaine. Il est servi dans un théière traditionnelle avec de petits verres et de la menthe fraîche. C’est l’une des boissons les plus emblématiques du Maroc, souvent présente lors des moments de convivialité et de l’accueil des invités. À Taza, les visiteurs peuvent profiter de cette expérience dans les cafés traditionnels, les maisons d’hôtes et les restaurants locaux.</p>
+                  <div class="text-sm text-stone-600 italic" data-i18n="food_mint_tip">Ne manquez pas l’expérience du thé marocain avec des pâtisseries traditionnelles ou du msemen.</div>
+                </div>
+                <div class="relative h-80 md:h-auto order-1 md:order-2">
+                  <img src="assets/images/food-8.jpg" alt="Moroccan Mint Tea" class="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Food Block 9 -->
+            <div class="bg-white rounded-[2rem] shadow-xl ring-1 ring-stone-200 overflow-hidden">
+              <div class="grid md:grid-cols-2 gap-0">
+                <div class="relative h-80 md:h-auto">
+                  <img src="assets/images/food-9.jpg" alt="Moroccan Msemen" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-8 flex flex-col justify-center">
+                  <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-4" data-i18n="food_category_msemen">Pains Traditionnels</span>
+                  <h3 class="text-2xl font-bold text-darkgreen mb-4" data-i18n="food_msemen_title">Msemen marocain</h3>
+                  <p class="text-stone-700 mb-6 leading-relaxed" data-i18n="food_msemen_desc">Le msemen marocain est l’une des crêpes traditionnelles les plus connues du Maroc. Il se distingue par sa texture fine et ses multiples couches. Il est souvent servi au petit-déjeuner ou avec le thé marocain, et peut être dégusté avec du miel, du beurre ou du fromage. À Taza, les visiteurs peuvent le découvrir dans les boulangeries traditionnelles et les cafés locaux.</p>
+                  <div class="text-sm text-stone-600 italic" data-i18n="food_msemen_tip">Essayez le msemen chaud avec du miel et un verre de thé marocain.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Morning and Evening Section -->
+      <div id="morning-section" class="mt-16 hidden">
+        <!-- Section Header -->
+        <div class="mb-12 max-w-3xl">
+          <h2 class="text-3xl font-black text-darkgreen mb-4" data-i18n="morning_section_title">Matin et soir à Taza</h2>
+          <p class="text-lg text-stone-700" data-i18n="morning_section_intro">Profitez des différents moments de la journée à Taza, du matin rafraîchissant au soir paisible.</p>
+        </div>
+
+        <!-- Morning and Evening Blocks -->
+        <div class="space-y-20">
+          <!-- Morning Block -->
+          <div class="grid items-center gap-10 rounded-[2rem] bg-white/80 p-6 shadow-sm ring-1 ring-stone-200/70 md:p-8 lg:grid-cols-2 lg:gap-14">
+            <!-- Morning Text -->
+            <div class="flex flex-col justify-center py-4 lg:py-10">
+              <div class="mb-6 flex items-center gap-4">
+                <span class="h-14 w-1.5 rounded-full bg-gold"></span>
+                <h3 class="text-4xl font-black leading-tight tracking-tight text-darkgreen md:text-5xl" data-i18n="morning_title">Le matin à Taza</h3>
+              </div>
+              <p class="max-w-xl text-lg leading-8 text-stone-700" data-i18n="morning_desc">Commencez votre journée à Taza par une balade calme dans l’ancienne médina, les cafés locaux ou les marchés traditionnels, dans une atmosphère fraîche et agréable.</p>
+              <a href="#morning" class="mt-8 inline-flex w-fit rounded-full bg-gold px-8 py-3 text-base font-bold text-darkgreen shadow-lg shadow-gold/20 transition hover:bg-[#b18d42] focus:outline-none focus:ring-4 focus:ring-gold/30" data-i18n="morning_button">Découvrir le matin</a>
+            </div>
+
+            <!-- Morning Image -->
+            <div class="relative h-72 overflow-hidden rounded-[1.5rem] shadow-2xl shadow-stone-900/15 sm:h-96 lg:h-[28rem]">
+              <img src="assets/images/matain-1.jpg" alt="Morning in Taza" class="h-full w-full object-cover" />
+            </div>
+          </div>
+
+          <!-- Evening Block -->
+          <div class="grid items-center gap-10 rounded-[2rem] bg-surface/80 p-6 shadow-sm ring-1 ring-stone-200/70 md:p-8 lg:grid-cols-2 lg:gap-14">
+            <!-- Evening Image -->
+            <div class="relative h-72 overflow-hidden rounded-[1.5rem] shadow-2xl shadow-stone-900/15 sm:h-96 lg:h-[28rem]">
+              <img src="assets/images/soir-1.jpg" alt="Evening in Taza" class="h-full w-full object-cover" />
+            </div>
+
+            <!-- Evening Text -->
+            <div class="flex flex-col justify-center py-4 lg:py-10">
+              <div class="mb-6 flex items-center gap-4">
+                <span class="h-14 w-1.5 rounded-full bg-gold"></span>
+                <h3 class="text-4xl font-black leading-tight tracking-tight text-darkgreen md:text-5xl" data-i18n="evening_title">Le soir à Taza</h3>
+              </div>
+              <p class="max-w-xl text-lg leading-8 text-stone-700" data-i18n="evening_desc">Le soir, les visiteurs peuvent profiter d'une ambiance calme, des vues sur la ville et des cafés locaux pour terminer la journée en douceur.</p>
+              <a href="#evening" class="mt-8 inline-flex w-fit rounded-full bg-gold px-8 py-3 text-base font-bold text-darkgreen shadow-lg shadow-gold/20 transition hover:bg-[#b18d42] focus:outline-none focus:ring-4 focus:ring-gold/30" data-i18n="evening_button">Découvrir le soir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/i18n.js"></script>
+  <script>
+    // Activity data with categories
+    const activitiesData = [
+      // Nature & Adventure
+      {
+        id: 'hiking',
+        category: 'nature',
+        image: 'assets/images/tazekka-1.jpg',
+        alt: 'Hiking in Tazekka',
+        categoryKey: 'activity_hiking_category',
+        titleKey: 'activity_hiking_title',
+        descKey: 'activity_hiking_desc',
+        link: 'tazekka.html'
+      },
+      {
+        id: 'friouato',
+        category: 'nature',
+        image: 'assets/images/Friouato-1.jpg',
+        alt: 'Explore Friouato Cave',
+        categoryKey: 'activity_friouato_category',
+        titleKey: 'activity_friouato_title',
+        descKey: 'activity_friouato_desc',
+        link: 'friouato.html'
+      },
+      {
+        id: 'bab_boudir',
+        category: 'nature',
+        image: 'assets/images/bab-boudir-1.jpg',
+        alt: 'Discover Bab Boudir',
+        categoryKey: 'activity_bab_boudir_category',
+        titleKey: 'activity_bab_boudir_title',
+        descKey: 'activity_bab_boudir_desc',
+        link: 'bab-boudir.html'
+      },
+
+      // Eat & Drink
+      {
+        id: 'food',
+        category: 'food',
+        image: 'assets/images/local-food.jpg',
+        alt: 'Taste Local Food',
+        categoryKey: 'activity_food_category',
+        titleKey: 'activity_food_title',
+        descKey: 'activity_food_desc',
+        link: 'tips.html#food'
+      },
+
+      // Accommodation
+      {
+        id: 'accommodation',
+        category: 'accommodation',
+        image: 'assets/images/agora-01.jpg',
+        alt: 'Oriental Hotel',
+        categoryKey: 'category_accommodation',
+        titleKey: 'activity_accommodation_title',
+        descKey: 'activity_accommodation_desc',
+        buttonKey: 'accommodation_more_info',
+        link: 'oriental-hotel.html'
+      },
+      {
+        id: 'manoir',
+        category: 'accommodation',
+        image: 'assets/images/manoir-1.jpg',
+        alt: 'Manoir Hotel',
+        categoryKey: 'category_accommodation',
+        titleKey: 'activity_manoir_title',
+        descKey: 'activity_manoir_desc',
+        buttonKey: 'accommodation_more_info',
+        link: 'manoir-hotel.html'
+      },
+      {
+        id: 'pyramides',
+        category: 'accommodation',
+        image: 'assets/images/pyramides-1.jpg',
+        alt: 'Pyramides Hotel',
+        categoryKey: 'category_accommodation',
+        titleKey: 'activity_pyramides_title',
+        descKey: 'activity_pyramides_desc',
+        buttonKey: 'accommodation_more_info',
+        link: 'pyramides-hotel.html'
+      },
+
+      // Culture & History
+      {
+        id: 'medina',
+        category: 'culture',
+        image: 'assets/images/lmdina-1.jpg',
+        alt: 'Walk in the Old Medina',
+        categoryKey: 'activity_medina_category',
+        titleKey: 'activity_medina_title',
+        descKey: 'activity_medina_desc',
+        link: 'medina.html'
+      },
+
+      // Family Activities
+      {
+        id: 'ras_elma',
+        category: 'family',
+        image: 'assets/images/ras-elma-1.jpg',
+        alt: 'Picnic at Ras El Ma',
+        categoryKey: 'activity_ras_elma_category',
+        titleKey: 'activity_ras_elma_title',
+        descKey: 'activity_ras_elma_desc',
+        link: 'ras-el-ma.html'
+      },
+
+      // Local Shopping
+      {
+        id: 'shopping',
+        category: 'shopping',
+        image: 'assets/images/local-food.jpg', // Placeholder
+        alt: 'Local Shopping',
+        categoryKey: 'activity_food_category', // Placeholder
+        titleKey: 'activity_food_title', // Placeholder
+        descKey: 'activity_food_desc', // Placeholder
+        link: 'tips.html#shopping'
+      }
+    ];
+
+    // Map dropdown anchors to activity categories
+    const hashToCategoryMap = {
+      'inspiration': 'nature',
+      'festivals': 'family',
+      'activities': 'nature',
+      'history': 'culture',
+      'culture': 'culture',
+      'food': 'food',
+      'morning': 'nature',
+      'nature': 'nature',
+      'accommodation': 'accommodation'
+    };
+
+    // Function to create activity card HTML
+    function createActivityCard(activity) {
+      return `
+        <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+          <img src="${activity.image}" alt="${activity.alt}" class="h-56 w-full object-cover" />
+          <div class="p-6">
+            <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold" data-i18n="${activity.categoryKey}"></span>
+            <h2 class="mt-4 text-2xl font-black text-darkgreen" data-i18n="${activity.titleKey}"></h2>
+            <p class="mt-3 text-sm leading-7 text-stone-600" data-i18n="${activity.descKey}"></p>
+            <a href="${activity.link}" class="mt-6 inline-flex rounded-full bg-darkgreen px-5 py-3 text-sm font-semibold text-white transition hover:bg-olive" data-i18n="${activity.buttonKey || 'activities_more_info'}">Plus d'informations</a>
+          </div>
+        </article>
+      `;
+    }
+
+    // Function to filter and display activities based on category
+    function filterActivities(category) {
+      const defaultMessage = document.getElementById('default-message');
+      const resultsSection = document.getElementById('results-section');
+      const foodSection = document.getElementById('food-section');
+      const morningSection = document.getElementById('morning-section');
+      const resultsGrid = document.getElementById('results-grid');
+
+      if (!category) {
+        // Show default message if no category
+        defaultMessage.classList.remove('hidden');
+        resultsSection.classList.add('hidden');
+        foodSection.classList.add('hidden');
+        morningSection.classList.add('hidden');
+        resultsGrid.innerHTML = '';
+        return;
+      }
+
+      // Hide default message
+      defaultMessage.classList.add('hidden');
+
+      if (category === 'food') {
+        // Show food section
+        resultsSection.classList.add('hidden');
+        foodSection.classList.remove('hidden');
+        morningSection.classList.add('hidden');
+        resultsGrid.innerHTML = '';
+      } else if (category === 'morning') {
+        // Show morning and evening section
+        resultsSection.classList.add('hidden');
+        foodSection.classList.add('hidden');
+        morningSection.classList.remove('hidden');
+        resultsGrid.innerHTML = '';
+      } else {
+        // Show filtered activities for other categories
+        foodSection.classList.add('hidden');
+        morningSection.classList.add('hidden');
+        resultsSection.classList.remove('hidden');
+
+        let filteredActivities;
+        if (category === 'all') {
+          filteredActivities = activitiesData;
+        } else {
+          filteredActivities = activitiesData.filter(activity => activity.category === category);
+        }
+
+        // Clear previous results
+        resultsGrid.innerHTML = '';
+
+        // Add filtered activities
+        filteredActivities.forEach(activity => {
+          resultsGrid.innerHTML += createActivityCard(activity);
+        });
+      }
+
+      // Update language for new elements
+      if (typeof switchLanguage !== 'undefined') {
+        switchLanguage(currentLang);
+      }
+    }
+
+    // Function to handle hash change
+    function handleHashChange() {
+      const hash = window.location.hash.slice(1); // Remove the '#'
+      const category = hashToCategoryMap[hash] || null;
+      filterActivities(category);
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Handle initial hash
+      handleHashChange();
+
+      // Listen for hash changes
+      window.addEventListener('hashchange', handleHashChange);
+    });
+  </script>
+</body>
+</html>

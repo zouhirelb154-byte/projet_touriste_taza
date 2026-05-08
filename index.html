@@ -44,10 +44,57 @@
       <!-- Desktop Nav -->
       <nav class="hidden items-center justify-center gap-10 text-sm font-medium tracking-wide text-darkgreen lg:flex">
         <a href="index.html" class="transition hover:text-gold" data-i18n="nav_home">Accueil</a>
-        <a href="#discover" class="transition hover:text-gold" data-i18n="nav_discover">Découvrir Taza</a>
-        <a href="#places" class="transition hover:text-gold" data-i18n="nav_places">À visiter</a>
-        <a href="#things-to-do" class="transition hover:text-gold" data-i18n="nav_things">À faire</a>
-        <a href="#tips" class="transition hover:text-gold" data-i18n="nav_tips">Astuces de voyage</a>
+        <a href="places.html" class="transition hover:text-gold" data-i18n="nav_places">À visiter</a>
+        <div class="relative group">
+          <a href="activities.html" class="transition hover:text-gold" data-i18n="nav_things">À faire</a>
+          <div class="absolute top-full left-0 mt-2 w-96 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg border border-stone-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="p-6">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-3">
+                  <a href="activities.html#inspiration" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_inspiration">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Inspirations de voyage
+                  </a>
+                  <a href="activities.html#festivals" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_festivals">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Festivals et événements
+                  </a>
+                  <a href="activities.html#activities" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_activities">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Activités
+                  </a>
+                  <a href="activities.html#history" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_history">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Histoire et religion
+                  </a>
+                  <a href="activities.html#culture" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_culture">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Art et culture
+                  </a>
+                </div>
+                <div class="space-y-3">
+                  <a href="activities.html#food" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_food">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Manger, boire
+                  </a>
+                  <a href="activities.html#morning" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_morning">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Matin et soir
+                  </a>
+                  <a href="activities.html#nature" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_nature">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Nature et plein air
+                  </a>
+                  <a href="activities.html#accommodation" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_accommodation">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Hébergement
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="tips.html" class="transition hover:text-gold" data-i18n="nav_tips">Astuces de voyage</a>
       </nav>
 
       <!-- Right controls -->
@@ -73,10 +120,9 @@
 
           <nav class="absolute right-0 top-14 z-50 grid w-72 gap-2 rounded-[1.25rem] bg-white p-4 text-sm font-medium text-darkgreen shadow-2xl ring-1 ring-stone-200">
             <a href="index.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_home">Accueil</a>
-            <a href="#discover" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_discover">Découvrir Taza</a>
-            <a href="#places" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_places">À visiter</a>
-            <a href="#things-to-do" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_things">À faire</a>
-            <a href="#tips" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_tips">Astuces de voyage</a>
+            <a href="places.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_places">À visiter</a>
+            <a href="activities.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_things">À faire</a>
+            <a href="tips.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_tips">Astuces de voyage</a>
 
             <div class="mt-2 flex gap-2 border-t border-stone-200 pt-4">
               <button class="lang-btn flex-1 rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">
@@ -118,9 +164,14 @@
             Explorez la médina, les montagnes, les grottes et les paysages naturels qui font de Taza une destination marocaine unique.
           </p>
 
-          <a href="#discover" class="mt-8 inline-flex rounded-full bg-gold px-7 py-3 text-sm font-semibold text-darkgreen shadow-lg transition hover:bg-[#b18d42]" data-i18n="hero_button">
-            Découvrir la ville
-          </a>
+          <div class="mt-8 flex gap-4">
+            <a href="#discover" class="inline-flex rounded-full bg-gold px-7 py-3 text-sm font-semibold text-darkgreen shadow-lg transition hover:bg-[#b18d42]" data-i18n="hero_button">
+              Découvrir la ville
+            </a>
+            <a href="map.html" class="inline-flex rounded-full border-2 border-white px-7 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-white hover:text-darkgreen" data-i18n="hero_button_plan">
+              Planifier votre voyage
+            </a>
+          </div>
         </div>
 
         <!-- Weather card -->

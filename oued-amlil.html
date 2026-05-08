@@ -45,8 +45,56 @@
       <nav class="flex flex-1 items-center justify-center gap-12 text-sm font-semibold tracking-wide text-darkgreen">
         <a href="index.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_home">Accueil</a>
         <a href="places.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_places">À visiter</a>
-        <a href="index.html#things-to-do" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_things">À faire</a>
-        <a href="index.html#tips" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_tips">Astuces de voyage</a>
+        <div class="relative group">
+          <a href="activities.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_things">À faire</a>
+          <div class="absolute top-full left-0 mt-2 w-96 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg border border-stone-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="p-6">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-3">
+                  <a href="activities.html#inspiration" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_inspiration">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Inspirations de voyage
+                  </a>
+                  <a href="activities.html#festivals" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_festivals">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Festivals et événements
+                  </a>
+                  <a href="activities.html#activities" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_activities">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Activités
+                  </a>
+                  <a href="activities.html#history" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_history">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Histoire et religion
+                  </a>
+                  <a href="activities.html#culture" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_culture">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Art et culture
+                  </a>
+                </div>
+                <div class="space-y-3">
+                  <a href="activities.html#food" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_food">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Manger, boire
+                  </a>
+                  <a href="activities.html#morning" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_morning">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Matin et soir
+                  </a>
+                  <a href="activities.html#nature" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_nature">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Nature et plein air
+                  </a>
+                  <a href="activities.html#accommodation" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_accommodation">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Hébergement
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="tips.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_tips">Astuces de voyage</a>
       </nav>
 
       <!-- Right controls -->

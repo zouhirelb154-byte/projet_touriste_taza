@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pyramides Hotel - Visit Taza</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkgreen: "#12372A",
+            olive: "#436850",
+            beige: "#FBF8EF",
+            gold: "#C8A15A",
+            surface: "#F7F1E8"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="min-h-screen bg-beige text-stone-900 antialiased">
+  <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur-xl">
+    <div class="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex shrink-0 items-center gap-3">
+        <span class="flex h-12 w-12 items-center justify-center rounded-full bg-darkgreen text-lg font-black text-beige shadow">VT</span>
+        <span>
+          <span class="block text-lg font-semibold tracking-tight text-darkgreen">Visit Taza</span>
+          <span class="block text-xs font-semibold uppercase tracking-[0.32em] text-stone-500">MOROCCO</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center justify-center gap-10 text-sm font-medium tracking-wide text-darkgreen lg:flex">
+        <a href="index.html" class="transition hover:text-gold" data-i18n="nav_home">Accueil</a>
+        <a href="places.html" class="transition hover:text-gold" data-i18n="nav_places">À visiter</a>
+        <div class="relative group">
+          <a href="activities.html" class="transition hover:text-gold" data-i18n="nav_things">À faire</a>
+          <div class="absolute top-full left-0 mt-2 w-96 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg border border-stone-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="p-6">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-3">
+                  <a href="activities.html#inspiration" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_inspiration">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Inspirations de voyage
+                  </a>
+                  <a href="activities.html#festivals" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_festivals">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Festivals et événements
+                  </a>
+                  <a href="activities.html#activities" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_activities">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Activités
+                  </a>
+                  <a href="activities.html#history" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_history">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Histoire et religion
+                  </a>
+                  <a href="activities.html#culture" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_culture">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Art et culture
+                  </a>
+                </div>
+                <div class="space-y-3">
+                  <a href="activities.html#food" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_food">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Manger, boire
+                  </a>
+                  <a href="activities.html#morning" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_morning">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Matin et soir
+                  </a>
+                  <a href="activities.html#nature" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_nature">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Nature et plein air
+                  </a>
+                  <a href="activities.html#accommodation" class="flex items-center gap-2 text-sm text-stone-700 hover:text-gold transition" data-i18n="dropdown_accommodation">
+                    <span class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+                    Hébergement
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="tips.html" class="transition hover:text-gold" data-i18n="nav_tips">Astuces de voyage</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="hidden items-center gap-2 md:flex">
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">AR</button>
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="en">EN</button>
+          <button class="lang-btn rounded-full bg-darkgreen px-3 py-2 text-xs font-bold text-white transition hover:bg-olive" data-lang="fr">FR</button>
+        </div>
+
+        <details class="relative lg:hidden">
+          <summary class="cursor-pointer rounded-full border border-stone-200 px-4 py-2 text-sm font-semibold text-darkgreen" data-i18n="menu_label">Menu</summary>
+          <nav class="absolute right-0 top-14 z-50 grid w-72 gap-2 rounded-[1.25rem] bg-white p-4 text-sm font-medium text-darkgreen shadow-2xl ring-1 ring-stone-200">
+            <a href="index.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_home">Accueil</a>
+            <a href="places.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_places">À visiter</a>
+            <a href="activities.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_things">À faire</a>
+            <a href="tips.html" class="rounded-xl px-4 py-3 hover:bg-surface hover:text-gold" data-i18n="nav_tips">Astuces de voyage</a>
+            <div class="mt-2 flex gap-2 border-t border-stone-200 pt-4">
+              <button class="lang-btn flex-1 rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">AR</button>
+              <button class="lang-btn flex-1 rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="en">EN</button>
+              <button class="lang-btn flex-1 rounded-full bg-darkgreen px-3 py-2 text-xs font-bold text-white transition hover:bg-olive" data-lang="fr">FR</button>
+            </div>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden bg-white">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-beige"></div>
+      <div class="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+        <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div class="space-y-6">
+            <a href="activities.html#accommodation" class="inline-flex items-center gap-2 rounded-full bg-gold/15 px-4 py-2 text-sm font-semibold text-darkgreen transition hover:bg-gold/20" data-i18n="accommodation_back_button">Retour à l’hébergement</a>
+            <div class="space-y-4">
+              <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="dropdown_accommodation">Hébergement</p>
+              <h1 class="text-4xl font-black tracking-tight text-darkgreen sm:text-5xl" data-i18n="pyramides_hotel_title">Pyramides Hotel</h1>
+              <p class="max-w-2xl text-lg leading-8 text-stone-700" data-i18n="pyramides_intro">Un hôtel adapté aux visiteurs qui cherchent un séjour confortable à Taza, avec une ambiance calme, des services essentiels et une expérience pratique proche des commodités de la ville.</p>
+            </div>
+          </div>
+          <div class="rounded-[2rem] overflow-hidden shadow-2xl ring-1 ring-stone-200">
+            <img src="assets/images/pyramides-1.jpg" alt="Pyramides Hotel" class="h-96 w-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-beige py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="space-y-16">
+          <div>
+            <h2 class="text-3xl font-black text-darkgreen" data-i18n="accommodation_gallery_title">Galerie de l’hôtel</h2>
+            <div class="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+              <img src="assets/images/pyramides-2.jpg" alt="Pyramides Hotel Gallery" class="h-72 w-full rounded-[2rem] object-cover shadow-xl ring-1 ring-stone-200" />
+              <img src="assets/images/pyramides-3.jpg" alt="Pyramides Hotel Gallery" class="h-72 w-full rounded-[2rem] object-cover shadow-xl ring-1 ring-stone-200" />
+              <img src="assets/images/pyramides-4.jpg" alt="Pyramides Hotel Gallery" class="h-72 w-full rounded-[2rem] object-cover shadow-xl ring-1 ring-stone-200" />
+              <img src="assets/images/pyramides-5.jpg" alt="Pyramides Hotel Gallery" class="h-72 w-full rounded-[2rem] object-cover shadow-xl ring-1 ring-stone-200" />
+              <img src="assets/images/pyramides-6.jpg" alt="Pyramides Hotel Gallery" class="h-72 w-full rounded-[2rem] object-cover shadow-xl ring-1 ring-stone-200" />
+              <img src="assets/images/pyramides-7.jpg" alt="Pyramides Hotel Gallery" class="h-72 w-full rounded-[2rem] object-cover shadow-xl ring-1 ring-stone-200" />
+            </div>
+          </div>
+
+          <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+            <div class="space-y-8">
+              <div class="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-stone-200">
+                <h3 class="text-2xl font-black text-darkgreen mb-6" data-i18n="accommodation_prices_title">Tarifs</h3>
+                <div class="space-y-4 text-stone-700">
+                  <p class="rounded-3xl border border-stone-200 bg-beige px-6 py-4 font-semibold" data-i18n="pyramides_price_single">Chambre simple : 280 MAD / nuit</p>
+                  <p class="rounded-3xl border border-stone-200 bg-beige px-6 py-4 font-semibold" data-i18n="pyramides_price_double">Chambre double : 420 MAD / nuit</p>
+                  <p class="rounded-3xl border border-stone-200 bg-beige px-6 py-4 font-semibold" data-i18n="pyramides_price_suite">Suite junior : 620 MAD / nuit</p>
+                </div>
+              </div>
+
+              <div class="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-stone-200">
+                <h3 class="text-2xl font-black text-darkgreen mb-6" data-i18n="accommodation_useful_info_title">Informations utiles</h3>
+                <ul class="space-y-3 text-stone-700">
+                  <li data-i18n="accommodation_checkin">Arrivée : 14:00</li>
+                  <li data-i18n="accommodation_checkout">Départ : 12:00</li>
+                  <li data-i18n="accommodation_wifi">Wi-Fi : Disponible</li>
+                  <li data-i18n="accommodation_parking">Parking : Disponible</li>
+                  <li data-i18n="accommodation_breakfast">Petit-déjeuner : En option</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-stone-200">
+              <h3 class="text-2xl font-black text-darkgreen mb-6" data-i18n="accommodation_gallery_title">Galerie de l’hôtel</h3>
+              <p class="text-stone-700 leading-7">Ce lieu est conçu pour offrir un séjour pratique, calme et bien situé, idéal pour explorer les services et les attractions de Taza.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-darkgreen text-white">
+    <div class="mx-auto max-w-7xl space-y-12 px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-4">
+          <a href="index.html" class="inline-flex items-center gap-3 text-xl font-black text-white">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-beige text-darkgreen">VT</span>
+            <span>
+              <span class="block text-lg font-semibold text-white">Visit Taza</span>
+              <span class="block text-xs uppercase tracking-[0.32em] text-stone-300">MOROCCO</span>
+            </span>
+          </a>
+          <p class="max-w-sm text-sm leading-7 text-stone-200" data-i18n="footer_brand_desc">Découvrez Taza, ses paysages naturels, son patrimoine et son accueil chaleureux.</p>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold">Liens rapides</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="index.html" class="transition hover:text-gold" data-i18n="footer_nav_home">Accueil</a></li>
+            <li><a href="places.html" class="transition hover:text-gold" data-i18n="footer_nav_places">À visiter</a></li>
+            <li><a href="activities.html" class="transition hover:text-gold" data-i18n="footer_nav_things">À faire</a></li>
+            <li><a href="tips.html" class="transition hover:text-gold" data-i18n="footer_nav_tips">Astuces de voyage</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold">Informations pratiques</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="#" class="transition hover:text-gold" data-i18n="footer_info_map">Carte & Infos</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-i18n="footer_info_transport">Transport</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-i18n="footer_info_weather">Météo</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-i18n="footer_info_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold" data-i18n="footer_contact_title">Contact</p>
+          <div class="space-y-3 text-sm leading-7 text-stone-200">
+            <p>Taza, Morocco</p>
+            <p><a href="mailto:contact@visittaza.ma" class="transition hover:text-gold">contact@visittaza.ma</a></p>
+            <p><a href="tel:+212000000000" class="transition hover:text-gold">+212 000 000 000</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-stone-300 sm:flex-row sm:items-center sm:justify-between">
+        <p data-i18n="footer_copy">© 2026 Visit Taza. All rights reserved.</p>
+        <p data-i18n="footer_made">Made with HTML & Tailwind CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>
