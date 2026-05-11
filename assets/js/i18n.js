@@ -261,14 +261,240 @@ const translations = {
     food_produce_tip: "Conseil au visiteur: Goûtez les oranges locales - leur saveur unique reflète le terroir de Taza.",
 
     // Morning and Evening
+    morning_label: "Expérience de la journée",
     morning_section_title: "Matin et soir à Taza",
-    morning_section_intro: "Profitez des différents moments de la journée à Taza, du matin rafraîchissant au soir paisible.",
-    morning_title: "Le matin à Taza",
-    morning_desc: "Commencez votre journée à Taza par une balade calme dans l’ancienne médina, les cafés locaux ou les marchés traditionnels, dans une atmosphère fraîche et agréable.",
-    morning_button: "Découvrir le matin",
-    evening_title: "Le soir à Taza",
-    evening_desc: "Le soir, les visiteurs peuvent profiter d'une ambiance calme, des vues sur la ville et des cafés locaux pour terminer la journée en douceur.",
-    evening_button: "Découvrir le soir"
+    morning_section_intro: "Découvrez l’ambiance de Taza le matin et le soir, entre balades paisibles, cafés locaux et beaux paysages.",
+
+    morning_block_title: "Le matin à Taza",
+    morning_block_desc: "Commencez votre journée à Taza par une balade paisible dans ses anciens quartiers ou par une visite des lieux naturels proches. Le matin est idéal pour marcher, prendre des photos et découvrir la vie locale en douceur.",
+    morning_block_button: "Découvrir le matin",
+
+    evening_block_title: "La nuit à Taza",
+    evening_block_desc: "Le soir, vous pouvez profiter de l’ambiance calme de Taza, visiter les cafés locaux, vous promener dans quelques rues proches ou savourer un thé marocain dans une atmosphère simple et agréable.",
+    evening_block_button: "Conseils pour le soir",
+    evening_page_hero_label: "Expérience du soir",
+    evening_page_hero_label: "Expérience du soir",
+    evening_page_title: "Conseils pour le soir à Taza",
+    evening_page_subtitle: "Profitez de l’ambiance calme de Taza le soir grâce à des balades légères, des cafés locaux et des lieux adaptés aux photos.",
+    evening_page_back: "Retour aux activités",
+
+    evening_page_intro_label: "Pourquoi le soir ?",
+    evening_page_intro_title: "Une ambiance calme après le coucher du soleil",
+    evening_page_intro_text: "Le soir à Taza est idéal pour se détendre, profiter d’une promenade légère et découvrir l’atmosphère paisible de la ville. Les visiteurs peuvent s’installer dans un café local, boire un thé marocain, admirer les lumières de la ville et passer un moment simple et agréable.",
+
+    evening_page_suggestions_label: "Suggestions du soir",
+    evening_page_suggestions_title: "Que faire le soir à Taza ?",
+
+    evening_page_card1_title: "Balade légère",
+    evening_page_card1_desc: "Faites une courte promenade dans les rues proches du centre-ville ou autour des espaces animés. Le soir, l’ambiance devient plus calme et agréable pour découvrir la ville autrement.",
+
+    evening_page_card2_title: "Café et thé marocain",
+    evening_page_card2_desc: "Installez-vous dans un café local et dégustez un thé marocain à la menthe ou un café. C’est une bonne occasion pour observer la vie locale et profiter d’un moment de repos.",
+
+    evening_page_card3_title: "Photos de nuit",
+    evening_page_card3_desc: "Les lumières de la ville, les rues calmes et certains points de vue offrent de belles occasions pour prendre des photos nocturnes et garder des souvenirs de votre visite.",
+
+    evening_page_card4_title: "Conseils de sécurité",
+    evening_page_card4_desc: "Choisissez des lieux connus et bien éclairés, évitez les endroits isolés tard le soir, gardez votre téléphone chargé et sortez de préférence avec des amis ou en famille.",
+
+    evening_page_plan_label: "Programme suggéré",
+    evening_page_plan_title: "Une soirée simple à Taza",
+    evening_page_plan_text: "Voici une idée simple pour profiter d’une soirée agréable à Taza sans trop vous éloigner : une petite balade, une pause dans un café local, puis quelques photos avant de rentrer.",
+
+    evening_page_plan1: " - Balade près du centre-ville",
+    evening_page_plan2: " - Thé ou café dans un café local",
+    evening_page_plan3: " - Photos et ambiance calme",
+
+    evening_page_safety_label: "Note importante",
+    evening_page_safety_title: "Conseils avant de sortir le soir",
+    evening_page_safety1: "• Il est préférable de sortir avec la famille ou des amis.",
+    evening_page_safety2: "• Gardez votre téléphone chargé.",
+    evening_page_safety3: "• Choisissez des endroits connus et bien éclairés.",
+    evening_page_safety4: "• Évitez les lieux isolés tard le soir.",
+        inspiration_category: "Inspiration voyage",
+        inspiration_one_day_title: "Une journée à Taza",
+        inspiration_one_day_desc: "Un programme simple pour découvrir l’essentiel de la ville : ancienne médina, cafés locaux, Ras El Ma et balade légère.",
+
+        inspiration_section_label: "Inspiration voyage",
+    inspiration_section_title: "Des idées pour découvrir Taza autrement",
+    inspiration_section_intro: "Choisissez une idée de voyage selon votre temps, vos envies et votre style de visite : nature, culture, famille ou expérience locale.",
+
+    inspiration_card1_label: "Circuit rapide",
+    inspiration_card1_title: "Une journée à Taza",
+    inspiration_card1_desc: "Un programme simple pour découvrir l’essentiel de la ville : ancienne médina, cafés locaux, Ras El Ma et balade légère.",
+
+    inspiration_card2_label: "Deux jours",
+    inspiration_card2_title: "Week-end à Taza",
+    inspiration_card2_desc: "Deux jours pour explorer la nature, visiter le Gouffre de Friouato, découvrir Tazekka et profiter de la cuisine locale.",
+
+    inspiration_card3_label: "Nature",
+    inspiration_card3_title: "Évasion nature",
+    inspiration_card3_desc: "Une idée de voyage pour les amateurs de forêts, montagnes, air frais et paysages calmes autour de Taza.",
+
+    inspiration_card4_label: "Culture",
+    inspiration_card4_title: "Voyage culturel",
+    inspiration_card4_desc: "Un parcours pour découvrir l’histoire de Taza, ses portes anciennes, sa médina et son ambiance traditionnelle.",
+
+    inspiration_card5_label: "Famille",
+    inspiration_card5_title: "Sortie en famille",
+    inspiration_card5_desc: "Des lieux calmes et accessibles pour passer un bon moment en famille entre nature, détente et petites balades.",
+
+    inspiration_card6_label: "Expérience locale",
+    inspiration_card6_title: "Goûter à l’ambiance locale",
+    inspiration_card6_desc: "Découvrez les saveurs marocaines, les marchés, le thé à la menthe et les spécialités traditionnelles.",
+    festivals_section_title: "Événements et ambiance locale à Taza",
+    festivals_section_intro: "Découvrez les moments forts de la vie locale à Taza : fêtes culturelles, marchés, activités saisonnières et rencontres autour du patrimoine.",
+
+    festival_card1_label: "Culture",
+    festival_card1_title: "Festival culturel local",
+    festival_card1_desc: "Un moment pour découvrir la musique, les traditions, les habits locaux et l’ambiance culturelle de la région de Taza.",
+
+    festival_card2_label: "Marchés",
+    festival_card2_title: "Marchés et produits locaux",
+    festival_card2_desc: "Les marchés de Taza offrent une expérience authentique avec des produits locaux, des épices, des fruits, des légumes et de l’artisanat.",
+
+    festival_card3_label: "Saison",
+    festival_card3_title: "Activités saisonnières",
+    festival_card3_desc: "Selon la saison, les visiteurs peuvent profiter de sorties en nature, de rencontres locales ou d’activités autour des paysages de Taza.",
+
+    festival_note_label: "Conseil",
+    festival_note_title: "Vérifiez les dates avant votre visite",
+    festival_note_desc: "Les événements peuvent changer selon les saisons. Il est conseillé de vérifier les dates auprès des pages locales, des associations ou des offices de tourisme.",
+    festival_date_label: "Date :",
+    festival_time_label: "Heure :",
+
+    festival_card1_date: "15 juillet 2026",
+    festival_card1_time: "18:00 - 22:00",
+
+    festival_card2_date: "Chaque dimanche",
+    festival_card2_time: "08:00 - 13:00",
+
+    festival_card3_date: "Printemps 2026",
+    festival_card3_time: "10:00 - 16:00",
+    activities_section_label: "Activités",
+    activities_section_title: "Des activités à vivre à Taza",
+    activities_section_intro: "Profitez de Taza à travers des expériences simples et agréables : promenades, photographie, découvertes locales et moments de détente.",
+
+    activity_card1_label: "Promenade",
+    activity_card1_title: "Balade dans la ville",
+    activity_card1_desc: "Découvrez les rues de Taza, ses quartiers calmes et son ambiance locale à travers une promenade légère.",
+
+    activity_card2_label: "Photographie",
+    activity_card2_title: "Points de vue et photos",
+    activity_card2_desc: "Profitez des vues sur la ville, des paysages naturels et des lieux historiques pour prendre de belles photos.",
+
+    activity_card3_label: "Découverte",
+    activity_card3_title: "Découvrir la vie locale",
+    activity_card3_desc: "Observez les marchés, les cafés, les habitudes quotidiennes et l’accueil chaleureux des habitants.",
+
+    activity_card4_label: "Détente",
+    activity_card4_title: "Moments de détente",
+    activity_card4_desc: "Prenez le temps de vous reposer dans un café local, un espace vert ou un lieu calme de la ville.",
+
+    activity_card5_label: "Nature",
+    activity_card5_title: "Petite randonnée",
+    activity_card5_desc: "Explorez les environs naturels de Taza avec une marche simple adaptée aux amateurs de paysages calmes.",
+
+    activity_card6_label: "Famille",
+    activity_card6_title: "Activité en famille",
+    activity_card6_desc: "Choisissez des lieux faciles d’accès pour passer un moment agréable avec la famille.",
+
+    activity_note_label: "Conseil",
+    activity_note_title: "Choisissez l’activité selon votre temps",
+    activity_note_desc: "Si vous avez peu de temps, commencez par une balade légère ou une visite proche. Pour une journée complète, combinez nature, culture et pause dans un café local.",
+    history_section_label: "Histoire et religion",
+    history_section_title: "Patrimoine historique et spirituel de Taza",
+    history_section_intro: "Découvrez l’histoire ancienne de Taza, ses monuments, ses portes, ses mosquées et les lieux qui témoignent de son importance culturelle et spirituelle.",
+
+    history_card1_label: "Patrimoine",
+    history_card1_title: "Ancienne médina",
+    history_card1_desc: "La médina de Taza reflète l’histoire de la ville à travers ses ruelles, ses portes anciennes et son architecture traditionnelle.",
+
+    history_card2_label: "Religion",
+    history_card2_title: "Grande Mosquée de Taza",
+    history_card2_desc: "Un monument religieux important qui rappelle le rôle spirituel et historique de Taza dans la région.",
+
+    history_card3_label: "Architecture",
+    history_card3_title: "Remparts et portes historiques",
+    history_card3_desc: "Les anciennes portes et les remparts montrent l’importance stratégique de Taza comme passage entre plusieurs régions du Maroc.",
+
+    history_card4_label: "Spiritualité",
+    history_card4_title: "Lieux spirituels",
+    history_card4_desc: "La ville possède une atmosphère spirituelle marquée par ses mosquées, ses quartiers anciens et ses traditions religieuses.",
+
+    history_card5_label: "Vie ancienne",
+    history_card5_title: "Souks et vie traditionnelle",
+    history_card5_desc: "Les anciens souks témoignent de la vie quotidienne, du commerce local et des traditions qui ont marqué la ville.",
+
+    history_card6_label: "Mémoire",
+    history_card6_title: "Mémoire de la ville",
+    history_card6_desc: "Taza garde une mémoire riche liée à son emplacement, à son patrimoine et à son rôle dans l’histoire du Maroc.",
+
+    history_note_label: "Conseil",
+    history_note_title: "Respectez les lieux religieux",
+    history_note_desc: "Lors de la visite des lieux historiques ou religieux, il est conseillé de respecter le calme, les traditions locales et les règles propres à chaque lieu.",
+    culture_section_label: "Art et culture",
+    culture_section_title: "Arts, traditions et culture locale à Taza",
+    culture_section_intro: "Découvrez la richesse culturelle de Taza à travers l’artisanat, la musique, les traditions, les souks et les moments de vie locale.",
+
+    culture_card1_label: "Artisanat",
+    culture_card1_title: "Artisanat local",
+    culture_card1_desc: "Découvrez les objets traditionnels, les produits faits à la main et le savoir-faire local transmis de génération en génération.",
+
+    culture_card2_label: "Musique",
+    culture_card2_title: "Musique et ambiance populaire",
+    culture_card2_desc: "La musique traditionnelle et les rythmes locaux donnent une image vivante de la culture et des rassemblements populaires.",
+
+    culture_card3_label: "Traditions",
+    culture_card3_title: "Habits et traditions",
+    culture_card3_desc: "Les habits traditionnels, les coutumes familiales et les pratiques locales font partie de l’identité culturelle de Taza.",
+
+    culture_card4_label: "Souks",
+    culture_card4_title: "Souks et vie quotidienne",
+    culture_card4_desc: "Les souks permettent d’observer la vie locale, les échanges, les couleurs, les odeurs et l’ambiance authentique de la ville.",
+
+    culture_card5_label: "Saveurs",
+    culture_card5_title: "Culture culinaire",
+    culture_card5_desc: "La cuisine locale fait partie de la culture marocaine : pain, thé, couscous, harira et autres spécialités partagées en famille.",
+
+    culture_card6_label: "Rencontres",
+    culture_card6_title: "Rencontres locales",
+    culture_card6_desc: "Les échanges avec les habitants permettent de mieux comprendre l’accueil, les traditions et la simplicité de la vie locale.",
+
+    culture_note_label: "Conseil",
+    culture_note_title: "Prenez le temps d’observer",
+    culture_note_desc: "Pour découvrir la culture locale, prenez le temps de discuter, d’observer les détails et de respecter les traditions des habitants.",
+tips_page_label: "Conseils utiles",
+tips_page_title: "Astuces de voyage à Taza",
+tips_page_intro: "Préparez votre visite à Taza avec des conseils simples pour profiter de votre séjour en toute tranquillité.",
+
+tips_card1_title: "Préparer son sac",
+tips_card1_desc: "Prenez une bouteille d’eau, une casquette, un téléphone chargé et des chaussures confortables pour marcher.",
+
+tips_card2_title: "Se déplacer facilement",
+tips_card2_desc: "Pour les petits trajets, privilégiez la marche ou les taxis. Pour les zones naturelles, préparez le trajet à l’avance.",
+
+tips_card3_title: "Choisir le bon moment",
+tips_card3_desc: "Le matin et la fin d’après-midi sont souvent les meilleurs moments pour visiter, marcher et prendre des photos.",
+
+tips_card4_title: "Planifier son itinéraire",
+tips_card4_desc: "Choisissez deux ou trois lieux par jour pour éviter la fatigue et profiter de chaque visite calmement.",
+
+tips_card5_title: "Respecter la culture locale",
+tips_card5_desc: "Respectez les traditions, demandez l’autorisation avant de photographier les personnes et gardez une attitude polie.",
+
+tips_card6_title: "Garder des souvenirs",
+tips_card6_desc: "Photographiez les paysages, les détails architecturaux et les moments simples pour garder un beau souvenir de Taza.",
+
+tips_check_label: "Checklist",
+tips_check_title: "Avant de partir",
+tips_check_intro: "Avant votre sortie, vérifiez quelques éléments simples pour passer une journée plus confortable.",
+
+tips_check1: "✅ Téléphone chargé",
+tips_check2: "✅ Eau et petite collation",
+tips_check3: "✅ Chaussures confortables",
+tips_check4: "✅ Appareil photo ou téléphone",
+tips_check5: "✅ Itinéraire préparé",
   },
 
   en: {
@@ -533,15 +759,240 @@ const translations = {
     food_produce_tip: "Visitor tip: Taste the local oranges - their unique flavor reflects Taza's terroir.",
 
     // Morning and Evening
+    morning_label: "Daily Experience",
     morning_section_title: "Morning and Evening in Taza",
-    morning_section_intro: "Enjoy different times of the day in Taza, from the refreshing morning to the peaceful evening.",
-    morning_title: "Morning in Taza",
-    morning_desc: "Start your day in Taza with a peaceful walk through the old medina, local cafés, or traditional markets, enjoying a fresh and pleasant atmosphere.",
-    morning_button: "Discover Morning",
-    evening_title: "Evening in Taza",
-    evening_desc: "In the evening, visitors can enjoy a calm atmosphere, city views, and local cafés for a relaxing end to the day.",
-    evening_button: "Discover Evening"
-  },
+    morning_section_intro: "Discover Taza’s atmosphere in the morning and evening, from peaceful walks to local cafés and beautiful views.",
+
+    morning_block_title: "Morning in Taza",
+    morning_block_desc: "Start your day in Taza with a peaceful walk through its old neighborhoods or a visit to nearby natural places. Morning is ideal for walking, taking photos, and discovering local life calmly.",
+    morning_block_button: "Discover the Morning",
+
+    evening_block_title: "Night in Taza",
+    evening_block_desc: "In the evening, you can enjoy Taza’s calm atmosphere, visit local cafés, walk through nearby streets, or enjoy Moroccan tea in a simple and relaxing setting.",
+    evening_block_button: "Evening Tips",
+    evening_page_hero_label: "Evening Experience",
+    evening_page_hero_label: "Evening Experience",
+    evening_page_title: "Evening Tips in Taza",
+    evening_page_subtitle: "Enjoy Taza’s calm evening atmosphere with light walks, local cafés, and photo-friendly places.",
+    evening_page_back: "Back to Activities",
+
+    evening_page_intro_label: "Why evening?",
+    evening_page_intro_title: "A calm atmosphere after sunset",
+    evening_page_intro_text: "Evening in Taza is ideal for relaxing and taking a light walk. Visitors can enjoy local cafés, city lights, and a peaceful atmosphere.",
+
+    evening_page_suggestions_label: "Evening Suggestions",
+    evening_page_suggestions_title: "What to do in the evening?",
+
+    evening_page_card1_title: "Light Walk",
+    evening_page_card1_desc: "Take a short walk through nearby streets or around the city center to enjoy a calm atmosphere.",
+
+    evening_page_card2_title: "Café and Moroccan Tea",
+    evening_page_card2_desc: "Choose a local café and enjoy Moroccan tea or coffee in a simple and pleasant atmosphere.",
+
+    evening_page_card3_title: "Night Photos",
+    evening_page_card3_desc: "Use the city lights and night views to take beautiful photos of Taza.",
+
+    evening_page_card4_title: "Safety Tips",
+    evening_page_card4_desc: "Stay in known places, avoid isolated areas late at night, and keep your phone charged.",
+
+    evening_page_plan_label: "Suggested Plan",
+    evening_page_plan_title: "A Simple Evening in Taza",
+    evening_page_plan_text: "Organize your evening simply with a walk, a break in a local café, and a few photos before returning.",
+
+    evening_page_plan1: " - Walk near the city center",
+    evening_page_plan2: " - Tea or coffee in a local café",
+    evening_page_plan3: " - Photos and calm atmosphere",
+
+    evening_page_safety_label: "Important Note",
+    evening_page_safety_title: "Tips before going out at night",
+    evening_page_safety1: "• It is better to go out with family or friends.",
+    evening_page_safety2: "• Keep your phone charged.",
+    evening_page_safety3: "• Choose known and well-lit places.",
+    evening_page_safety4: "• Avoid isolated places late at night.",
+   
+    festivals_section_label: "Festivals and Events",
+    festivals_section_title: "Events and Local Atmosphere in Taza",
+    festivals_section_intro: "Discover highlights of local life in Taza: cultural celebrations, markets, seasonal activities, and heritage gatherings.",
+
+    festival_card1_label: "Culture",
+    festival_card1_title: "Local Cultural Festival",
+    festival_card1_desc: "A moment to discover music, traditions, local clothing, and the cultural atmosphere of the Taza region.",
+
+    festival_card2_label: "Markets",
+    festival_card2_title: "Markets and Local Products",
+    festival_card2_desc: "Taza’s markets offer an authentic experience with local products, spices, fruits, vegetables, and handicrafts.",
+
+    festival_card3_label: "Season",
+    festival_card3_title: "Seasonal Activities",
+    festival_card3_desc: "Depending on the season, visitors can enjoy nature outings, local gatherings, or activities around Taza’s landscapes.",
+
+    festival_note_label: "Tip",
+    festival_note_title: "Check dates before your visit",
+    festival_note_desc: "Events may change depending on the season. It is recommended to check dates through local pages, associations, or tourism offices.",
+    inspiration_section_label: "Travel Inspiration",
+    inspiration_section_title: "Ideas to Discover Taza Differently",
+    inspiration_section_intro: "Choose a travel idea according to your time, interests, and travel style: nature, culture, family, or local experience.",
+
+    inspiration_card1_label: "Quick Route",
+    inspiration_card1_title: "One Day in Taza",
+    inspiration_card1_desc: "A simple program to discover the city’s essentials: old medina, local cafés, Ras El Ma, and a light walk.",
+
+    inspiration_card2_label: "Two Days",
+    inspiration_card2_title: "Weekend in Taza",
+    inspiration_card2_desc: "Two days to explore nature, visit Friouato Cave, discover Tazekka, and enjoy local food.",
+
+    inspiration_card3_label: "Nature",
+    inspiration_card3_title: "Nature Escape",
+    inspiration_card3_desc: "A travel idea for lovers of forests, mountains, fresh air, and peaceful landscapes around Taza.",
+
+    inspiration_card4_label: "Culture",
+    inspiration_card4_title: "Cultural Trip",
+    inspiration_card4_desc: "A route to discover Taza’s history, ancient gates, old medina, and traditional atmosphere.",
+
+    inspiration_card5_label: "Family",
+    inspiration_card5_title: "Family Trip",
+    inspiration_card5_desc: "Calm and accessible places to spend a good time with family through nature, relaxation, and short walks.",
+
+    inspiration_card6_label: "Local Experience",
+    inspiration_card6_title: "Taste the Local Atmosphere",
+    inspiration_card6_desc: "Discover Moroccan flavors, traditional markets, mint tea, and local specialties.",
+    festival_date_label: "Date:",
+    festival_time_label: "Time:",
+
+    festival_card1_date: "July 15, 2026",
+    festival_card1_time: "6:00 PM - 10:00 PM",
+
+    festival_card2_date: "Every Sunday",
+    festival_card2_time: "8:00 AM - 1:00 PM",
+
+    festival_card3_date: "Spring 2026",
+    festival_card3_time: "10:00 AM - 4:00 PM",
+    activities_section_label: "Activities",
+    activities_section_title: "Activities to Enjoy in Taza",
+    activities_section_intro: "Enjoy Taza through simple and pleasant experiences: walks, photography, local discoveries, and relaxing moments.",
+
+    activity_card1_label: "Walk",
+    activity_card1_title: "Walk Around the City",
+    activity_card1_desc: "Discover Taza’s streets, calm neighborhoods, and local atmosphere through a light walk.",
+
+    activity_card2_label: "Photography",
+    activity_card2_title: "Viewpoints and Photos",
+    activity_card2_desc: "Enjoy city views, natural landscapes, and historical places to take beautiful photos.",
+
+    activity_card3_label: "Discovery",
+    activity_card3_title: "Discover Local Life",
+    activity_card3_desc: "Observe markets, cafés, daily habits, and the warm welcome of local residents.",
+
+    activity_card4_label: "Relaxation",
+    activity_card4_title: "Relaxing Moments",
+    activity_card4_desc: "Take time to rest in a local café, a green space, or a calm place in the city.",
+
+    activity_card5_label: "Nature",
+    activity_card5_title: "Short Hike",
+    activity_card5_desc: "Explore the natural surroundings of Taza with a simple walk suitable for lovers of peaceful landscapes.",
+
+    activity_card6_label: "Family",
+    activity_card6_title: "Family Activity",
+    activity_card6_desc: "Choose easy-to-access places to spend a pleasant moment with family.",
+
+    activity_note_label: "Tip",
+    activity_note_title: "Choose the Activity According to Your Time",
+    
+    activity_note_desc: "If you have little time, start with a light walk or a nearby visit. For a full day, combine nature, culture, and a break in a local café.",
+    history_section_label: "History and Religion",
+    history_section_title: "Historical and Spiritual Heritage of Taza",
+    history_section_intro: "Discover the ancient history of Taza, its monuments, gates, mosques, and places that reflect its cultural and spiritual importance.",
+
+    history_card1_label: "Heritage",
+    history_card1_title: "Old Medina",
+    history_card1_desc: "Taza’s medina reflects the city’s history through its narrow streets, ancient gates, and traditional architecture.",
+
+    history_card2_label: "Religion",
+    history_card2_title: "Great Mosque of Taza",
+    history_card2_desc: "An important religious monument that recalls the spiritual and historical role of Taza in the region.",
+
+    history_card3_label: "Architecture",
+    history_card3_title: "Ramparts and Historic Gates",
+    history_card3_desc: "The ancient gates and ramparts show Taza’s strategic importance as a passage between several regions of Morocco.",
+
+    history_card4_label: "Spirituality",
+    history_card4_title: "Spiritual Places",
+    history_card4_desc: "The city has a spiritual atmosphere shaped by its mosques, old neighborhoods, and religious traditions.",
+
+    history_card5_label: "Old Life",
+    history_card5_title: "Souks and Traditional Life",
+    history_card5_desc: "The old souks reflect daily life, local trade, and the traditions that shaped the city.",
+
+    history_card6_label: "Memory",
+    history_card6_title: "Memory of the City",
+    history_card6_desc: "Taza preserves a rich memory linked to its location, heritage, and role in Moroccan history.",
+
+    history_note_label: "Tip",
+    history_note_title: "Respect Religious Places",
+    history_note_desc: "When visiting historical or religious places, it is recommended to respect calm, local traditions, and the rules of each place.",
+    culture_section_label: "Art and Culture",
+    culture_section_title: "Arts, Traditions and Local Culture in Taza",
+    culture_section_intro: "Discover Taza’s cultural richness through handicrafts, music, traditions, souks, and moments of local life.",
+
+    culture_card1_label: "Handicrafts",
+    culture_card1_title: "Local Handicrafts",
+    culture_card1_desc: "Discover traditional objects, handmade products, and local know-how passed down from generation to generation.",
+
+    culture_card2_label: "Music",
+    culture_card2_title: "Music and Popular Atmosphere",
+    culture_card2_desc: "Traditional music and local rhythms give a lively image of culture and popular gatherings.",
+
+    culture_card3_label: "Traditions",
+    culture_card3_title: "Clothing and Traditions",
+    culture_card3_desc: "Traditional clothing, family customs, and local practices are part of Taza’s cultural identity.",
+
+    culture_card4_label: "Souks",
+    culture_card4_title: "Souks and Daily Life",
+    culture_card4_desc: "Souks allow visitors to observe local life, exchanges, colors, smells, and the authentic atmosphere of the city.",
+
+    culture_card5_label: "Flavors",
+    culture_card5_title: "Culinary Culture",
+    culture_card5_desc: "Local cuisine is part of Moroccan culture: bread, tea, couscous, harira, and other specialties often shared with family.",
+
+    culture_card6_label: "Encounters",
+    culture_card6_title: "Local Encounters",
+    culture_card6_desc: "Exchanges with locals help visitors better understand hospitality, traditions, and the simplicity of local life.",
+
+    culture_note_label: "Tip",
+    culture_note_title: "Take Time to Observe",
+    culture_note_desc: "To discover local culture, take time to talk, observe details, and respect residents’ traditions.",
+tips_page_label: "Useful Tips",
+tips_page_title: "Travel Tips for Taza",
+tips_page_intro: "Prepare your visit to Taza with simple tips to enjoy your stay comfortably and peacefully.",
+
+tips_card1_title: "Prepare Your Bag",
+tips_card1_desc: "Bring a bottle of water, a cap, a charged phone, and comfortable shoes for walking.",
+
+tips_card2_title: "Move Around Easily",
+tips_card2_desc: "For short distances, choose walking or taxis. For natural areas, prepare your route in advance.",
+
+tips_card3_title: "Choose the Right Time",
+tips_card3_desc: "Morning and late afternoon are often the best times to visit, walk, and take photos.",
+
+tips_card4_title: "Plan Your Route",
+tips_card4_desc: "Choose two or three places per day to avoid fatigue and enjoy each visit calmly.",
+
+tips_card5_title: "Respect Local Culture",
+tips_card5_desc: "Respect traditions, ask permission before photographing people, and keep a polite attitude.",
+
+tips_card6_title: "Keep Memories",
+tips_card6_desc: "Take photos of landscapes, architectural details, and simple moments to keep beautiful memories of Taza.",
+
+tips_check_label: "Checklist",
+tips_check_title: "Before You Go",
+tips_check_intro: "Before going out, check a few simple things to make your day more comfortable.",
+
+tips_check1: "✅ Charged phone",
+tips_check2: "✅ Water and a small snack",
+tips_check3: "✅ Comfortable shoes",
+tips_check4: "✅ Camera or phone",
+tips_check5: "✅ Prepared itinerary",
+},
 
   ar: {
     menu_label: "القائمة",
@@ -805,14 +1256,236 @@ const translations = {
     food_produce_tip: "نصيحة للزائر: ذق البرتقال المحلي - نكهته الفريدة تعكس تربة تازة.",
 
     // Morning and Evening
-    morning_section_title: "صباح ومساء في تازة",
-    morning_section_intro: "استمتع بأوقات مختلفة من اليوم في تازة، من الصباح المنعش إلى المساء الهادئ.",
-    morning_title: "صباح في تازة",
-    morning_desc: "ابدأ يومك في تازة بجولة هادئة في المدينة القديمة أو زيارة المقاهي المحلية والأسواق الشعبية، حيث تكون الأجواء منعشة ومناسبة لاكتشاف الحياة اليومية للمدينة.",
-    morning_button: "اكتشف الصباح",
-    evening_title: "المساء في تازة",
-    evening_desc: "في المساء، يمكن للزائر الاستمتاع بأجواء هادئة، مناظر المدينة، والمقاهي المحلية التي تمنح تجربة بسيطة ومريحة بعد يوم من الاستكشاف.",
-    evening_button: "اكتشف المساء"
+    morning_label: "تجربة اليوم",
+    morning_section_title: "الصباح والمساء في تازة",
+    morning_section_intro: "اكتشف أجواء تازة في الصباح الهادئ والمساء اللطيف، من الجولات الخفيفة إلى المقاهي المحلية والمناظر الجميلة.",
+
+    morning_block_title: "صباح تازة",
+    morning_block_desc: "ابدأ يومك في تازة بجولة هادئة بين أزقتها القديمة أو بزيارة الأماكن الطبيعية القريبة. في الصباح تكون الأجواء مناسبة للمشي، التقاط الصور، واكتشاف الحياة المحلية بهدوء.",
+    morning_block_button: "اكتشف أماكن الصباح",
+
+    evening_block_title: "ليلة في تازة",
+    evening_block_desc: "في المساء يمكنك الاستمتاع بأجواء تازة الهادئة، زيارة المقاهي المحلية، التجول في بعض الشوارع القريبة، أو الاستمتاع بجلسة شاي مغربي في أجواء بسيطة ومريحة.",
+    evening_block_button: "نصائح للمساء",
+    evening_page_hero_label: "تجربة مسائية",
+    evening_page_hero_label: "تجربة مسائية",
+    evening_page_title: "نصائح للمساء في تازة",
+    evening_page_subtitle: "استمتع بأجواء تازة الهادئة في المساء من خلال جولات خفيفة، مقاهي محلية، وأماكن مناسبة للتصوير.",
+    evening_page_back: "العودة إلى الأنشطة",
+
+    evening_page_intro_label: "لماذا المساء؟",
+    evening_page_intro_title: "أجواء هادئة بعد غروب الشمس",
+    evening_page_intro_text: "المساء في تازة مناسب للراحة والتجول الخفيف، حيث يمكن للزائر الاستمتاع بالمقاهي المحلية، الإضاءة الليلية، وجو المدينة الهادئ.",
+
+    evening_page_suggestions_label: "اقتراحات مسائية",
+    evening_page_suggestions_title: "ماذا تفعل في المساء؟",
+
+    evening_page_card1_title: "جولة خفيفة",
+    evening_page_card1_desc: "يمكنك القيام بجولة قصيرة في الشوارع القريبة أو قرب مركز المدينة للاستمتاع بالأجواء الهادئة.",
+
+    evening_page_card2_title: "مقهى وشاي مغربي",
+    evening_page_card2_desc: "اختر مقهى محلياً وجرب الشاي المغربي أو القهوة في أجواء بسيطة ومريحة.",
+
+    evening_page_card3_title: "صور ليلية",
+    evening_page_card3_desc: "استغل أضواء المدينة والمناظر الليلية لالتقاط صور جميلة ومختلفة لتازة.",
+
+    evening_page_card4_title: "نصائح السلامة",
+    evening_page_card4_desc: "ابق في الأماكن المعروفة، تجنب المناطق المعزولة في وقت متأخر، وخذ هاتفك مشحوناً.",
+
+    evening_page_plan_label: "برنامج مقترح",
+    evening_page_plan_title: "أمسية بسيطة داخل تازة",
+    evening_page_plan_text: "يمكنك تنظيم أمسيتك بطريقة بسيطة تجمع بين المشي، الراحة في مقهى محلي، والتقاط بعض الصور قبل العودة.",
+
+    evening_page_plan1: " - جولة قرب مركز المدينة",
+    evening_page_plan2: " - شاي أو قهوة في مقهى محلي",
+    evening_page_plan3: " - التقاط صور والاستمتاع بالأجواء",
+
+    evening_page_safety_label: "ملاحظة مهمة",
+    evening_page_safety_title: "نصائح قبل الخروج ليلاً",
+    evening_page_safety1: "• من الأفضل الخروج مع العائلة أو الأصدقاء.",
+    evening_page_safety2: "• حافظ على هاتفك مشحوناً.",
+    evening_page_safety3: "• اختر الأماكن المعروفة والمضاءة جيداً.",
+    evening_page_safety4: "• تجنب التجول في أماكن منعزلة في وقت متأخر.",
+    inspiration_section_label: "إلهام السفر",
+    inspiration_section_title: "أفكار لاكتشاف تازة بطريقة مختلفة",
+    inspiration_section_intro: "اختر فكرة سفر حسب وقتك، رغباتك وطريقة زيارتك: الطبيعة، الثقافة، العائلة أو التجربة المحلية.",
+
+    inspiration_card1_label: "مسار سريع",
+    inspiration_card1_title: "يوم واحد في تازة",
+    inspiration_card1_desc: "برنامج بسيط لاكتشاف أهم معالم المدينة: المدينة القديمة، المقاهي المحلية، راس الماء وجولة خفيفة.",
+
+    inspiration_card2_label: "يومان",
+    inspiration_card2_title: "عطلة نهاية الأسبوع في تازة",
+    inspiration_card2_desc: "يومان لاكتشاف الطبيعة، زيارة كهف فريواطو، التعرف على تازكة والاستمتاع بالأكل المحلي.",
+
+    inspiration_card3_label: "طبيعة",
+    inspiration_card3_title: "هروب إلى الطبيعة",
+    inspiration_card3_desc: "فكرة سفر مناسبة لعشاق الغابات والجبال والهواء النقي والمناظر الهادئة حول تازة.",
+
+    inspiration_card4_label: "ثقافة",
+    inspiration_card4_title: "رحلة ثقافية",
+    inspiration_card4_desc: "مسار لاكتشاف تاريخ تازة، أبوابها القديمة، مدينتها العتيقة وأجوائها التقليدية.",
+
+    inspiration_card5_label: "عائلة",
+    inspiration_card5_title: "خرجة عائلية",
+    inspiration_card5_desc: "أماكن هادئة وسهلة الزيارة لقضاء وقت ممتع مع العائلة بين الطبيعة والاسترخاء والجولات القصيرة.",
+
+    inspiration_card6_label: "تجربة محلية",
+    inspiration_card6_title: "تذوق الأجواء المحلية",
+    inspiration_card6_desc: "اكتشف النكهات المغربية، الأسواق الشعبية، الشاي بالنعناع والتخصصات التقليدية.",
+    festivals_section_title: "فعاليات وأجواء محلية في تازة",
+    festivals_section_intro: "اكتشف لحظات مميزة من الحياة المحلية في تازة: احتفالات ثقافية، أسواق شعبية، أنشطة موسمية ولقاءات حول التراث.",
+
+    festival_card1_label: "ثقافة",
+    festival_card1_title: "مهرجان ثقافي محلي",
+    festival_card1_desc: "فرصة لاكتشاف الموسيقى، التقاليد، اللباس المحلي والأجواء الثقافية التي تميز منطقة تازة.",
+
+    festival_card2_label: "أسواق",
+    festival_card2_title: "الأسواق والمنتجات المحلية",
+    festival_card2_desc: "توفر أسواق تازة تجربة أصيلة من خلال المنتجات المحلية، التوابل، الخضر، الفواكه وبعض الصناعات التقليدية.",
+
+    festival_card3_label: "موسم",
+    festival_card3_title: "أنشطة موسمية",
+    festival_card3_desc: "حسب الموسم، يمكن للزوار الاستمتاع بخرجات طبيعية، لقاءات محلية أو أنشطة مرتبطة بمناظر تازة.",
+
+    festival_note_label: "نصيحة",
+    festival_note_title: "تحقق من المواعيد قبل الزيارة",
+    festival_note_desc: "قد تتغير الفعاليات حسب الموسم، لذلك يُنصح بالتحقق من المواعيد عبر الصفحات المحلية أو الجمعيات أو مكاتب السياحة.",
+    festival_date_label: "التاريخ:",
+    festival_time_label: "الوقت:",
+
+    festival_card1_date: "15 يوليوز 2026",
+    festival_card1_time: "18:00 - 22:00",
+
+    festival_card2_date: "كل يوم أحد",
+    festival_card2_time: "08:00 - 13:00",
+
+    festival_card3_date: "ربيع 2026",
+    festival_card3_time: "10:00 - 16:00",
+    activities_section_label: "الأنشطة",
+    activities_section_title: "أنشطة يمكنك تجربتها في تازة",
+    activities_section_intro: "استمتع بتازة من خلال تجارب بسيطة وممتعة: جولات خفيفة، تصوير، اكتشاف الحياة المحلية ولحظات من الراحة.",
+
+    activity_card1_label: "جولة",
+    activity_card1_title: "جولة داخل المدينة",
+    activity_card1_desc: "اكتشف شوارع تازة، أحيائها الهادئة وأجواءها المحلية من خلال جولة خفيفة وممتعة.",
+
+    activity_card2_label: "تصوير",
+    activity_card2_title: "إطلالات وصور",
+    activity_card2_desc: "استمتع بمناظر المدينة، الطبيعة والأماكن التاريخية لالتقاط صور جميلة ومميزة.",
+
+    activity_card3_label: "اكتشاف",
+    activity_card3_title: "اكتشاف الحياة المحلية",
+    activity_card3_desc: "تعرف على الأسواق، المقاهي، العادات اليومية وحسن استقبال سكان تازة.",
+
+    activity_card4_label: "راحة",
+    activity_card4_title: "لحظات استرخاء",
+    activity_card4_desc: "خذ وقتاً للراحة في مقهى محلي، فضاء أخضر أو مكان هادئ داخل المدينة.",
+
+    activity_card5_label: "طبيعة",
+    activity_card5_title: "نزهة قصيرة",
+    activity_card5_desc: "اكتشف المناطق الطبيعية القريبة من تازة من خلال مشي بسيط مناسب لمحبي المناظر الهادئة.",
+
+    activity_card6_label: "عائلة",
+    activity_card6_title: "نشاط عائلي",
+    activity_card6_desc: "اختر أماكن سهلة الولوج لقضاء وقت ممتع مع العائلة في أجواء مريحة.",
+
+    activity_note_label: "نصيحة",
+    activity_note_title: "اختر النشاط حسب وقتك",
+    activity_note_desc: "إذا كان لديك وقت قصير، ابدأ بجولة خفيفة أو زيارة قريبة. أما إذا كان لديك يوم كامل، فاجمع بين الطبيعة، الثقافة واستراحة في مقهى محلي.",  
+    history_section_label: "التاريخ والدين",
+    history_section_title: "التراث التاريخي والروحي لتازة",
+    history_section_intro: "اكتشف التاريخ العريق لمدينة تازة، معالمها، أبوابها، مساجدها والأماكن التي تعكس أهميتها الثقافية والروحية.",
+
+    history_card1_label: "تراث",
+    history_card1_title: "المدينة القديمة",
+    history_card1_desc: "تعكس المدينة القديمة لتازة تاريخ المدينة من خلال أزقتها، أبوابها القديمة ومعمارها التقليدي.",
+
+    history_card2_label: "دين",
+    history_card2_title: "المسجد الأعظم بتازة",
+    history_card2_desc: "معلمة دينية مهمة تبرز الدور الروحي والتاريخي لمدينة تازة داخل المنطقة.",
+
+    history_card3_label: "معمار",
+    history_card3_title: "الأسوار والأبواب التاريخية",
+    history_card3_desc: "تُظهر الأبواب القديمة والأسوار أهمية تازة الاستراتيجية كممر بين عدة مناطق في المغرب.",
+
+    history_card4_label: "روحانية",
+    history_card4_title: "أماكن روحية",
+    history_card4_desc: "تتميز المدينة بأجواء روحية تظهر من خلال مساجدها، أحيائها القديمة وتقاليدها الدينية.",
+
+    history_card5_label: "حياة قديمة",
+    history_card5_title: "الأسواق والحياة التقليدية",
+    history_card5_desc: "تشهد الأسواق القديمة على الحياة اليومية، التجارة المحلية والتقاليد التي طبعت تاريخ المدينة.",
+
+    history_card6_label: "ذاكرة",
+    history_card6_title: "ذاكرة المدينة",
+    history_card6_desc: "تحتفظ تازة بذاكرة غنية مرتبطة بموقعها، تراثها ودورها في تاريخ المغرب.",
+
+    history_note_label: "نصيحة",
+    history_note_title: "احترم الأماكن الدينية",
+    history_note_desc: "أثناء زيارة الأماكن التاريخية أو الدينية، يُنصح باحترام الهدوء، التقاليد المحلية والقواعد الخاصة بكل مكان.",
+    culture_section_label: "الفن والثقافة",
+    culture_section_title: "الفنون، التقاليد والثقافة المحلية في تازة",
+    culture_section_intro: "اكتشف الغنى الثقافي لمدينة تازة من خلال الصناعة التقليدية، الموسيقى، العادات، الأسواق ولحظات من الحياة المحلية.",
+
+    culture_card1_label: "صناعة تقليدية",
+    culture_card1_title: "الصناعة التقليدية المحلية",
+    culture_card1_desc: "اكتشف المنتجات التقليدية، الأشياء المصنوعة يدوياً والمهارات المحلية التي تنتقل من جيل إلى جيل.",
+
+    culture_card2_label: "موسيقى",
+    culture_card2_title: "الموسيقى والأجواء الشعبية",
+    culture_card2_desc: "تعكس الموسيقى التقليدية والإيقاعات المحلية صورة حية عن الثقافة والتجمعات الشعبية في المنطقة.",
+
+    culture_card3_label: "تقاليد",
+    culture_card3_title: "الأزياء والعادات التقليدية",
+    culture_card3_desc: "تُعتبر الأزياء التقليدية، العادات العائلية والممارسات المحلية جزءاً مهماً من الهوية الثقافية لتازة.",
+
+    culture_card4_label: "أسواق",
+    culture_card4_title: "الأسواق والحياة اليومية",
+    culture_card4_desc: "تتيح الأسواق فرصة لملاحظة الحياة المحلية، المبادلات، الألوان، الروائح والأجواء الأصيلة للمدينة.",
+
+    culture_card5_label: "نكهات",
+    culture_card5_title: "الثقافة الغذائية",
+    culture_card5_desc: "يشكل المطبخ المحلي جزءاً من الثقافة المغربية: الخبز، الشاي، الكسكس، الحريرة وتخصصات أخرى تُشارك غالباً داخل العائلة.",
+
+    culture_card6_label: "لقاءات",
+    culture_card6_title: "لقاءات محلية",
+    culture_card6_desc: "يساعد التواصل مع السكان على فهم كرم الضيافة، التقاليد وبساطة الحياة المحلية بشكل أفضل.",
+
+    culture_note_label: "نصيحة",
+    culture_note_title: "خذ وقتك في الملاحظة",
+    culture_note_desc: "لاكتشاف الثقافة المحلية، خذ وقتك في الحديث مع الناس، ملاحظة التفاصيل واحترام تقاليد السكان.",
+tips_page_label: "نصائح مفيدة",
+tips_page_title: "نصائح السفر إلى تازة",
+tips_page_intro: "حضّر زيارتك إلى تازة من خلال نصائح بسيطة تساعدك على الاستمتاع برحلتك براحة وهدوء.",
+
+tips_card1_title: "تحضير الحقيبة",
+tips_card1_desc: "خذ معك قارورة ماء، قبعة، هاتفاً مشحوناً وحذاءً مريحاً للمشي.",
+
+tips_card2_title: "التنقل بسهولة",
+tips_card2_desc: "للمسافات القصيرة، يمكنك الاعتماد على المشي أو سيارات الأجرة. أما للمناطق الطبيعية، فمن الأفضل تحضير الطريق مسبقاً.",
+
+tips_card3_title: "اختيار الوقت المناسب",
+tips_card3_desc: "الصباح ونهاية بعد الظهر غالباً هما أفضل وقتين للزيارة، المشي والتقاط الصور.",
+
+tips_card4_title: "تخطيط المسار",
+tips_card4_desc: "اختر مكانين أو ثلاثة في اليوم لتجنب التعب والاستمتاع بكل زيارة بهدوء.",
+
+tips_card5_title: "احترام الثقافة المحلية",
+tips_card5_desc: "احترم العادات المحلية، اطلب الإذن قبل تصوير الأشخاص، وحافظ على أسلوب مهذب في التعامل.",
+
+tips_card6_title: "الاحتفاظ بالذكريات",
+tips_card6_desc: "التقط صوراً للمناظر، التفاصيل المعمارية واللحظات البسيطة لتحتفظ بذكرى جميلة عن تازة.",
+
+tips_check_label: "قائمة التحقق",
+tips_check_title: "قبل الانطلاق",
+tips_check_intro: "قبل الخروج، تأكد من بعض الأشياء البسيطة التي ستجعل يومك أكثر راحة.",
+
+tips_check1: "✅ الهاتف مشحون",
+tips_check2: "✅ ماء ووجبة خفيفة",
+tips_check3: "✅ حذاء مريح",
+tips_check4: "✅ كاميرا أو هاتف للتصوير",
+tips_check5: "✅ مسار الرحلة مُحضّر",
   }
 };
 

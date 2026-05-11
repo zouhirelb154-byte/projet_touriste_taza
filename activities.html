@@ -316,53 +316,955 @@
         </div>
       </div>
 
-      <!-- Morning and Evening Section -->
-      <div id="morning-section" class="mt-16 hidden">
-        <!-- Section Header -->
-        <div class="mb-12 max-w-3xl">
-          <h2 class="text-3xl font-black text-darkgreen mb-4" data-i18n="morning_section_title">Matin et soir à Taza</h2>
-          <p class="text-lg text-stone-700" data-i18n="morning_section_intro">Profitez des différents moments de la journée à Taza, du matin rafraîchissant au soir paisible.</p>
-        </div>
+      
+      <!-- Section Matin et soir -->
+      <!-- Section Matin et soir داخل نفس div ديال الأنشطة -->
+      <div id="morning" class="activity-section hidden bg-[#FBF8EF] py-24">
+        <div class="max-w-7xl mx-auto px-6">
 
-        <!-- Morning and Evening Blocks -->
-        <div class="space-y-20">
-          <!-- Morning Block -->
-          <div class="grid items-center gap-10 rounded-[2rem] bg-white/80 p-6 shadow-sm ring-1 ring-stone-200/70 md:p-8 lg:grid-cols-2 lg:gap-14">
-            <!-- Morning Text -->
-            <div class="flex flex-col justify-center py-4 lg:py-10">
-              <div class="mb-6 flex items-center gap-4">
-                <span class="h-14 w-1.5 rounded-full bg-gold"></span>
-                <h3 class="text-4xl font-black leading-tight tracking-tight text-darkgreen md:text-5xl" data-i18n="morning_title">Le matin à Taza</h3>
+          <div class="text-center mb-20">
+            <p class="text-[#C8A15A] font-semibold mb-3" data-i18n="morning_label">
+              Expérience de la journée
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-bold text-[#12372A] mb-6" data-i18n="morning_section_title">
+              Matin et soir à Taza
+            </h2>
+
+            <p class="max-w-3xl mx-auto text-lg leading-9 text-gray-700" data-i18n="morning_section_intro">
+              Découvrez l’ambiance de Taza le matin et le soir, entre balades paisibles, cafés locaux et beaux paysages.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+            <div>
+              <div class="flex items-center gap-3 mb-6">
+                <span class="w-3 h-8 rounded-full bg-[#D6BE7B]"></span>
+                <span class="w-3 h-8 rounded-full bg-[#D6BE7B]"></span>
+
+                <h3 class="text-4xl md:text-5xl font-bold text-[#12372A]" data-i18n="morning_block_title">
+                  Le matin à Taza
+                </h3>
               </div>
-              <p class="max-w-xl text-lg leading-8 text-stone-700" data-i18n="morning_desc">Commencez votre journée à Taza par une balade calme dans l’ancienne médina, les cafés locaux ou les marchés traditionnels, dans une atmosphère fraîche et agréable.</p>
-              <a href="#morning" class="mt-8 inline-flex w-fit rounded-full bg-gold px-8 py-3 text-base font-bold text-darkgreen shadow-lg shadow-gold/20 transition hover:bg-[#b18d42] focus:outline-none focus:ring-4 focus:ring-gold/30" data-i18n="morning_button">Découvrir le matin</a>
+
+              <p class="text-lg leading-9 text-gray-700 mb-10" data-i18n="morning_block_desc">
+                Commencez votre journée à Taza par une balade paisible dans ses anciens quartiers ou par une visite des lieux naturels proches. Le matin est idéal pour marcher, prendre des photos et découvrir la vie locale en douceur.
+              </p>
+
+              <a href="morning-taza.html"
+                class="inline-flex items-center justify-center rounded-full bg-[#D6BE7B] px-9 py-4 font-semibold text-[#12372A] shadow-md transition hover:bg-[#12372A] hover:text-white"
+                data-i18n="morning_block_button">
+                Découvrir le matin
+              </a>
             </div>
 
-            <!-- Morning Image -->
-            <div class="relative h-72 overflow-hidden rounded-[1.5rem] shadow-2xl shadow-stone-900/15 sm:h-96 lg:h-[28rem]">
-              <img src="assets/images/matain-1.jpg" alt="Morning in Taza" class="h-full w-full object-cover" />
+            <div>
+              <img src="assets/images/matain-1.jpg" alt="Le matin à Taza"
+                class="h-[420px] w-full rounded-[2rem] object-cover shadow-xl">
             </div>
           </div>
 
-          <!-- Evening Block -->
-          <div class="grid items-center gap-10 rounded-[2rem] bg-surface/80 p-6 shadow-sm ring-1 ring-stone-200/70 md:p-8 lg:grid-cols-2 lg:gap-14">
-            <!-- Evening Image -->
-            <div class="relative h-72 overflow-hidden rounded-[1.5rem] shadow-2xl shadow-stone-900/15 sm:h-96 lg:h-[28rem]">
-              <img src="assets/images/soir-1.jpg" alt="Evening in Taza" class="h-full w-full object-cover" />
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="md:order-2">
+              <div class="flex items-center gap-3 mb-6">
+                <span class="w-3 h-8 rounded-full bg-[#D6BE7B]"></span>
+                <span class="w-3 h-8 rounded-full bg-[#D6BE7B]"></span>
+
+                <h3 class="text-4xl md:text-5xl font-bold text-[#12372A]" data-i18n="evening_block_title">
+                  La nuit à Taza
+                </h3>
+              </div>
+
+              <p class="text-lg leading-9 text-gray-700 mb-10" data-i18n="evening_block_desc">
+                Le soir, vous pouvez profiter de l’ambiance calme de Taza, visiter les cafés locaux, vous promener dans quelques rues proches ou savourer un thé marocain dans une atmosphère simple et agréable.
+              </p>
+
+              <a href="evening-taza.html"
+                class="inline-flex items-center justify-center rounded-full bg-[#D6BE7B] px-9 py-4 font-semibold text-[#12372A] shadow-md transition hover:bg-[#12372A] hover:text-white"
+                data-i18n="evening_block_button">
+                Conseils pour le soir
+              </a>
             </div>
 
-            <!-- Evening Text -->
-            <div class="flex flex-col justify-center py-4 lg:py-10">
-              <div class="mb-6 flex items-center gap-4">
-                <span class="h-14 w-1.5 rounded-full bg-gold"></span>
-                <h3 class="text-4xl font-black leading-tight tracking-tight text-darkgreen md:text-5xl" data-i18n="evening_title">Le soir à Taza</h3>
-              </div>
-              <p class="max-w-xl text-lg leading-8 text-stone-700" data-i18n="evening_desc">Le soir, les visiteurs peuvent profiter d'une ambiance calme, des vues sur la ville et des cafés locaux pour terminer la journée en douceur.</p>
-              <a href="#evening" class="mt-8 inline-flex w-fit rounded-full bg-gold px-8 py-3 text-base font-bold text-darkgreen shadow-lg shadow-gold/20 transition hover:bg-[#b18d42] focus:outline-none focus:ring-4 focus:ring-gold/30" data-i18n="evening_button">Découvrir le soir</a>
+            <div class="md:order-1">
+              <img src="assets/images/soir-1.jpg" alt="La nuit à Taza"
+                class="h-[420px] w-full rounded-[2rem] object-cover shadow-xl">
             </div>
           </div>
+
         </div>
       </div>
+      <!-- Section Inspiration voyage -->
+<div id="inspiration" class="activity-section hidden bg-[#FBF8EF] py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Titre -->
+    <div class="text-center mb-16">
+      <p class="text-[#C8A15A] font-semibold mb-3" data-i18n="inspiration_section_label">
+        Inspiration voyage
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-black text-[#12372A] mb-6" data-i18n="inspiration_section_title">
+        Des idées pour découvrir Taza autrement
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-lg leading-9 text-gray-700" data-i18n="inspiration_section_intro">
+        Choisissez une idée de voyage selon votre temps, vos envies et votre style de visite : nature, culture, famille ou expérience locale.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Card 1 -->
+      <article class="flex h-full flex-col overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/taza-city.jpg"
+          alt="Une journée à Taza"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="flex flex-1 flex-col p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="inspiration_card1_label">
+            Circuit rapide
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="inspiration_card1_title">
+            Une journée à Taza
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="inspiration_card1_desc">
+            Un programme simple pour découvrir l’essentiel de la ville : ancienne médina, cafés locaux, Ras El Ma et balade légère.
+          </p>
+
+          <a href="places.html"  class="inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#D6BE7B] text-[#12372A] hover:bg-[#12372A] hover:text-white" data-i18n="activities_more_info">
+            Plus d’informations
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="flex h-full flex-col overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/Friouato-1.jpg"
+          alt="Week-end à Taza"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="flex flex-1 flex-col p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="inspiration_card2_label">
+            Deux jours
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="inspiration_card2_title">
+            Week-end à Taza
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="inspiration_card2_desc">
+            Deux jours pour explorer la nature, visiter le Gouffre de Friouato, découvrir Tazekka et profiter de la cuisine locale.
+          </p>
+
+          <a href="friouato.html"  class="inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#D6BE7B] text-[#12372A] hover:bg-[#12372A] hover:text-white" data-i18n="activities_more_info">
+            Plus d’informations
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="flex h-full flex-col overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/tazekka-1.jpg"
+          alt="Évasion nature"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="flex flex-1 flex-col p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="inspiration_card3_label">
+            Nature
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="inspiration_card3_title">
+            Évasion nature
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="inspiration_card3_desc">
+            Une idée de voyage pour les amateurs de forêts, montagnes, air frais et paysages calmes autour de Taza.
+          </p>
+
+          <a href="tazekka.html"  class="inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#D6BE7B] text-[#12372A] hover:bg-[#12372A] hover:text-white" data-i18n="activities_more_info">
+            Plus d’informations
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="flex h-full flex-col overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/lmdina-1.jpg"
+          alt="Voyage culturel"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="flex flex-1 flex-col p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="inspiration_card4_label">
+            Culture
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="inspiration_card4_title">
+            Voyage culturel
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="inspiration_card4_desc">
+            Un parcours pour découvrir l’histoire de Taza, ses portes anciennes, sa médina et son ambiance traditionnelle.
+          </p>
+
+          <a href="medina.html" class="inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#D6BE7B] text-[#12372A] hover:bg-[#12372A] hover:text-white" data-i18n="activities_more_info">
+            Plus d’informations
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="flex h-full flex-col overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/ras-elma-1.jpg"
+          alt="Sortie en famille"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="flex flex-1 flex-col p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="inspiration_card5_label">
+            Famille
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="inspiration_card5_title">
+            Sortie en famille
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="inspiration_card5_desc">
+            Des lieux calmes et accessibles pour passer un bon moment en famille entre nature, détente et petites balades.
+          </p>
+
+          <a href="ras-el-ma.html"  class="inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#D6BE7B] text-[#12372A] hover:bg-[#12372A] hover:text-white" data-i18n="activities_more_info">
+            Plus d’informations
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="flex h-full flex-col overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/food-8.jpg"
+          alt="Expérience locale"
+          class="h-64 w-full object-cover"
+        >
+
+          <div class="flex flex-1 flex-col p-8">          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="inspiration_card6_label">
+            Expérience locale
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="inspiration_card6_title">
+            Goûter à l’ambiance locale
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="inspiration_card6_desc">
+            Découvrez les saveurs marocaines, les marchés, le thé à la menthe et les spécialités traditionnelles.
+          </p>
+
+          <a href="activities.html#food"  class="inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#D6BE7B] text-[#12372A] hover:bg-[#12372A] hover:text-white" data-i18n="activities_more_info">
+            Plus d’informations
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</div>
+<!-- Section Festivals et événements -->
+<div id="festivals" class="activity-section hidden bg-[#FBF8EF] py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Titre -->
+    <div class="text-center mb-16">
+      <p class="text-[#C8A15A] font-semibold mb-3" data-i18n="festivals_section_label">
+        Festivals et événements
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-black text-[#12372A] mb-6" data-i18n="festivals_section_title">
+        Événements et ambiance locale à Taza
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-lg leading-9 text-gray-700" data-i18n="festivals_section_intro">
+        Découvrez les moments forts de la vie locale à Taza : fêtes culturelles, marchés, activités saisonnières et rencontres autour du patrimoine.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Card 1 -->
+      <!-- Card 1 -->
+<article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+  <img
+    src="assets/images/festival-01.jpg"
+    alt="Festival culturel à Taza"
+    class="h-64 w-full object-cover"
+  >
+
+  <div class="p-8">
+    <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="festival_card1_label">
+      Culture
+    </p>
+
+    <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="festival_card1_title">
+      Festival culturel local
+    </h3>
+
+    <p class="mt-4 leading-8 text-stone-700" data-i18n="festival_card1_desc">
+      Un moment pour découvrir la musique, les traditions, les habits locaux et l’ambiance culturelle de la région de Taza.
+    </p>
+
+    <div class="mt-6 rounded-2xl bg-[#FBF8EF] p-4 text-sm font-semibold text-[#12372A]">
+      <p>
+        <span class="text-[#C8A15A]" data-i18n="festival_date_label">Date :</span>
+        <span data-i18n="festival_card1_date">15 juillet 2026</span>
+      </p>
+      <p class="mt-2">
+        <span class="text-[#C8A15A]" data-i18n="festival_time_label">Heure :</span>
+        <span data-i18n="festival_card1_time">18:00 - 22:00</span>
+      </p>
+    </div>
+  </div>
+</article>
+      <!-- Card 2 -->
+     <!-- Card 2 -->
+<article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+  <img
+    src="assets/images/festival-02.jpg"
+    alt="Marché local à Taza"
+    class="h-64 w-full object-cover"
+  >
+
+  <div class="p-8">
+    <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="festival_card2_label">
+      Marchés
+    </p>
+
+    <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="festival_card2_title">
+      Marchés et produits locaux
+    </h3>
+
+    <p class="mt-4 leading-8 text-stone-700" data-i18n="festival_card2_desc">
+      Les marchés de Taza offrent une expérience authentique avec des produits locaux, des épices, des fruits, des légumes et de l’artisanat.
+    </p>
+
+    <div class="mt-6 rounded-2xl bg-[#FBF8EF] p-4 text-sm font-semibold text-[#12372A]">
+      <p>
+        <span class="text-[#C8A15A]" data-i18n="festival_date_label">Date :</span>
+        <span data-i18n="festival_card2_date">Chaque dimanche</span>
+      </p>
+      <p class="mt-2">
+        <span class="text-[#C8A15A]" data-i18n="festival_time_label">Heure :</span>
+        <span data-i18n="festival_card2_time">08:00 - 13:00</span>
+      </p>
+    </div>
+  </div>
+</article>
+
+      <!-- Card 3 -->
+      <!-- Card 3 -->
+<article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+  <img
+    src="assets/images/festival-03.jpg"
+    alt="Événement naturel à Taza"
+    class="h-64 w-full object-cover"
+  >
+
+  <div class="p-8">
+    <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="festival_card3_label">
+      Saison
+    </p>
+
+    <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="festival_card3_title">
+      Activités saisonnières
+    </h3>
+
+    <p class="mt-4 leading-8 text-stone-700" data-i18n="festival_card3_desc">
+      Selon la saison, les visiteurs peuvent profiter de sorties en nature, de rencontres locales ou d’activités autour des paysages de Taza.
+    </p>
+
+    <div class="mt-6 rounded-2xl bg-[#FBF8EF] p-4 text-sm font-semibold text-[#12372A]">
+      <p>
+        <span class="text-[#C8A15A]" data-i18n="festival_date_label">Date :</span>
+        <span data-i18n="festival_card3_date">Printemps 2026</span>
+      </p>
+      <p class="mt-2">
+        <span class="text-[#C8A15A]" data-i18n="festival_time_label">Heure :</span>
+        <span data-i18n="festival_card3_time">10:00 - 16:00</span>
+      </p>
+    </div>
+  </div>
+</article>
+    </div>
+
+    <!-- Note -->
+    <div class="mt-14 rounded-[2rem] bg-[#12372A] p-8 text-white shadow-xl">
+      <p class="text-[#C8A15A] font-semibold mb-3" data-i18n="festival_note_label">
+        Conseil
+      </p>
+
+      <h3 class="text-3xl font-black mb-4" data-i18n="festival_note_title">
+        Vérifiez les dates avant votre visite
+      </h3>
+
+      <p class="text-white/85 leading-8" data-i18n="festival_note_desc">
+        Les événements peuvent changer selon les saisons. Il est conseillé de vérifier les dates auprès des pages locales, des associations ou des offices de tourisme.
+      </p>
+    </div>
+
+  </div>
+</div>
+<!-- Section Activités -->
+<div id="activities-special" class="activity-section hidden bg-[#FBF8EF] py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Titre -->
+    <div class="text-center mb-16">
+      <p class="text-[#C8A15A] font-semibold mb-3" data-i18n="activities_section_label">
+        Activités
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-black text-[#12372A] mb-6" data-i18n="activities_section_title">
+        Des activités à vivre à Taza
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-lg leading-9 text-gray-700" data-i18n="activities_section_intro">
+        Profitez de Taza à travers des expériences simples et agréables : promenades, photographie, découvertes locales et moments de détente.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Card 1 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/activite-1.jpg"
+          alt="Balade dans Taza"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="activity_card1_label">
+            Promenade
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="activity_card1_title">
+            Balade dans la ville
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="activity_card1_desc">
+            Découvrez les rues de Taza, ses quartiers calmes et son ambiance locale à travers une promenade légère.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/activite-2.jpg"
+          alt="Photographie à Taza"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="activity_card2_label">
+            Photographie
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="activity_card2_title">
+            Points de vue et photos
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="activity_card2_desc">
+            Profitez des vues sur la ville, des paysages naturels et des lieux historiques pour prendre de belles photos.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/activite-3.jpg"
+          alt="Découverte locale"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="activity_card3_label">
+            Découverte
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="activity_card3_title">
+            Découvrir la vie locale
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="activity_card3_desc">
+            Observez les marchés, les cafés, les habitudes quotidiennes et l’accueil chaleureux des habitants.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/activite-4.jpg"
+          alt="Détente à Taza"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="activity_card4_label">
+            Détente
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="activity_card4_title">
+            Moments de détente
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="activity_card4_desc">
+            Prenez le temps de vous reposer dans un café local, un espace vert ou un lieu calme de la ville.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/activite-5.jpg"
+          alt="Randonnée près de Taza"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="activity_card5_label">
+            Nature
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="activity_card5_title">
+            Petite randonnée
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="activity_card5_desc">
+            Explorez les environs naturels de Taza avec une marche simple adaptée aux amateurs de paysages calmes.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/activite-6.jpg"
+          alt="Expérience familiale"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="activity_card6_label">
+            Famille
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="activity_card6_title">
+            Activité en famille
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="activity_card6_desc">
+            Choisissez des lieux faciles d’accès pour passer un moment agréable avec la famille.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Note -->
+    <div class="mt-14 rounded-[2rem] bg-[#12372A] p-8 text-white shadow-xl">
+      <p class="text-[#C8A15A] font-semibold mb-3" data-i18n="activity_note_label">
+        Conseil
+      </p>
+
+      <h3 class="text-3xl font-black mb-4" data-i18n="activity_note_title">
+        Choisissez l’activité selon votre temps
+      </h3>
+
+      <p class="text-white/85 leading-8" data-i18n="activity_note_desc">
+        Si vous avez peu de temps, commencez par une balade légère ou une visite proche. Pour une journée complète, combinez nature, culture et pause dans un café local.
+      </p>
+    </div>
+
+  </div>
+</div>
+<!-- Section Histoire et religion -->
+<div id="history" class="activity-section hidden bg-[#FBF8EF] py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Titre -->
+    <div class="text-center mb-16">
+      <p class="text-[#C8A15A] font-semibold mb-3" data-i18n="history_section_label">
+        Histoire et religion
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-black text-[#12372A] mb-6" data-i18n="history_section_title">
+        Patrimoine historique et spirituel de Taza
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-lg leading-9 text-gray-700" data-i18n="history_section_intro">
+        Découvrez l’histoire ancienne de Taza, ses monuments, ses portes, ses mosquées et les lieux qui témoignent de son importance culturelle et spirituelle.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Card 1 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/history-1.jpg"
+          alt="Ancienne médina de Taza"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="history_card1_label">
+            Patrimoine
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="history_card1_title">
+            Ancienne médina
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="history_card1_desc">
+            La médina de Taza reflète l’histoire de la ville à travers ses ruelles, ses portes anciennes et son architecture traditionnelle.
+          </p>
+
+          <a href="medina.html" c class="inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#D6BE7B] text-[#12372A] hover:bg-[#12372A] hover:text-white" data-i18n="activities_more_info">
+            Plus d’informations
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/history-2.jpg"
+          alt="Grande mosquée de Taza"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="history_card2_label">
+            Religion
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="history_card2_title">
+            Grande Mosquée de Taza
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="history_card2_desc">
+            Un monument religieux important qui rappelle le rôle spirituel et historique de Taza dans la région.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/history-3.jpg"
+          alt="Remparts et portes historiques"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="history_card3_label">
+            Architecture
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="history_card3_title">
+            Remparts et portes historiques
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="history_card3_desc">
+            Les anciennes portes et les remparts montrent l’importance stratégique de Taza comme passage entre plusieurs régions du Maroc.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/history-4.jpg"
+          alt="Patrimoine religieux local"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="history_card4_label">
+            Spiritualité
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="history_card4_title">
+            Lieux spirituels
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="history_card4_desc">
+            La ville possède une atmosphère spirituelle marquée par ses mosquées, ses quartiers anciens et ses traditions religieuses.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/history-5.jpg"
+          alt="Souks anciens de Taza"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="history_card5_label">
+            Vie ancienne
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="history_card5_title">
+            Souks et vie traditionnelle
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="history_card5_desc">
+            Les anciens souks témoignent de la vie quotidienne, du commerce local et des traditions qui ont marqué la ville.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/history-6.jpg"
+          alt="Mémoire de Taza"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="history_card6_label">
+            Mémoire
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="history_card6_title">
+            Mémoire de la ville
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="history_card6_desc">
+            Taza garde une mémoire riche liée à son emplacement, à son patrimoine et à son rôle dans l’histoire du Maroc.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Note -->
+    <div class="mt-14 rounded-[2rem] bg-[#12372A] p-8 text-white shadow-xl">
+      <p class="text-[#C8A15A] font-semibold mb-3" data-i18n="history_note_label">
+        Conseil
+      </p>
+
+      <h3 class="text-3xl font-black mb-4" data-i18n="history_note_title">
+        Respectez les lieux religieux
+      </h3>
+
+      <p class="text-white/85 leading-8" data-i18n="history_note_desc">
+        Lors de la visite des lieux historiques ou religieux, il est conseillé de respecter le calme, les traditions locales et les règles propres à chaque lieu.
+      </p>
+    </div>
+
+  </div>
+</div>
+<!-- Section Art et culture -->
+<div id="culture-section" class="activity-section hidden bg-[#FBF8EF] py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Titre -->
+    <div class="text-center mb-16">
+      <p class="text-[#C8A15A] font-semibold mb-3" data-i18n="culture_section_label">
+        Art et culture
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-black text-[#12372A] mb-6" data-i18n="culture_section_title">
+        Arts, traditions et culture locale à Taza
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-lg leading-9 text-gray-700" data-i18n="culture_section_intro">
+        Découvrez la richesse culturelle de Taza à travers l’artisanat, la musique, les traditions, les souks et les moments de vie locale.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Card 1 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/culture-1.jpg"
+          alt="Artisanat local"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="culture_card1_label">
+            Artisanat
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="culture_card1_title">
+            Artisanat local
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="culture_card1_desc">
+            Découvrez les objets traditionnels, les produits faits à la main et le savoir-faire local transmis de génération en génération.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/culture-2.jpg"
+          alt="Musique traditionnelle"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="culture_card2_label">
+            Musique
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="culture_card2_title">
+            Musique et ambiance populaire
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="culture_card2_desc">
+            La musique traditionnelle et les rythmes locaux donnent une image vivante de la culture et des rassemblements populaires.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/culture-3.jpg"
+          alt="Habits traditionnels"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="culture_card3_label">
+            Traditions
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="culture_card3_title">
+            Habits et traditions
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="culture_card3_desc">
+            Les habits traditionnels, les coutumes familiales et les pratiques locales font partie de l’identité culturelle de Taza.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/culture-4.jpg"
+          alt="Souk traditionnel"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="culture_card4_label">
+            Souks
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="culture_card4_title">
+            Souks et vie quotidienne
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="culture_card4_desc">
+            Les souks permettent d’observer la vie locale, les échanges, les couleurs, les odeurs et l’ambiance authentique de la ville.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/culture-5.jpg"
+          alt="Cuisine traditionnelle"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="culture_card5_label">
+            Saveurs
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="culture_card5_title">
+            Culture culinaire
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="culture_card5_desc">
+            La cuisine locale fait partie de la culture marocaine : pain, thé, couscous, harira et autres spécialités partagées en famille.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200">
+        <img
+          src="assets/images/culture-6.jpg"
+          alt="Rencontres locales"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#C8A15A]" data-i18n="culture_card6_label">
+            Rencontres
+          </p>
+
+          <h3 class="mt-4 text-3xl font-black text-[#12372A]" data-i18n="culture_card6_title">
+            Rencontres locales
+          </h3>
+
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="culture_card6_desc">
+            Les échanges avec les habitants permettent de mieux comprendre l’accueil, les traditions et la simplicité de la vie locale.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Note -->
+    <div class="mt-14 rounded-[2rem] bg-[#12372A] p-8 text-white shadow-xl">
+      <p class="text-[#C8A15A] font-semibold mb-3" data-i18n="culture_note_label">
+        Conseil
+      </p>
+
+      <h3 class="text-3xl font-black mb-4" data-i18n="culture_note_title">
+        Prenez le temps d’observer
+      </h3>
+
+      <p class="text-white/85 leading-8" data-i18n="culture_note_desc">
+        Pour découvrir la culture locale, prenez le temps de discuter, d’observer les détails et de respecter les traditions des habitants.
+      </p>
+    </div>
+
+  </div>
+</div>
     </section>
   </main>
 
@@ -370,6 +1272,74 @@
   <script>
     // Activity data with categories
     const activitiesData = [
+      // Travel Inspiration
+{
+  id: 'one_day_taza',
+  category: 'inspiration',
+  image: 'assets/images/taza-city.jpg',
+  alt: 'Une journée à Taza',
+  categoryKey: 'inspiration_category',
+  titleKey: 'inspiration_one_day_title',
+  descKey: 'inspiration_one_day_desc',
+  buttonKey: 'activities_more_info',
+  link: 'places.html'
+},
+{
+  id: 'weekend_taza',
+  category: 'inspiration',
+  image: 'assets/images/Friouato-1.jpg',
+  alt: 'Week-end à Taza',
+  categoryKey: 'inspiration_category',
+  titleKey: 'inspiration_weekend_title',
+  descKey: 'inspiration_weekend_desc',
+  buttonKey: 'activities_more_info',
+  link: 'friouato.html'
+},
+{
+  id: 'nature_escape',
+  category: 'inspiration',
+  image: 'assets/images/tazekka-1.jpg',
+  alt: 'Évasion nature à Taza',
+  categoryKey: 'inspiration_category',
+  titleKey: 'inspiration_nature_title',
+  descKey: 'inspiration_nature_desc',
+  buttonKey: 'activities_more_info',
+  link: 'tazekka.html'
+},
+{
+  id: 'cultural_trip',
+  category: 'inspiration',
+  image: 'assets/images/lmdina-1.jpg',
+  alt: 'Voyage culturel à Taza',
+  categoryKey: 'inspiration_category',
+  titleKey: 'inspiration_culture_title',
+  descKey: 'inspiration_culture_desc',
+  buttonKey: 'activities_more_info',
+  link: 'medina.html'
+},
+{
+  id: 'family_trip',
+  category: 'inspiration',
+  image: 'assets/images/ras-elma-1.jpg',
+  alt: 'Sortie en famille à Taza',
+  categoryKey: 'inspiration_category',
+  titleKey: 'inspiration_family_title',
+  descKey: 'inspiration_family_desc',
+  buttonKey: 'activities_more_info',
+  link: 'ras-el-ma.html'
+},
+{
+  id: 'local_experience',
+  category: 'inspiration',
+  image: 'assets/images/food-8.jpg',
+  alt: 'Expérience locale à Taza',
+  categoryKey: 'inspiration_category',
+  titleKey: 'inspiration_local_title',
+  descKey: 'inspiration_local_desc',
+  buttonKey: 'activities_more_info',
+  link: 'activities.html#food'
+},
+     
       // Nature & Adventure
       {
         id: 'hiking',
@@ -448,7 +1418,29 @@
         buttonKey: 'accommodation_more_info',
         link: 'pyramides-hotel.html'
       },
-
+       // Morning & Evening
+      {
+        id: 'morning_taza',
+        category: 'morning',
+        image: 'assets/images/matain-1.jpg',
+        alt: 'Le matin à Taza',
+        categoryKey: 'morning_category',
+        titleKey: 'morning_block_title',
+        descKey: 'morning_block_desc',
+        buttonKey: 'morning_block_button',
+        link: 'places.html'
+      },
+      {
+        id: 'evening_taza',
+        category: 'morning',
+        image: 'assets/images/soir-1.jpg',
+        alt: 'La nuit à Taza',
+        categoryKey: 'morning_category',
+        titleKey: 'evening_block_title',
+        descKey: 'evening_block_desc',
+        buttonKey: 'evening_block_button',
+        link: 'tips.html'
+      },
       // Culture & History
       {
         id: 'medina',
@@ -487,17 +1479,17 @@
     ];
 
     // Map dropdown anchors to activity categories
-    const hashToCategoryMap = {
-      'inspiration': 'nature',
-      'festivals': 'family',
-      'activities': 'nature',
-      'history': 'culture',
-      'culture': 'culture',
-      'food': 'food',
-      'morning': 'nature',
-      'nature': 'nature',
-      'accommodation': 'accommodation'
-    };
+const hashToCategoryMap = {
+'inspiration': 'inspiration',
+'festivals': 'festivals',
+  'activities': 'activities',
+  'history': 'history',
+  'culture': 'culture',
+  'food': 'food',
+  'morning': 'morning',
+  'nature': 'nature',
+  'accommodation': 'accommodation'
+};
 
     // Function to create activity card HTML
     function createActivityCard(activity) {
@@ -514,66 +1506,113 @@
       `;
     }
 
-    // Function to filter and display activities based on category
-    function filterActivities(category) {
-      const defaultMessage = document.getElementById('default-message');
-      const resultsSection = document.getElementById('results-section');
-      const foodSection = document.getElementById('food-section');
-      const morningSection = document.getElementById('morning-section');
-      const resultsGrid = document.getElementById('results-grid');
+// Function to filter and display activities based on category
+function filterActivities(category) {
+  const defaultMessage = document.getElementById('default-message');
+  const resultsSection = document.getElementById('results-section');
+  const foodSection = document.getElementById('food-section');
+  const morningSection = document.getElementById('morning');
+  const inspirationSection = document.getElementById('inspiration');
+  const festivalsSection = document.getElementById('festivals');
+  const activitiesSpecialSection = document.getElementById('activities-special');
+  const historySection = document.getElementById('history');
+  const cultureSection = document.getElementById('culture-section');
+  const resultsGrid = document.getElementById('results-grid');
 
-      if (!category) {
-        // Show default message if no category
-        defaultMessage.classList.remove('hidden');
-        resultsSection.classList.add('hidden');
-        foodSection.classList.add('hidden');
-        morningSection.classList.add('hidden');
-        resultsGrid.innerHTML = '';
-        return;
-      }
+  function hideAllSections() {
+    if (defaultMessage) defaultMessage.classList.add('hidden');
+    if (resultsSection) resultsSection.classList.add('hidden');
+    if (foodSection) foodSection.classList.add('hidden');
+    if (morningSection) morningSection.classList.add('hidden');
+    if (inspirationSection) inspirationSection.classList.add('hidden');
+    if (festivalsSection) festivalsSection.classList.add('hidden');
+    if (activitiesSpecialSection) activitiesSpecialSection.classList.add('hidden');
+    if (historySection) historySection.classList.add('hidden');
+    if (cultureSection) cultureSection.classList.add('hidden');
+    if (resultsGrid) resultsGrid.innerHTML = '';
+  }
 
-      // Hide default message
-      defaultMessage.classList.add('hidden');
+  if (!category) {
+    hideAllSections();
 
-      if (category === 'food') {
-        // Show food section
-        resultsSection.classList.add('hidden');
-        foodSection.classList.remove('hidden');
-        morningSection.classList.add('hidden');
-        resultsGrid.innerHTML = '';
-      } else if (category === 'morning') {
-        // Show morning and evening section
-        resultsSection.classList.add('hidden');
-        foodSection.classList.add('hidden');
-        morningSection.classList.remove('hidden');
-        resultsGrid.innerHTML = '';
-      } else {
-        // Show filtered activities for other categories
-        foodSection.classList.add('hidden');
-        morningSection.classList.add('hidden');
-        resultsSection.classList.remove('hidden');
-
-        let filteredActivities;
-        if (category === 'all') {
-          filteredActivities = activitiesData;
-        } else {
-          filteredActivities = activitiesData.filter(activity => activity.category === category);
-        }
-
-        // Clear previous results
-        resultsGrid.innerHTML = '';
-
-        // Add filtered activities
-        filteredActivities.forEach(activity => {
-          resultsGrid.innerHTML += createActivityCard(activity);
-        });
-      }
-
-      // Update language for new elements
-      if (typeof switchLanguage !== 'undefined') {
-        switchLanguage(currentLang);
-      }
+    if (defaultMessage) {
+      defaultMessage.classList.remove('hidden');
     }
+
+    return;
+  }
+
+  hideAllSections();
+
+  if (category === 'food') {
+    if (foodSection) {
+      foodSection.classList.remove('hidden');
+    }
+  }
+
+  else if (category === 'morning') {
+    if (morningSection) {
+      morningSection.classList.remove('hidden');
+    }
+  }
+
+  else if (category === 'inspiration') {
+    if (inspirationSection) {
+      inspirationSection.classList.remove('hidden');
+    }
+  }
+
+  else if (category === 'festivals') {
+    if (festivalsSection) {
+      festivalsSection.classList.remove('hidden');
+    }
+  }
+
+  else if (category === 'activities') {
+    if (activitiesSpecialSection) {
+      activitiesSpecialSection.classList.remove('hidden');
+    }
+  }
+
+  else if (category === 'history') {
+    if (historySection) {
+      historySection.classList.remove('hidden');
+    }
+  }
+
+  else if (category === 'culture') {
+    if (cultureSection) {
+      cultureSection.classList.remove('hidden');
+    }
+  }
+
+  else {
+    if (resultsSection) {
+      resultsSection.classList.remove('hidden');
+    }
+
+    let filteredActivities;
+
+    if (category === 'all') {
+      filteredActivities = activitiesData;
+    } else {
+      filteredActivities = activitiesData.filter(activity => activity.category === category);
+    }
+
+    if (resultsGrid) {
+      resultsGrid.innerHTML = '';
+
+      filteredActivities.forEach(activity => {
+        resultsGrid.innerHTML += createActivityCard(activity);
+      });
+    }
+  }
+
+  // Update language for new elements
+  if (typeof switchLanguage !== 'undefined') {
+    switchLanguage(currentLang);
+  }
+}
 
     // Function to handle hash change
     function handleHashChange() {

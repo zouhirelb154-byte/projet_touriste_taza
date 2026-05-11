@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conseils pour le soir à Taza | Visit Taza</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            beige: "#FBF8EF",
+            darkgreen: "#12372A",
+            olive: "#436850",
+            gold: "#C8A15A"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="min-h-screen bg-beige text-stone-900">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur">
+    <div class="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-6 px-6 py-4">
+
+      <!-- Language buttons -->
+      <div class="flex items-center gap-3">
+  <button data-lang="fr" class="lang-btn rounded-full border border-darkgreen px-4 py-3 text-sm font-bold text-darkgreen hover:bg-darkgreen hover:text-white">
+    FR
+  </button>
+
+  <button data-lang="en" class="lang-btn rounded-full border border-darkgreen px-4 py-3 text-sm font-bold text-darkgreen hover:bg-darkgreen hover:text-white">
+    EN
+  </button>
+
+  <button data-lang="ar" class="lang-btn rounded-full border border-darkgreen px-4 py-3 text-sm font-bold text-darkgreen hover:bg-darkgreen hover:text-white">
+    AR
+  </button>
+</div>
+
+      <!-- Navigation -->
+      <nav class="flex items-center justify-center gap-12 text-lg font-semibold text-darkgreen">
+        <a href="index.html" class="transition hover:text-gold" data-i18n="nav_home">
+          Accueil
+        </a>
+
+        <a href="places.html" class="transition hover:text-gold" data-i18n="nav_places">
+          À visiter
+        </a>
+
+        <div class="group relative">
+          <a href="activities.html" class="transition hover:text-gold" data-i18n="nav_activities">
+            À faire
+          </a>
+
+          <!-- Dropdown -->
+          <div class="invisible absolute left-1/2 top-full mt-4 w-[650px] -translate-x-1/2 rounded-2xl bg-white p-8 opacity-0 shadow-xl ring-1 ring-stone-200 transition group-hover:visible group-hover:opacity-100">
+            <div class="grid grid-cols-2 gap-6 text-base text-stone-700">
+              <a href="activities.html#food" class="hover:text-gold" data-i18n="drop_food">Manger et boire</a>
+              <a href="activities.html#inspiration" class="hover:text-gold" data-i18n="drop_inspiration">Inspirations de voyage</a>
+              <a href="activities.html#morning" class="hover:text-gold" data-i18n="drop_morning">Matin et soir</a>
+              <a href="activities.html#festivals" class="hover:text-gold" data-i18n="drop_festivals">Festivals et événements</a>
+              <a href="activities.html#nature" class="hover:text-gold" data-i18n="drop_nature">Nature et plein air</a>
+              <a href="activities.html#activities" class="hover:text-gold" data-i18n="drop_activities">Activités</a>
+              <a href="activities.html#accommodation" class="hover:text-gold" data-i18n="drop_accommodation">Hébergement</a>
+              <a href="activities.html#history" class="hover:text-gold" data-i18n="drop_history">Histoire et religion</a>
+              <a href="activities.html#culture" class="hover:text-gold" data-i18n="drop_culture">Art et culture</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="tips.html" class="transition hover:text-gold" data-i18n="nav_tips">
+          Astuces de voyage
+        </a>
+      </nav>
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-4">
+        <div class="text-right">
+          <h1 class="text-2xl font-black text-darkgreen">Visit Taza</h1>
+          <p class="tracking-[0.35em] text-stone-500">MOROCCO</p>
+        </div>
+
+        <div class="flex h-16 w-16 items-center justify-center rounded-full bg-darkgreen text-2xl font-black text-white shadow-md">
+          VT
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="relative min-h-[520px] overflow-hidden">
+      <img
+        src="assets/images/soir-1.jpg"
+        alt="La nuit à Taza"
+        class="absolute inset-0 h-full w-full object-cover"
+      >
+
+      <div class="absolute inset-0 bg-darkgreen/70"></div>
+
+      <div class="relative z-10 mx-auto flex min-h-[520px] max-w-7xl flex-col justify-center px-6 text-white">
+        <p class="mb-4 text-lg font-semibold text-gold" data-i18n="evening_page_hero_label">
+          Expérience du soir
+        </p>
+
+        <h2 class="max-w-4xl text-5xl font-black leading-tight md:text-7xl" data-i18n="evening_page_title">
+          Conseils pour le soir à Taza
+        </h2>
+
+        <p class="mt-8 max-w-3xl text-xl leading-10 text-white/90" data-i18n="evening_page_subtitle">
+          Profitez de l’ambiance calme de Taza le soir grâce à des balades légères, des cafés locaux et des lieux adaptés aux photos.
+        </p>
+
+        <div class="mt-10">
+          <a
+            href="activities.html#morning"
+            class="inline-flex rounded-full bg-gold px-8 py-4 font-bold text-darkgreen shadow-lg transition hover:bg-white"
+            data-i18n="evening_page_back"
+          >
+            Retour aux activités
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="bg-beige py-20">
+      <div class="mx-auto max-w-5xl px-6 text-center">
+        <p class="mb-4 font-semibold text-gold" data-i18n="evening_page_intro_label">
+          Pourquoi le soir ?
+        </p>
+
+        <h2 class="mb-8 text-4xl font-black text-darkgreen" data-i18n="evening_page_intro_title">
+          Une ambiance calme après le coucher du soleil
+        </h2>
+
+        <p class="text-xl leading-10 text-stone-700" data-i18n="evening_page_intro_text">
+          Le soir à Taza est idéal pour se détendre, profiter d’une promenade légère et découvrir l’atmosphère paisible de la ville. Les visiteurs peuvent s’installer dans un café local, boire un thé marocain, admirer les lumières de la ville et passer un moment simple et agréable.
+        </p>
+      </div>
+    </section>
+
+    <!-- Evening Cards -->
+    <section class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-6">
+
+        <div class="mb-14 text-center">
+          <p class="mb-3 font-semibold text-gold" data-i18n="evening_page_suggestions_label">
+            Suggestions du soir
+          </p>
+
+          <h2 class="text-4xl font-black text-darkgreen" data-i18n="evening_page_suggestions_title">
+            Que faire le soir à Taza ?
+          </h2>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+          <!-- Card 1 -->
+          <article class="rounded-[2rem] bg-beige p-8 shadow-xl ring-1 ring-stone-200">
+            <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white text-3xl text-gold shadow">
+              🚶
+            </div>
+
+            <h3 class="mb-4 text-2xl font-black text-darkgreen" data-i18n="evening_page_card1_title">
+              Balade légère
+            </h3>
+
+            <p class="leading-8 text-stone-700" data-i18n="evening_page_card1_desc">
+              Faites une courte promenade dans les rues proches du centre-ville ou autour des espaces animés. Le soir, l’ambiance devient plus calme et agréable pour découvrir la ville autrement.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="rounded-[2rem] bg-beige p-8 shadow-xl ring-1 ring-stone-200">
+            <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white text-3xl text-gold shadow">
+              🍵
+            </div>
+
+            <h3 class="mb-4 text-2xl font-black text-darkgreen" data-i18n="evening_page_card2_title">
+              Café et thé marocain
+            </h3>
+
+            <p class="leading-8 text-stone-700" data-i18n="evening_page_card2_desc">
+              Installez-vous dans un café local et dégustez un thé marocain à la menthe ou un café. C’est une bonne occasion pour observer la vie locale et profiter d’un moment de repos.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="rounded-[2rem] bg-beige p-8 shadow-xl ring-1 ring-stone-200">
+            <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white text-3xl text-gold shadow">
+              📸
+            </div>
+
+            <h3 class="mb-4 text-2xl font-black text-darkgreen" data-i18n="evening_page_card3_title">
+              Photos de nuit
+            </h3>
+
+            <p class="leading-8 text-stone-700" data-i18n="evening_page_card3_desc">
+              Les lumières de la ville, les rues calmes et certains points de vue offrent de belles occasions pour prendre des photos nocturnes et garder des souvenirs de votre visite.
+            </p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="rounded-[2rem] bg-beige p-8 shadow-xl ring-1 ring-stone-200">
+            <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white text-3xl text-gold shadow">
+              🛡️
+            </div>
+
+            <h3 class="mb-4 text-2xl font-black text-darkgreen" data-i18n="evening_page_card4_title">
+              Conseils de sécurité
+            </h3>
+
+            <p class="leading-8 text-stone-700" data-i18n="evening_page_card4_desc">
+              Choisissez des lieux connus et bien éclairés, évitez les endroits isolés tard le soir, gardez votre téléphone chargé et sortez de préférence avec des amis ou en famille.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Suggested Plan -->
+    <section class="bg-beige py-24">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="grid gap-12 md:grid-cols-2 md:items-center">
+
+          <div>
+            <p class="mb-4 font-semibold text-gold" data-i18n="evening_page_plan_label">
+              Programme suggéré
+            </p>
+
+            <h2 class="mb-8 text-4xl font-black text-darkgreen" data-i18n="evening_page_plan_title">
+              Une soirée simple à Taza
+            </h2>
+
+            <p class="text-lg leading-9 text-stone-700" data-i18n="evening_page_plan_text">
+              Voici une idée simple pour profiter d’une soirée agréable à Taza sans trop vous éloigner : une petite balade, une pause dans un café local, puis quelques photos avant de rentrer.
+            </p>
+          </div>
+
+          <div class="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-stone-200">
+            <div class="space-y-5 text-lg text-stone-700">
+
+              <div class="rounded-2xl bg-beige p-5">
+                <strong class="text-darkgreen">18:00</strong>
+                <span data-i18n="evening_page_plan1"> - Balade près du centre-ville</span>
+              </div>
+
+              <div class="rounded-2xl bg-beige p-5">
+                <strong class="text-darkgreen">19:00</strong>
+                <span data-i18n="evening_page_plan2"> - Thé ou café dans un café local</span>
+              </div>
+
+              <div class="rounded-2xl bg-beige p-5">
+                <strong class="text-darkgreen">20:00</strong>
+                <span data-i18n="evening_page_plan3"> - Photos et ambiance calme</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety Tips -->
+    <section class="bg-white py-24">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="rounded-[2rem] bg-darkgreen p-10 text-white shadow-xl">
+          <p class="mb-4 font-semibold text-gold" data-i18n="evening_page_safety_label">
+            Note importante
+          </p>
+
+          <h2 class="mb-6 text-4xl font-black" data-i18n="evening_page_safety_title">
+            Conseils avant de sortir le soir
+          </h2>
+
+          <div class="space-y-4 text-lg leading-8 text-white/85">
+            <p data-i18n="evening_page_safety1">• Il est préférable de sortir avec la famille ou des amis.</p>
+            <p data-i18n="evening_page_safety2">• Gardez votre téléphone chargé.</p>
+            <p data-i18n="evening_page_safety3">• Choisissez des endroits connus et bien éclairés.</p>
+            <p data-i18n="evening_page_safety4">• Évitez les lieux isolés tard le soir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-darkgreen py-12 text-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-6 md:flex-row md:items-center md:justify-between">
+      <div>
+        <h2 class="text-3xl font-black">Visit Taza</h2>
+        <p class="mt-2 text-white/70" data-i18n="footer_text">
+          Votre guide pour découvrir Taza simplement et agréablement.
+        </p>
+      </div>
+
+      <p class="text-white/70">
+        © 2026 Visit Taza
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>
