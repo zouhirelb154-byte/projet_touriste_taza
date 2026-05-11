@@ -214,91 +214,146 @@
 
       </div>
     </section>
+<!-- Discover -->
+<section id="discover" class="bg-beige py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-    <!-- Discover -->
-    <section id="discover" class="bg-beige py-20">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+    <!-- Text -->
+    <div class="mx-auto mb-14 max-w-4xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="discover_kicker">
+        Découvrir la ville
+      </p>
 
-          <!-- Text -->
-          <div>
-            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="discover_kicker">
-              Découvrir la ville
-            </p>
+      <h2 class="mt-4 text-4xl font-black leading-tight text-darkgreen md:text-5xl" data-i18n="discover_title">
+        Une première idée sur Taza
+      </h2>
 
-            <h2 class="mt-4 text-4xl font-black leading-tight text-darkgreen" data-i18n="discover_title">
-              Une première idée sur Taza
-            </h2>
+      <p class="mt-5 text-lg leading-8 text-stone-700" data-i18n="discover_desc">
+        Taza est une ville marocaine historique située entre le Rif et le Moyen Atlas. Elle réunit une médina ancienne, des portes historiques, des montagnes, des grottes, des forêts et des paysages naturels paisibles.
+      </p>
+    </div>
 
-            <p class="mt-5 text-lg leading-8 text-stone-700" data-i18n="discover_desc">
-              Taza est une ville marocaine historique située entre le Rif et le Moyen Atlas. Elle réunit une médina ancienne, des portes historiques, des montagnes, des grottes, des forêts et des paysages naturels paisibles.
-            </p>
-          </div>
+    <!-- Cards -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-          <!-- Cards -->
-          <div class="space-y-6">
+      <!-- Card 1 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-2xl">
+        <img
+          src="assets/images/taza-commune-4.jpg"
+          alt="Taza"
+          class="h-64 w-full object-cover"
+        >
 
-            <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-2xl md:flex">
-              <div class="h-64 bg-[url('assets/images/taza-commune-4.jpg')] bg-cover bg-center md:h-auto md:w-72 md:shrink-0"></div>
-              <div class="p-7">
-                <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-gold" data-i18n="discover_city_label">Ville</p>
-                <h3 class="text-2xl font-bold text-darkgreen" data-i18n="discover_taza_title">Taza</h3>
-                <p class="mt-3 text-base leading-8 text-stone-600" data-i18n="discover_taza_desc">
-                  Une ville historique entre montagnes, médina ancienne et ambiance locale paisible.
-                </p>
-              </div>
-            </article>
+        <div class="p-8 text-right">
+          <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-gold" data-i18n="discover_city_label">
+            Ville
+          </p>
 
-            <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-2xl md:flex">
-              <div class="h-64 bg-[url('assets/images/challald-ras-elma.jpg')] bg-cover bg-center md:h-auto md:w-72 md:shrink-0"></div>
-              <div class="p-7">
-                <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-gold" data-i18n="discover_nature_label">Nature</p>
-                <h3 class="text-2xl font-bold text-darkgreen" data-i18n="discover_ras_elma_title">Ras El Ma</h3>
-                <p class="mt-3 text-base leading-8 text-stone-600" data-i18n="discover_ras_elma_desc">
-                  Un coin naturel frais connu pour l'eau, la verdure et les petites pauses en famille.
-                </p>
-              </div>
-            </article>
+          <h3 class="text-3xl font-black text-darkgreen" data-i18n="discover_taza_title">
+            Taza
+          </h3>
 
-            <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-2xl md:flex">
-              <div class="h-64 bg-[url('assets/images/tazekka-park.jpg')] bg-cover bg-center md:h-auto md:w-72 md:shrink-0"></div>
-              <div class="p-7">
-                <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-gold" data-i18n="discover_mountain_label">Montagne</p>
-                <h3 class="text-2xl font-bold text-darkgreen" data-i18n="discover_tazekka_title">Tazekka</h3>
-                <p class="mt-3 text-base leading-8 text-stone-600" data-i18n="discover_tazekka_desc">
-                  Un espace de montagne avec forêts, air pur, sentiers et vues naturelles autour de Taza.
-                </p>
-              </div>
-            </article>
-
-            <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-2xl md:flex">
-              <div class="h-64 bg-[url('assets/images/bab-boudir.jpg')] bg-cover bg-center md:h-auto md:w-72 md:shrink-0"></div>
-              <div class="p-7">
-                <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-gold" data-i18n="discover_escape_label">Évasion</p>
-                <h3 class="text-2xl font-bold text-darkgreen" data-i18n="discover_bab_boudir_title">Bab Boudir</h3>
-                <p class="mt-3 text-base leading-8 text-stone-600" data-i18n="discover_bab_boudir_desc">
-                  Une zone calme près de la nature, appréciée pour ses paysages et son atmosphère de montagne.
-                </p>
-              </div>
-            </article>
-
-            <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-2xl md:flex">
-              <div class="h-64 bg-[url('assets/images/wed-amlil.jpg')] bg-cover bg-center md:h-auto md:w-72 md:shrink-0"></div>
-              <div class="p-7">
-                <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-gold" data-i18n="discover_local_label">Local</p>
-                <h3 class="text-2xl font-bold text-darkgreen" data-i18n="discover_wed_amlil_title">Oued Amlil</h3>
-                <p class="mt-3 text-base leading-8 text-stone-600" data-i18n="discover_wed_amlil_desc">
-                  Une étape vivante entre routes, campagne et culture locale dans la province de Taza.
-                </p>
-              </div>
-            </article>
-
-          </div>
-
+          <p class="mt-4 text-base leading-8 text-stone-600" data-i18n="discover_taza_desc">
+            Une ville historique entre montagnes, médina ancienne et ambiance locale paisible.
+          </p>
         </div>
-      </div>
-    </section>
+      </article>
 
+      <!-- Card 2 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-2xl">
+        <img
+          src="assets/images/challald-ras-elma.jpg"
+          alt="Ras El Ma"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8 text-right">
+          <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-gold" data-i18n="discover_nature_label">
+            Nature
+          </p>
+
+          <h3 class="text-3xl font-black text-darkgreen" data-i18n="discover_ras_elma_title">
+            Ras El Ma
+          </h3>
+
+          <p class="mt-4 text-base leading-8 text-stone-600" data-i18n="discover_ras_elma_desc">
+            Un coin naturel frais connu pour l'eau, la verdure et les petites pauses en famille.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-2xl">
+        <img
+          src="assets/images/tazekka-park.jpg"
+          alt="Tazekka"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8 text-right">
+          <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-gold" data-i18n="discover_mountain_label">
+            Montagne
+          </p>
+
+          <h3 class="text-3xl font-black text-darkgreen" data-i18n="discover_tazekka_title">
+            Tazekka
+          </h3>
+
+          <p class="mt-4 text-base leading-8 text-stone-600" data-i18n="discover_tazekka_desc">
+            Un espace de montagne avec forêts, air pur, sentiers et vues naturelles autour de Taza.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-2xl">
+        <img
+          src="assets/images/bab-boudir.jpg"
+          alt="Bab Boudir"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8 text-right">
+          <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-gold" data-i18n="discover_escape_label">
+            Évasion
+          </p>
+
+          <h3 class="text-3xl font-black text-darkgreen" data-i18n="discover_bab_boudir_title">
+            Bab Boudir
+          </h3>
+
+          <p class="mt-4 text-base leading-8 text-stone-600" data-i18n="discover_bab_boudir_desc">
+            Une zone calme près de la nature, appréciée pour ses paysages et son atmosphère de montagne.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-stone-200 transition hover:-translate-y-1 hover:shadow-2xl">
+        <img
+          src="assets/images/wed-amlil.jpg"
+          alt="Oued Amlil"
+          class="h-64 w-full object-cover"
+        >
+
+        <div class="p-8 text-right">
+          <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-gold" data-i18n="discover_local_label">
+            Local
+          </p>
+
+          <h3 class="text-3xl font-black text-darkgreen" data-i18n="discover_wed_amlil_title">
+            Oued Amlil
+          </h3>
+
+          <p class="mt-4 text-base leading-8 text-stone-600" data-i18n="discover_wed_amlil_desc">
+            Une étape vivante entre routes, campagne et culture locale dans la province de Taza.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
   </main>
 
   <script src="assets/js/i18n.js"></script>
