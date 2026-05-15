@@ -1,0 +1,11 @@
+# .NET backend
+backend_touriste_taza/bin/
+backend_touriste_taza/obj/
+backend_touriste_taza/.vs/
+backend_touriste_taza/.idea/
+backend_touriste_taza/*.user
+backend_touriste_taza/*.suo
+
+# Temp database files
+*.db-shm
+*.db-wal
