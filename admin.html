@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Visit Taza</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            beige: "#FBF8EF",
+            darkgreen: "#12372A",
+            olive: "#436850",
+            gold: "#C8A15A"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="min-h-screen bg-beige text-stone-900">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-darkgreen text-lg font-black text-white shadow-md">
+          VT
+        </div>
+
+        <div>
+          <h1 class="text-xl font-black text-darkgreen">Visit Taza</h1>
+          <p class="text-xs tracking-[0.35em] text-stone-500">ADMIN</p>
+        </div>
+      </a>
+
+      <nav class="flex items-center gap-6 font-semibold text-darkgreen">
+        <a href="index.html" class="hover:text-gold">Accueil</a>
+        <a href="places.html" class="hover:text-gold">À visiter</a>
+        <a href="activities.html" class="hover:text-gold">À faire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-6 py-12">
+
+    <!-- Title -->
+    <section class="mb-10 text-center">
+      <p class="mb-3 font-semibold text-gold">Espace administrateur</p>
+      <h2 class="text-4xl font-black text-darkgreen md:text-5xl">
+        Gestion des lieux touristiques
+      </h2>
+      <p class="mx-auto mt-5 max-w-3xl text-lg leading-8 text-stone-700">
+        Ajoutez, modifiez ou supprimez les lieux affichés depuis l’API .NET.
+      </p>
+    </section>
+
+    <!-- Alert -->
+    <div id="message" class="mb-8 hidden rounded-2xl p-4 font-semibold"></div>
+
+    <div class="grid gap-10 lg:grid-cols-[0.9fr_1.4fr]">
+
+      <!-- Form -->
+      <section class="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-stone-200">
+        <h3 id="form-title" class="mb-6 text-2xl font-black text-darkgreen">
+          Ajouter un lieu
+        </h3>
+
+        <form id="place-form" class="space-y-5">
+          <input type="hidden" id="place-id">
+
+          <div>
+            <label class="mb-2 block font-semibold text-darkgreen">Titre</label>
+            <input
+              type="text"
+              id="title"
+              class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
+              placeholder="Ex: Taza"
+              required
+            >
+          </div>
+
+          <div>
+            <label class="mb-2 block font-semibold text-darkgreen">Catégorie</label>
+            <input
+              type="text"
+              id="category"
+              class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
+              placeholder="Ex: Nature"
+              required
+            >
+          </div>
+
+          <div>
+            <label class="mb-2 block font-semibold text-darkgreen">Description</label>
+            <textarea
+              id="description"
+              rows="4"
+              class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
+              placeholder="Description du lieu..."
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <label class="mb-2 block font-semibold text-darkgreen">Image</label>
+            <input
+              id="image"
+              type="file"
+              accept="image/*"
+              class="w-full rounded-xl border border-stone-300 px-4 py-3"
+            />
+          </div>
+
+          <div>
+            <label class="mb-2 block font-semibold text-darkgreen">Lien</label>
+            <input
+              type="text"
+              id="link"
+              class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
+              placeholder="ex: medina.html"
+              required
+            >
+          </div>
+
+          <div class="flex flex-wrap gap-3 pt-3">
+            <button
+              type="submit"
+              id="submit-btn"
+              class="inline-flex items-center justify-center rounded-full bg-darkgreen px-7 py-3 font-bold text-white transition hover:bg-olive"
+            >
+              Ajouter
+            </button>
+
+            <button
+              type="button"
+              id="cancel-btn"
+              class="hidden inline-flex items-center justify-center rounded-full bg-stone-200 px-7 py-3 font-bold text-darkgreen transition hover:bg-stone-300"
+            >
+              Annuler
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Table -->
+      <section class="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-stone-200">
+        <div class="mb-6 flex items-center justify-between gap-4">
+          <h3 class="text-2xl font-black text-darkgreen">
+            Liste des lieux
+          </h3>
+
+          <button
+            onclick="loadPlaces()"
+            class="rounded-full bg-gold px-5 py-2 font-bold text-darkgreen transition hover:bg-darkgreen hover:text-white"
+          >
+            Actualiser
+          </button>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[760px] border-collapse">
+            <thead>
+              <tr class="border-b border-stone-200 text-left text-sm uppercase tracking-[0.18em] text-stone-500">
+                <th class="py-4 pr-4">Image</th>
+                <th class="py-4 pr-4">Titre</th>
+                <th class="py-4 pr-4">Catégorie</th>
+                <th class="py-4 pr-4">Description</th>
+                <th class="py-4 pr-4">Actions</th>
+              </tr>
+            </thead>
+
+            <tbody id="places-table" class="divide-y divide-stone-200">
+              <!-- Data from API -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script>
+  const API_URL = "http://localhost:5017/api/places";
+
+  const form = document.getElementById("place-form");
+  const placeIdInput = document.getElementById("place-id");
+  const titleInput = document.getElementById("title");
+  const categoryInput = document.getElementById("category");
+  const descriptionInput = document.getElementById("description");
+  const imageInput = document.getElementById("image");
+  const linkInput = document.getElementById("link");
+  const tableBody = document.getElementById("places-table");
+  const messageBox = document.getElementById("message");
+  const submitBtn = document.getElementById("submit-btn");
+  const cancelBtn = document.getElementById("cancel-btn");
+  const formTitle = document.getElementById("form-title");
+
+  let currentImage = "";
+
+  function showMessage(text, type = "success") {
+    messageBox.textContent = text;
+    messageBox.className = "mb-8 rounded-2xl p-4 font-semibold";
+
+    if (type === "success") {
+      messageBox.classList.add("bg-green-100", "text-green-700");
+    } else {
+      messageBox.classList.add("bg-red-100", "text-red-700");
+    }
+
+    messageBox.classList.remove("hidden");
+
+    setTimeout(() => {
+      messageBox.classList.add("hidden");
+    }, 3000);
+  }
+
+  async function loadPlaces() {
+    try {
+      const response = await fetch(API_URL);
+
+      if (!response.ok) {
+        throw new Error("Erreur lors du chargement des lieux");
+      }
+
+      const places = await response.json();
+
+      tableBody.innerHTML = "";
+
+      places.forEach((place) => {
+        tableBody.innerHTML += `
+          <tr>
+            <td class="py-4 pr-4">
+              <img
+                src="${place.image || ""}"
+                alt="${place.title || ""}"
+                class="h-16 w-24 rounded-xl object-cover"
+              >
+            </td>
+
+            <td class="py-4 pr-4 font-bold text-darkgreen">
+              ${place.title || ""}
+            </td>
+
+            <td class="py-4 pr-4">
+              <span class="rounded-full bg-gold/20 px-3 py-1 text-sm font-semibold text-darkgreen">
+                ${place.category || ""}
+              </span>
+            </td>
+
+            <td class="max-w-xs py-4 pr-4 text-sm leading-6 text-stone-600">
+              ${place.description || ""}
+            </td>
+
+            <td class="py-4 pr-4">
+              <div class="flex gap-2">
+                <button
+                  onclick='editPlace(${JSON.stringify(place)})'
+                  class="rounded-full bg-gold px-4 py-2 text-sm font-bold text-darkgreen transition hover:bg-darkgreen hover:text-white"
+                >
+                  Modifier
+                </button>
+
+                <button
+                  onclick="deletePlace(${place.id})"
+                  class="rounded-full bg-red-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-red-700"
+                >
+                  Supprimer
+                </button>
+              </div>
+            </td>
+          </tr>
+        `;
+      });
+    } catch (error) {
+      console.error(error);
+      showMessage("Impossible de charger les lieux. Vérifiez que le backend est lancé.", "error");
+    }
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const id = placeIdInput.value;
+    const imageFile = imageInput.files[0];
+
+    const formData = new FormData();
+
+    formData.append("title", titleInput.value.trim());
+    formData.append("category", categoryInput.value.trim());
+    formData.append("description", descriptionInput.value.trim());
+    formData.append("link", linkInput.value.trim());
+
+    // إلا اختارتي صورة جديدة
+    if (imageFile) {
+      formData.append("imageFile", imageFile);
+    }
+
+    // إلا كنتي كتعدلي وماختارتيش صورة جديدة، خليه يحتافظ بالصورة القديمة
+    if (currentImage) {
+      formData.append("currentImage", currentImage);
+    }
+
+    try {
+      let response;
+
+      if (id) {
+        response = await fetch(`${API_URL}/${id}`, {
+          method: "PUT",
+          body: formData
+        });
+      } else {
+        response = await fetch(API_URL, {
+          method: "POST",
+          body: formData
+        });
+      }
+
+      if (!response.ok) {
+  const errorText = await response.text();
+  console.error("Status:", response.status);
+  console.error("Erreur backend:", errorText);
+  alert("Erreur backend: " + response.status + "\n" + errorText);
+  throw new Error("Erreur lors de l'enregistrement");
+}
+
+      resetForm();
+      await loadPlaces();
+
+      showMessage(id ? "Lieu modifié avec succès." : "Lieu ajouté avec succès.");
+    } catch (error) {
+      console.error(error);
+      showMessage("Erreur: impossible d'enregistrer le lieu.", "error");
+    }
+  });
+
+  function editPlace(place) {
+    placeIdInput.value = place.id;
+    titleInput.value = place.title || "";
+    categoryInput.value = place.category || "";
+    descriptionInput.value = place.description || "";
+    linkInput.value = place.link || "";
+
+    // مهم: input type file ما نقدرش نعمره بقيمة قديمة
+    // لذلك كنخزنو الصورة القديمة فـ variable
+    currentImage = place.image || "";
+
+    submitBtn.textContent = "Modifier";
+    formTitle.textContent = "Modifier un lieu";
+    cancelBtn.classList.remove("hidden");
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  async function deletePlace(id) {
+    const confirmed = confirm("Voulez-vous vraiment supprimer ce lieu ?");
+
+    if (!confirmed) return;
+
+    try {
+      const response = await fetch(`${API_URL}/${id}`, {
+        method: "DELETE"
+      });
+
+      if (!response.ok) {
+        throw new Error("Erreur lors de la suppression");
+      }
+
+      await loadPlaces();
+      showMessage("Lieu supprimé avec succès.");
+    } catch (error) {
+      console.error(error);
+      showMessage("Erreur: impossible de supprimer le lieu.", "error");
+    }
+  }
+
+  function resetForm() {
+    placeIdInput.value = "";
+    currentImage = "";
+    form.reset();
+
+    submitBtn.textContent = "Ajouter";
+    formTitle.textContent = "Ajouter un lieu";
+    cancelBtn.classList.add("hidden");
+  }
+
+  cancelBtn.addEventListener("click", resetForm);
+
+  document.addEventListener("DOMContentLoaded", loadPlaces);
+</script>
+</body>
+</html>
