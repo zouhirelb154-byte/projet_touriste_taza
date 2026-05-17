@@ -1489,7 +1489,399 @@ tips_check5: "✅ مسار الرحلة مُحضّر",
   }
 };
 
+Object.assign(translations.fr, {
+  nav_activities: "À faire",
+  drop_food: "Manger, boire",
+  drop_inspiration: "Inspirations de voyage",
+  drop_morning: "Matin et soir",
+  drop_festivals: "Festivals et événements",
+  drop_nature: "Nature et plein air",
+  drop_activities: "Activités",
+  drop_accommodation: "Hébergement",
+  drop_history: "Histoire et religion",
+  drop_culture: "Art et culture",
+  footer_quick_links: "Liens rapides",
+  footer_practical_info: "Informations pratiques",
+  footer_text: "Votre guide pour découvrir Taza simplement et agréablement.",
+  loading_food: "Chargement des plats...",
+  loading_morning: "Chargement des circuits matin et soir...",
+  loading_inspiration: "Chargement des inspirations...",
+  loading_festivals: "Chargement des festivals et événements...",
+  loading_activities: "Chargement des activités...",
+  loading_history: "Chargement du patrimoine historique...",
+  loading_culture: "Chargement de l'art et culture...",
+  loading_accommodation: "Chargement des hébergements...",
+  accommodation_section_label: "Hébergement",
+  accommodation_section_title: "Où séjourner à Taza",
+  accommodation_section_intro: "Découvrez des hôtels et hébergements à Taza avec les informations essentielles : prix, emplacement, contact et galerie photos.",
+  dynamic_more_info: "Plus d'informations",
+  dynamic_learn_more: "En savoir plus",
+  dynamic_event: "Événement",
+  dynamic_activity: "Activité",
+  dynamic_heritage: "Patrimoine",
+  dynamic_culture: "Culture",
+  dynamic_accommodation: "Hébergement",
+  dynamic_place: "Lieu",
+  dynamic_time: "Heure",
+  dynamic_price: "Prix",
+  dynamic_phone: "Téléphone",
+  dynamic_unspecified: "À préciser",
+  dynamic_price_unspecified: "Prix à préciser",
+  dynamic_phone_unavailable: "Non disponible",
+  empty_places: "Aucun lieu trouvé. Ajoutez des lieux depuis admin.html avec la catégorie Places ou Nature.",
+  error_places: "Impossible de charger les lieux depuis le backend.",
+  empty_food: "Aucun plat trouvé. Ajoutez des éléments depuis la page admin avec la catégorie Gastronomie.",
+  error_food: "Impossible de charger les plats depuis le backend.",
+  empty_morning: "Aucun élément trouvé. Ajoutez des éléments depuis admin.html avec la catégorie Morning ou Evening.",
+  error_morning: "Impossible de charger les éléments matin et soir depuis le backend.",
+  empty_inspiration: "Aucun élément trouvé. Ajoutez des éléments depuis admin.html avec la catégorie Inspiration.",
+  error_inspiration: "Impossible de charger les inspirations depuis le backend.",
+  empty_festivals: "Aucun événement trouvé. Ajoutez des éléments depuis admin.html avec la catégorie Festivals.",
+  error_festivals: "Impossible de charger les festivals depuis le backend.",
+  empty_activities: "Aucun élément trouvé. Ajoutez des éléments depuis admin.html avec la catégorie Activités.",
+  error_activities: "Impossible de charger les activités depuis le backend.",
+  empty_history: "Aucun élément trouvé. Ajoutez des éléments depuis admin.html avec la catégorie History.",
+  error_history: "Impossible de charger les éléments historiques depuis le backend.",
+  empty_culture: "Aucun élément trouvé. Ajoutez des éléments depuis admin.html avec la catégorie Culture.",
+  error_culture: "Impossible de charger les éléments culturels depuis le backend.",
+  empty_accommodation: "Aucun hébergement trouvé. Ajoutez un hôtel depuis admin.html avec la catégorie Accommodation.",
+  error_accommodation: "Impossible de charger les hébergements depuis le backend.",
+  category_places: "Lieux",
+  category_inspiration: "Inspiration voyage",
+  category_festivals: "Festivals et événements",
+  category_activities: "Activités",
+  category_history_single: "Histoire",
+  category_religion: "Religion",
+  category_culture_single: "Art et culture",
+  category_gastronomie: "Manger, boire",
+  category_morning_single: "Matin",
+  category_evening_single: "Soir",
+  category_accommodation_single: "Hébergement"
+  ,admin_nav_home: "Accueil",
+  admin_nav_places: "À visiter",
+  admin_nav_things: "À faire",
+  admin_label: "Espace administrateur",
+  admin_title: "Gestion des lieux touristiques",
+  admin_intro: "Ajoutez, modifiez ou supprimez les lieux affichés depuis l'API .NET.",
+  admin_form_add_title: "Ajouter un lieu",
+  admin_form_edit_title: "Modifier un lieu",
+  admin_title_label: "Titre",
+  admin_category_label: "Catégorie",
+  admin_description_label: "Description",
+  admin_image_label: "Image",
+  admin_link_label: "Lien",
+  admin_title_placeholder: "Ex: Taza",
+  admin_category_placeholder: "Ex: Nature",
+  admin_description_placeholder: "Description du lieu...",
+  admin_link_placeholder: "ex: medina.html",
+  admin_add_button: "Ajouter",
+  admin_edit_button: "Modifier",
+  admin_cancel_button: "Annuler",
+  admin_table_title: "Liste des lieux",
+  admin_refresh_button: "Actualiser",
+  admin_th_image: "Image",
+  admin_th_title: "Titre",
+  admin_th_category: "Catégorie",
+  admin_th_description: "Description",
+  admin_th_actions: "Actions",
+  admin_delete_button: "Supprimer",
+  admin_load_error: "Impossible de charger les lieux. Vérifiez que le backend est lancé.",
+  admin_save_success_add: "Lieu ajouté avec succès.",
+  admin_save_success_edit: "Lieu modifié avec succès.",
+  admin_save_error: "Erreur: impossible d'enregistrer le lieu.",
+  admin_delete_confirm: "Voulez-vous vraiment supprimer ce lieu ?",
+  admin_delete_success: "Lieu supprimé avec succès.",
+  admin_delete_error: "Erreur: impossible de supprimer le lieu."
+});
+
+Object.assign(translations.en, {
+  nav_activities: "Things to Do",
+  drop_food: "Food and drinks",
+  drop_inspiration: "Travel inspirations",
+  drop_morning: "Morning and evening",
+  drop_festivals: "Festivals and events",
+  drop_nature: "Nature and outdoor",
+  drop_activities: "Activities",
+  drop_accommodation: "Accommodation",
+  drop_history: "History and religion",
+  drop_culture: "Art and culture",
+  footer_quick_links: "Quick links",
+  footer_practical_info: "Practical information",
+  footer_text: "Your guide to discovering Taza simply and pleasantly.",
+  loading_food: "Loading dishes...",
+  loading_morning: "Loading morning and evening routes...",
+  loading_inspiration: "Loading inspirations...",
+  loading_festivals: "Loading festivals and events...",
+  loading_activities: "Loading activities...",
+  loading_history: "Loading historical heritage...",
+  loading_culture: "Loading art and culture...",
+  loading_accommodation: "Loading accommodation...",
+  accommodation_section_label: "Accommodation",
+  accommodation_section_title: "Where to Stay in Taza",
+  accommodation_section_intro: "Discover hotels and accommodation in Taza with key information: price, location, contact, and photo gallery.",
+  dynamic_more_info: "More information",
+  dynamic_learn_more: "Learn more",
+  dynamic_event: "Event",
+  dynamic_activity: "Activity",
+  dynamic_heritage: "Heritage",
+  dynamic_culture: "Culture",
+  dynamic_accommodation: "Accommodation",
+  dynamic_place: "Place",
+  dynamic_time: "Time",
+  dynamic_price: "Price",
+  dynamic_phone: "Phone",
+  dynamic_unspecified: "To be confirmed",
+  dynamic_price_unspecified: "Price to be confirmed",
+  dynamic_phone_unavailable: "Not available",
+  empty_places: "No places found. Add places from admin.html with the category Places or Nature.",
+  error_places: "Unable to load places from the backend.",
+  empty_food: "No dishes found. Add items from the admin page with the category Gastronomie.",
+  error_food: "Unable to load dishes from the backend.",
+  empty_morning: "No items found. Add items from admin.html with the category Morning or Evening.",
+  error_morning: "Unable to load morning and evening items from the backend.",
+  empty_inspiration: "No items found. Add items from admin.html with the category Inspiration.",
+  error_inspiration: "Unable to load inspirations from the backend.",
+  empty_festivals: "No events found. Add items from admin.html with the category Festivals.",
+  error_festivals: "Unable to load festivals from the backend.",
+  empty_activities: "No items found. Add items from admin.html with the category Activities.",
+  error_activities: "Unable to load activities from the backend.",
+  empty_history: "No items found. Add items from admin.html with the category History.",
+  error_history: "Unable to load historical items from the backend.",
+  empty_culture: "No items found. Add items from admin.html with the category Culture.",
+  error_culture: "Unable to load cultural items from the backend.",
+  empty_accommodation: "No accommodation found. Add a hotel from admin.html with the category Accommodation.",
+  error_accommodation: "Unable to load accommodation from the backend.",
+  category_places: "Places",
+  category_inspiration: "Travel inspiration",
+  category_festivals: "Festivals and events",
+  category_activities: "Activities",
+  category_history_single: "History",
+  category_religion: "Religion",
+  category_culture_single: "Art and culture",
+  category_gastronomie: "Food and drinks",
+  category_morning_single: "Morning",
+  category_evening_single: "Evening",
+  category_accommodation_single: "Accommodation"
+  ,admin_nav_home: "Home",
+  admin_nav_places: "Places to Visit",
+  admin_nav_things: "Things to Do",
+  admin_label: "Administrator area",
+  admin_title: "Tourist place management",
+  admin_intro: "Add, edit, or delete the places displayed from the .NET API.",
+  admin_form_add_title: "Add a place",
+  admin_form_edit_title: "Edit a place",
+  admin_title_label: "Title",
+  admin_category_label: "Category",
+  admin_description_label: "Description",
+  admin_image_label: "Image",
+  admin_link_label: "Link",
+  admin_title_placeholder: "Ex: Taza",
+  admin_category_placeholder: "Ex: Nature",
+  admin_description_placeholder: "Place description...",
+  admin_link_placeholder: "ex: medina.html",
+  admin_add_button: "Add",
+  admin_edit_button: "Edit",
+  admin_cancel_button: "Cancel",
+  admin_table_title: "Place list",
+  admin_refresh_button: "Refresh",
+  admin_th_image: "Image",
+  admin_th_title: "Title",
+  admin_th_category: "Category",
+  admin_th_description: "Description",
+  admin_th_actions: "Actions",
+  admin_delete_button: "Delete",
+  admin_load_error: "Unable to load places. Check that the backend is running.",
+  admin_save_success_add: "Place added successfully.",
+  admin_save_success_edit: "Place updated successfully.",
+  admin_save_error: "Error: unable to save the place.",
+  admin_delete_confirm: "Do you really want to delete this place?",
+  admin_delete_success: "Place deleted successfully.",
+  admin_delete_error: "Error: unable to delete the place."
+});
+
+Object.assign(translations.ar, {
+  nav_activities: "أشياء للقيام بها",
+  drop_food: "الأكل والمشروبات",
+  drop_inspiration: "إلهام السفر",
+  drop_morning: "الصباح والمساء",
+  drop_festivals: "المهرجانات والفعاليات",
+  drop_nature: "الطبيعة والهواء الطلق",
+  drop_activities: "الأنشطة",
+  drop_accommodation: "الإقامة",
+  drop_history: "التاريخ والدين",
+  drop_culture: "الفن والثقافة",
+  footer_quick_links: "روابط سريعة",
+  footer_practical_info: "معلومات عملية",
+  footer_text: "دليلك لاكتشاف تازة ببساطة ومتعة.",
+  loading_food: "جاري تحميل الأطباق...",
+  loading_morning: "جاري تحميل مسارات الصباح والمساء...",
+  loading_inspiration: "جاري تحميل إلهام السفر...",
+  loading_festivals: "جاري تحميل المهرجانات والفعاليات...",
+  loading_activities: "جاري تحميل الأنشطة...",
+  loading_history: "جاري تحميل التراث التاريخي...",
+  loading_culture: "جاري تحميل الفن والثقافة...",
+  loading_accommodation: "جاري تحميل أماكن الإقامة...",
+  accommodation_section_label: "الإقامة",
+  accommodation_section_title: "أين تقيم في تازة",
+  accommodation_section_intro: "اكتشف فنادق وأماكن إقامة في تازة مع المعلومات الأساسية: السعر، الموقع، التواصل ومعرض الصور.",
+  dynamic_more_info: "المزيد من المعلومات",
+  dynamic_learn_more: "اعرف المزيد",
+  dynamic_event: "فعالية",
+  dynamic_activity: "نشاط",
+  dynamic_heritage: "تراث",
+  dynamic_culture: "ثقافة",
+  dynamic_accommodation: "الإقامة",
+  dynamic_place: "المكان",
+  dynamic_time: "الزمان",
+  dynamic_price: "الثمن",
+  dynamic_phone: "الهاتف",
+  dynamic_unspecified: "غير محدد",
+  dynamic_price_unspecified: "الثمن غير محدد",
+  dynamic_phone_unavailable: "غير متوفر",
+  empty_places: "لا توجد أماكن حالياً. أضف أماكن من admin.html باستعمال Catégorie: Places أو Nature.",
+  error_places: "تعذر تحميل الأماكن من الخادم.",
+  empty_food: "لا توجد أطباق حالياً. أضف عناصر من صفحة الإدارة باستعمال Catégorie: Gastronomie.",
+  error_food: "تعذر تحميل الأطباق من الخادم.",
+  empty_morning: "لا توجد عناصر حالياً. أضف عناصر من admin.html باستعمال Catégorie: Morning أو Evening.",
+  error_morning: "تعذر تحميل عناصر الصباح والمساء من الخادم.",
+  empty_inspiration: "لا توجد عناصر حالياً. أضف عناصر من admin.html باستعمال Catégorie: Inspiration.",
+  error_inspiration: "تعذر تحميل إلهام السفر من الخادم.",
+  empty_festivals: "لا توجد فعاليات حالياً. أضف عناصر من admin.html باستعمال Catégorie: Festivals.",
+  error_festivals: "تعذر تحميل المهرجانات من الخادم.",
+  empty_activities: "لا توجد عناصر حالياً. أضف عناصر من admin.html باستعمال Catégorie: Activités.",
+  error_activities: "تعذر تحميل الأنشطة من الخادم.",
+  empty_history: "لا توجد عناصر حالياً. أضف عناصر من admin.html باستعمال Catégorie: History.",
+  error_history: "تعذر تحميل العناصر التاريخية من الخادم.",
+  empty_culture: "لا توجد عناصر حالياً. أضف عناصر من admin.html باستعمال Catégorie: Culture.",
+  error_culture: "تعذر تحميل العناصر الثقافية من الخادم.",
+  empty_accommodation: "لا توجد أماكن إقامة حالياً. أضف فندقاً من admin.html باستعمال Catégorie: Accommodation.",
+  error_accommodation: "تعذر تحميل أماكن الإقامة من الخادم.",
+  category_places: "أماكن للزيارة",
+  category_inspiration: "إلهام السفر",
+  category_festivals: "المهرجانات والفعاليات",
+  category_activities: "الأنشطة",
+  category_history_single: "التاريخ",
+  category_religion: "الدين",
+  category_culture_single: "الفن والثقافة",
+  category_gastronomie: "الأكل والمشروبات",
+  category_morning_single: "الصباح",
+  category_evening_single: "المساء",
+  category_accommodation_single: "الإقامة"
+  ,admin_nav_home: "الصفحة الرئيسية",
+  admin_nav_places: "أماكن للزيارة",
+  admin_nav_things: "أشياء للقيام بها",
+  admin_label: "فضاء الإدارة",
+  admin_title: "تدبير الأماكن السياحية",
+  admin_intro: "أضف، عدل أو احذف الأماكن المعروضة من واجهة .NET API.",
+  admin_form_add_title: "إضافة مكان",
+  admin_form_edit_title: "تعديل مكان",
+  admin_title_label: "العنوان",
+  admin_category_label: "الفئة",
+  admin_description_label: "الوصف",
+  admin_image_label: "الصورة",
+  admin_link_label: "الرابط",
+  admin_title_placeholder: "مثال: تازة",
+  admin_category_placeholder: "مثال: Nature",
+  admin_description_placeholder: "وصف المكان...",
+  admin_link_placeholder: "مثال: medina.html",
+  admin_add_button: "إضافة",
+  admin_edit_button: "تعديل",
+  admin_cancel_button: "إلغاء",
+  admin_table_title: "قائمة الأماكن",
+  admin_refresh_button: "تحديث",
+  admin_th_image: "الصورة",
+  admin_th_title: "العنوان",
+  admin_th_category: "الفئة",
+  admin_th_description: "الوصف",
+  admin_th_actions: "الإجراءات",
+  admin_delete_button: "حذف",
+  admin_load_error: "تعذر تحميل الأماكن. تحقق من تشغيل الخادم.",
+  admin_save_success_add: "تمت إضافة المكان بنجاح.",
+  admin_save_success_edit: "تم تعديل المكان بنجاح.",
+  admin_save_error: "خطأ: تعذر حفظ المكان.",
+  admin_delete_confirm: "هل تريد فعلاً حذف هذا المكان؟",
+  admin_delete_success: "تم حذف المكان بنجاح.",
+  admin_delete_error: "خطأ: تعذر حذف المكان."
+});
+
 let currentLang = localStorage.getItem("visitTazaLanguage") || "fr";
+
+function t(key, lang = getCurrentLanguage()) {
+  return (translations[lang] && translations[lang][key]) || translations.fr[key] || key;
+}
+
+function getCurrentLanguage() {
+  return translations[currentLang] ? currentLang : "fr";
+}
+
+function getTranslatedText(value) {
+  if (value === null || value === undefined) return "";
+
+  const text = String(value);
+  const parts = text.split("|").map((part) => part.trim());
+
+  if (parts.length < 2) {
+    return text;
+  }
+
+  const fr = parts[0] || "";
+  const en = parts[1] || fr;
+  const ar = parts[2] || fr;
+  const lang = getCurrentLanguage();
+
+  if (lang === "ar") return ar;
+  if (lang === "en") return en;
+
+  return fr;
+}
+
+function normalizeCategory(category) {
+  return (category || "")
+    .toString()
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function translateCategory(category) {
+  const cat = normalizeCategory(category);
+  const map = {
+    nature: "category_nature",
+    places: "category_places",
+    place: "category_places",
+    lieux: "category_places",
+    "a visiter": "category_places",
+    inspiration: "category_inspiration",
+    inspirations: "category_inspiration",
+    festivals: "category_festivals",
+    festival: "category_festivals",
+    events: "category_festivals",
+    event: "category_festivals",
+    evenements: "category_festivals",
+    activites: "category_activities",
+    activities: "category_activities",
+    activity: "category_activities",
+    activite: "category_activities",
+    history: "category_history_single",
+    histoire: "category_history_single",
+    religion: "category_religion",
+    culture: "category_culture_single",
+    "art et culture": "category_culture_single",
+    gastronomie: "category_gastronomie",
+    food: "category_gastronomie",
+    cuisine: "category_gastronomie",
+    morning: "category_morning_single",
+    matin: "category_morning_single",
+    evening: "category_evening_single",
+    soir: "category_evening_single",
+    accommodation: "category_accommodation_single",
+    hebergement: "category_accommodation_single",
+    hotel: "category_accommodation_single"
+  };
+
+  return map[cat] ? t(map[cat]) : getTranslatedText(category);
+}
 
 function updateLanguageButtons() {
   document.querySelectorAll(".lang-btn").forEach((button) => {
@@ -1514,15 +1906,20 @@ function switchLanguage(lang) {
   document.documentElement.lang = currentLang;
   document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
 
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const key = element.dataset.i18n;
+  document.querySelectorAll("[data-i18n], [data-footer-i18n]").forEach((element) => {
+    const key = element.dataset.i18n || element.dataset.footerI18n;
 
-    if (translations[currentLang][key]) {
-      element.textContent = translations[currentLang][key];
+    if (translations[currentLang][key] || translations.fr[key]) {
+      element.textContent = t(key);
     }
   });
 
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    element.setAttribute("placeholder", t(element.dataset.i18nPlaceholder));
+  });
+
   updateLanguageButtons();
+  document.dispatchEvent(new CustomEvent("visitTaza:languageChanged", { detail: { lang: currentLang } }));
 }
 
 function updateWeatherCard() {

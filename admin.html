@@ -40,9 +40,12 @@
       </a>
 
       <nav class="flex items-center gap-6 font-semibold text-darkgreen">
-        <a href="index.html" class="hover:text-gold">Accueil</a>
-        <a href="places.html" class="hover:text-gold">À visiter</a>
-        <a href="activities.html" class="hover:text-gold">À faire</a>
+        <a href="index.html" class="hover:text-gold" data-i18n="admin_nav_home">Accueil</a>
+        <a href="places.html" class="hover:text-gold" data-i18n="admin_nav_places">À visiter</a>
+        <a href="activities.html" class="hover:text-gold" data-i18n="admin_nav_things">À faire</a>
+        <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">AR</button>
+        <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="en">EN</button>
+        <button class="lang-btn rounded-full bg-darkgreen px-3 py-2 text-xs font-bold text-white transition hover:bg-olive" data-lang="fr">FR</button>
       </nav>
     </div>
   </header>
@@ -51,11 +54,11 @@
 
     <!-- Title -->
     <section class="mb-10 text-center">
-      <p class="mb-3 font-semibold text-gold">Espace administrateur</p>
-      <h2 class="text-4xl font-black text-darkgreen md:text-5xl">
+      <p class="mb-3 font-semibold text-gold" data-i18n="admin_label">Espace administrateur</p>
+      <h2 class="text-4xl font-black text-darkgreen md:text-5xl" data-i18n="admin_title">
         Gestion des lieux touristiques
       </h2>
-      <p class="mx-auto mt-5 max-w-3xl text-lg leading-8 text-stone-700">
+      <p class="mx-auto mt-5 max-w-3xl text-lg leading-8 text-stone-700" data-i18n="admin_intro">
         Ajoutez, modifiez ou supprimez les lieux affichés depuis l’API .NET.
       </p>
     </section>
@@ -67,7 +70,7 @@
 
       <!-- Form -->
       <section class="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-stone-200">
-        <h3 id="form-title" class="mb-6 text-2xl font-black text-darkgreen">
+        <h3 id="form-title" class="mb-6 text-2xl font-black text-darkgreen" data-i18n="admin_form_add_title">
           Ajouter un lieu
         </h3>
 
@@ -75,40 +78,43 @@
           <input type="hidden" id="place-id">
 
           <div>
-            <label class="mb-2 block font-semibold text-darkgreen">Titre</label>
+            <label class="mb-2 block font-semibold text-darkgreen" data-i18n="admin_title_label">Titre</label>
             <input
               type="text"
               id="title"
               class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
               placeholder="Ex: Taza"
+              data-i18n-placeholder="admin_title_placeholder"
               required
             >
           </div>
 
           <div>
-            <label class="mb-2 block font-semibold text-darkgreen">Catégorie</label>
+            <label class="mb-2 block font-semibold text-darkgreen" data-i18n="admin_category_label">Catégorie</label>
             <input
               type="text"
               id="category"
               class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
               placeholder="Ex: Nature"
+              data-i18n-placeholder="admin_category_placeholder"
               required
             >
           </div>
 
           <div>
-            <label class="mb-2 block font-semibold text-darkgreen">Description</label>
+            <label class="mb-2 block font-semibold text-darkgreen" data-i18n="admin_description_label">Description</label>
             <textarea
               id="description"
               rows="4"
               class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
               placeholder="Description du lieu..."
+              data-i18n-placeholder="admin_description_placeholder"
               required
             ></textarea>
           </div>
 
           <div>
-            <label class="mb-2 block font-semibold text-darkgreen">Image</label>
+            <label class="mb-2 block font-semibold text-darkgreen" data-i18n="admin_image_label">Image</label>
             <input
               id="image"
               type="file"
@@ -118,12 +124,13 @@
           </div>
 
           <div>
-            <label class="mb-2 block font-semibold text-darkgreen">Lien</label>
+            <label class="mb-2 block font-semibold text-darkgreen" data-i18n="admin_link_label">Lien</label>
             <input
               type="text"
               id="link"
               class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
               placeholder="ex: medina.html"
+              data-i18n-placeholder="admin_link_placeholder"
               required
             >
           </div>
@@ -134,7 +141,7 @@
               id="submit-btn"
               class="inline-flex items-center justify-center rounded-full bg-darkgreen px-7 py-3 font-bold text-white transition hover:bg-olive"
             >
-              Ajouter
+              <span data-i18n="admin_add_button">Ajouter</span>
             </button>
 
             <button
@@ -142,7 +149,7 @@
               id="cancel-btn"
               class="hidden inline-flex items-center justify-center rounded-full bg-stone-200 px-7 py-3 font-bold text-darkgreen transition hover:bg-stone-300"
             >
-              Annuler
+              <span data-i18n="admin_cancel_button">Annuler</span>
             </button>
           </div>
         </form>
@@ -151,7 +158,7 @@
       <!-- Table -->
       <section class="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-stone-200">
         <div class="mb-6 flex items-center justify-between gap-4">
-          <h3 class="text-2xl font-black text-darkgreen">
+          <h3 class="text-2xl font-black text-darkgreen" data-i18n="admin_table_title">
             Liste des lieux
           </h3>
 
@@ -159,7 +166,7 @@
             onclick="loadPlaces()"
             class="rounded-full bg-gold px-5 py-2 font-bold text-darkgreen transition hover:bg-darkgreen hover:text-white"
           >
-            Actualiser
+            <span data-i18n="admin_refresh_button">Actualiser</span>
           </button>
         </div>
 
@@ -167,11 +174,11 @@
           <table class="w-full min-w-[760px] border-collapse">
             <thead>
               <tr class="border-b border-stone-200 text-left text-sm uppercase tracking-[0.18em] text-stone-500">
-                <th class="py-4 pr-4">Image</th>
-                <th class="py-4 pr-4">Titre</th>
-                <th class="py-4 pr-4">Catégorie</th>
-                <th class="py-4 pr-4">Description</th>
-                <th class="py-4 pr-4">Actions</th>
+                <th class="py-4 pr-4" data-i18n="admin_th_image">Image</th>
+                <th class="py-4 pr-4" data-i18n="admin_th_title">Titre</th>
+                <th class="py-4 pr-4" data-i18n="admin_th_category">Catégorie</th>
+                <th class="py-4 pr-4" data-i18n="admin_th_description">Description</th>
+                <th class="py-4 pr-4" data-i18n="admin_th_actions">Actions</th>
               </tr>
             </thead>
 
@@ -185,6 +192,7 @@
     </div>
   </main>
 
+  <script src="assets/js/i18n.js"></script>
   <script>
   const API_URL = "http://localhost:5017/api/places";
 
@@ -238,23 +246,23 @@
             <td class="py-4 pr-4">
               <img
                 src="${place.image || ""}"
-                alt="${place.title || ""}"
+                alt="${getTranslatedText(place.title)}"
                 class="h-16 w-24 rounded-xl object-cover"
               >
             </td>
 
             <td class="py-4 pr-4 font-bold text-darkgreen">
-              ${place.title || ""}
+              ${getTranslatedText(place.title)}
             </td>
 
             <td class="py-4 pr-4">
               <span class="rounded-full bg-gold/20 px-3 py-1 text-sm font-semibold text-darkgreen">
-                ${place.category || ""}
+                ${translateCategory(place.category)}
               </span>
             </td>
 
             <td class="max-w-xs py-4 pr-4 text-sm leading-6 text-stone-600">
-              ${place.description || ""}
+              ${getTranslatedText(place.description)}
             </td>
 
             <td class="py-4 pr-4">
@@ -263,14 +271,14 @@
                   onclick='editPlace(${JSON.stringify(place)})'
                   class="rounded-full bg-gold px-4 py-2 text-sm font-bold text-darkgreen transition hover:bg-darkgreen hover:text-white"
                 >
-                  Modifier
+                  ${t("admin_edit_button")}
                 </button>
 
                 <button
                   onclick="deletePlace(${place.id})"
                   class="rounded-full bg-red-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-red-700"
                 >
-                  Supprimer
+                  ${t("admin_delete_button")}
                 </button>
               </div>
             </td>
@@ -279,7 +287,7 @@
       });
     } catch (error) {
       console.error(error);
-      showMessage("Impossible de charger les lieux. Vérifiez que le backend est lancé.", "error");
+      showMessage(t("admin_load_error"), "error");
     }
   }
 
@@ -332,10 +340,10 @@
       resetForm();
       await loadPlaces();
 
-      showMessage(id ? "Lieu modifié avec succès." : "Lieu ajouté avec succès.");
+      showMessage(id ? t("admin_save_success_edit") : t("admin_save_success_add"));
     } catch (error) {
       console.error(error);
-      showMessage("Erreur: impossible d'enregistrer le lieu.", "error");
+      showMessage(t("admin_save_error"), "error");
     }
   });
 
@@ -350,8 +358,8 @@
     // لذلك كنخزنو الصورة القديمة فـ variable
     currentImage = place.image || "";
 
-    submitBtn.textContent = "Modifier";
-    formTitle.textContent = "Modifier un lieu";
+    submitBtn.textContent = t("admin_edit_button");
+    formTitle.textContent = t("admin_form_edit_title");
     cancelBtn.classList.remove("hidden");
 
     window.scrollTo({
@@ -361,7 +369,7 @@
   }
 
   async function deletePlace(id) {
-    const confirmed = confirm("Voulez-vous vraiment supprimer ce lieu ?");
+    const confirmed = confirm(t("admin_delete_confirm"));
 
     if (!confirmed) return;
 
@@ -375,10 +383,10 @@
       }
 
       await loadPlaces();
-      showMessage("Lieu supprimé avec succès.");
+      showMessage(t("admin_delete_success"));
     } catch (error) {
       console.error(error);
-      showMessage("Erreur: impossible de supprimer le lieu.", "error");
+      showMessage(t("admin_delete_error"), "error");
     }
   }
 
@@ -387,14 +395,18 @@
     currentImage = "";
     form.reset();
 
-    submitBtn.textContent = "Ajouter";
-    formTitle.textContent = "Ajouter un lieu";
+    submitBtn.textContent = t("admin_add_button");
+    formTitle.textContent = t("admin_form_add_title");
     cancelBtn.classList.add("hidden");
   }
 
   cancelBtn.addEventListener("click", resetForm);
 
   document.addEventListener("DOMContentLoaded", loadPlaces);
+  document.addEventListener("visitTaza:languageChanged", () => {
+    resetForm();
+    loadPlaces();
+  });
 </script>
 </body>
 </html>
