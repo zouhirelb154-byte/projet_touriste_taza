@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Details - Visit Taza</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkgreen: "#12372A",
+            olive: "#436850",
+            beige: "#FBF8EF",
+            gold: "#C8A15A",
+            surface: "#F7F1E8"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="min-h-screen bg-beige text-stone-900 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur-xl">
+    <div class="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex shrink-0 items-center gap-3">
+        <span class="flex h-12 w-12 items-center justify-center rounded-full bg-darkgreen text-lg font-black text-beige shadow">
+          VT
+        </span>
+        <span>
+          <span class="block text-lg font-semibold tracking-tight text-darkgreen">Visit Taza</span>
+          <span class="block text-xs font-semibold uppercase tracking-[0.32em] text-stone-500">MOROCCO</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="flex flex-1 items-center justify-center gap-12 text-sm font-semibold tracking-wide text-darkgreen">
+        <a href="index.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_home">Accueil</a>
+        <a href="places.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_places">À visiter</a>
+        <a href="activities.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_things">À faire</a>
+        <a href="tips.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_tips">Astuces de voyage</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="flex items-center gap-3">
+        <div class="hidden items-center gap-2 md:flex">
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">
+            AR
+          </button>
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="en">
+            EN
+          </button>
+          <button class="lang-btn rounded-full bg-darkgreen px-3 py-2 text-xs font-bold text-white transition hover:bg-olive" data-lang="fr">
+            FR
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="relative min-h-[52vh] overflow-hidden bg-darkgreen text-white">
+      <div id="hero-image" class="absolute inset-0 bg-[url('assets/images/taza-hero.jpg')] bg-cover bg-center"></div>
+      <div class="absolute inset-0 bg-darkgreen/70"></div>
+
+      <div class="relative mx-auto flex min-h-[52vh] max-w-7xl items-end px-4 py-16 sm:px-6 lg:px-8">
+        <div class="max-w-4xl">
+          <p id="hero-category" class="text-sm font-semibold uppercase tracking-[0.3em] text-gold">
+            À visiter
+          </p>
+
+          <h1 id="hero-title" class="mt-5 text-5xl font-black leading-tight sm:text-6xl">
+            Visit Taza
+          </h1>
+
+          <p id="hero-description" class="mt-6 max-w-2xl text-lg leading-8 text-white/85"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="bg-white py-16">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:px-8">
+
+        <div class="overflow-hidden rounded-[2rem] bg-beige shadow-2xl ring-1 ring-stone-200">
+          <img id="main-image" src="assets/images/taza-hero.jpg" alt="Visit Taza" class="h-[32rem] w-full object-cover">
+        </div>
+
+        <aside class="rounded-[2rem] bg-beige p-8 shadow-lg ring-1 ring-stone-200">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="info_card_label">
+            Fiche du lieu
+          </p>
+
+          <h2 id="info-title" class="mt-4 text-3xl font-black text-darkgreen">
+            Visit Taza
+          </h2>
+
+          <dl class="mt-8 space-y-5 text-stone-700">
+            <div>
+              <dt class="text-xs font-bold uppercase tracking-[0.24em] text-gold" data-i18n="category_label">Catégorie</dt>
+              <dd id="info-category" class="mt-2 text-lg font-semibold text-darkgreen"></dd>
+            </div>
+
+            <div>
+              <dt class="text-xs font-bold uppercase tracking-[0.24em] text-gold" data-i18n="place_id_label">Identifiant</dt>
+              <dd id="info-id" class="mt-2 text-lg font-semibold text-darkgreen"></dd>
+            </div>
+          </dl>
+
+          <a href="places.html" class="mt-8 inline-flex rounded-full bg-darkgreen px-7 py-3 text-sm font-semibold text-white transition hover:bg-olive" data-i18n="back_to_places">
+            Retour aux lieux
+          </a>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section class="bg-beige py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="description_label">
+          Description
+        </p>
+        <h2 class="mt-4 text-3xl font-black text-darkgreen" data-i18n="description_title">
+          Découvrir ce lieu
+        </h2>
+        <p id="description-text" class="mt-6 text-lg leading-8 text-stone-700"></p>
+      </div>
+    </section>
+
+    <!-- Practical Information -->
+    <section class="bg-white py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-[2rem] bg-beige p-8 shadow-lg ring-1 ring-stone-200">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="practical_label">
+            Informations pratiques
+          </p>
+          <h2 class="mt-4 text-3xl font-black text-darkgreen" data-i18n="practical_title">
+            Préparer la visite
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-stone-700" data-i18n="practical_text">
+            Vérifiez les conditions de visite avant votre départ et prévoyez de l'eau, des chaussures confortables et suffisamment de temps pour découvrir le lieu tranquillement.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extra Information -->
+    <section id="extra-section" class="hidden bg-beige py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-[2rem] bg-white p-8 shadow-lg ring-1 ring-stone-200">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="extra_label">
+            Informations complémentaires
+          </p>
+          <p id="extra-text" class="mt-6 text-lg leading-8 text-stone-700"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Status -->
+    <section id="status-section" class="hidden bg-white py-16">
+      <div class="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+        <p id="status-message" class="rounded-2xl bg-red-50 p-6 text-red-700 shadow ring-1 ring-red-100"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-white/10 bg-darkgreen text-white">
+    <div class="mx-auto max-w-7xl space-y-12 px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-4">
+          <a href="index.html" class="inline-flex items-center gap-3 text-xl font-black text-white">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-beige text-darkgreen">VT</span>
+            <span>
+              <span class="block text-lg font-semibold text-white">Visit Taza</span>
+              <span class="block text-xs uppercase tracking-[0.32em] text-stone-300">MOROCCO</span>
+            </span>
+          </a>
+          <p class="max-w-sm text-sm leading-7 text-stone-200" data-i18n="footer_brand_desc">
+            Découvrez Taza, ses paysages naturels, son patrimoine et son accueil chaleureux.
+          </p>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold" data-i18n="footer_quick_links">Liens rapides</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="index.html" class="transition hover:text-gold" data-i18n="footer_nav_home">Accueil</a></li>
+            <li><a href="places.html" class="transition hover:text-gold" data-i18n="footer_nav_places">À visiter</a></li>
+            <li><a href="activities.html" class="transition hover:text-gold" data-i18n="footer_nav_things">À faire</a></li>
+            <li><a href="tips.html" class="transition hover:text-gold" data-i18n="footer_nav_tips">Astuces de voyage</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold" data-i18n="footer_practical_info">Informations pratiques</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="map.html" class="transition hover:text-gold" data-i18n="footer_info_map">Carte & Infos</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-i18n="footer_info_transport">Transport</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-i18n="footer_info_weather">Météo</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-i18n="footer_info_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold" data-i18n="footer_contact_title">Contact</p>
+          <div class="space-y-3 text-sm leading-7 text-stone-200">
+            <p>Taza, Morocco</p>
+            <p><a href="mailto:contact@visittaza.ma" class="transition hover:text-gold">contact@visittaza.ma</a></p>
+            <p><a href="tel:+212000000000" class="transition hover:text-gold">+212 000 000 000</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-stone-300 sm:flex-row sm:items-center sm:justify-between">
+        <p data-i18n="footer_copy">© 2026 Visit Taza. All rights reserved.</p>
+        <p data-i18n="footer_made">Made with HTML & Tailwind CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const API_URL = "http://localhost:5017/api/places";
+    const FALLBACK_IMAGE = "assets/images/taza-hero.jpg";
+
+    const translations = {
+      fr: {
+        nav_home: "Accueil",
+        nav_places: "À visiter",
+        nav_things: "À faire",
+        nav_tips: "Astuces de voyage",
+        footer_brand_desc: "Découvrez Taza, ses paysages naturels, son patrimoine et son accueil chaleureux.",
+        footer_quick_links: "Liens rapides",
+        footer_nav_home: "Accueil",
+        footer_nav_places: "À visiter",
+        footer_nav_things: "À faire",
+        footer_nav_tips: "Astuces de voyage",
+        footer_practical_info: "Informations pratiques",
+        footer_info_map: "Carte & Infos",
+        footer_info_transport: "Transport",
+        footer_info_weather: "Météo",
+        footer_info_contact: "Contact",
+        footer_contact_title: "Contact",
+        footer_copy: "© 2026 Visit Taza. Tous droits réservés.",
+        footer_made: "Réalisé avec HTML & Tailwind CSS.",
+        info_card_label: "Fiche du lieu",
+        category_label: "Catégorie",
+        place_id_label: "Identifiant",
+        description_label: "Description",
+        description_title: "Découvrir ce lieu",
+        practical_label: "Informations pratiques",
+        practical_title: "Préparer la visite",
+        practical_text: "Vérifiez les conditions de visite avant votre départ et prévoyez de l'eau, des chaussures confortables et suffisamment de temps pour découvrir le lieu tranquillement.",
+        extra_label: "Informations complémentaires",
+        back_to_places: "Retour aux lieux",
+        loading: "Chargement du lieu...",
+        missing_id: "Aucun identifiant de lieu n'a été fourni.",
+        load_error: "Impossible de charger ce lieu depuis le backend.",
+        category_places: "Lieux",
+        category_nature: "Nature",
+        category_history_single: "Histoire",
+        category_activities: "Activités",
+        category_culture_single: "Art et culture",
+        category_gastronomie: "Manger, boire",
+        category_accommodation_single: "Hébergement"
+      },
+      en: {
+        nav_home: "Home",
+        nav_places: "Places to Visit",
+        nav_things: "Things to Do",
+        nav_tips: "Travel Tips",
+        footer_brand_desc: "Discover Taza, its natural landscapes, heritage, and warm welcome.",
+        footer_quick_links: "Quick links",
+        footer_nav_home: "Home",
+        footer_nav_places: "Places to Visit",
+        footer_nav_things: "Things to Do",
+        footer_nav_tips: "Travel Tips",
+        footer_practical_info: "Practical information",
+        footer_info_map: "Map & Info",
+        footer_info_transport: "Transport",
+        footer_info_weather: "Weather",
+        footer_info_contact: "Contact",
+        footer_contact_title: "Contact",
+        footer_copy: "© 2026 Visit Taza. All rights reserved.",
+        footer_made: "Made with HTML & Tailwind CSS.",
+        info_card_label: "Place sheet",
+        category_label: "Category",
+        place_id_label: "ID",
+        description_label: "Description",
+        description_title: "Discover this place",
+        practical_label: "Practical information",
+        practical_title: "Prepare your visit",
+        practical_text: "Check visiting conditions before you leave, and bring water, comfortable shoes, and enough time to discover the place calmly.",
+        extra_label: "Additional information",
+        back_to_places: "Back to places",
+        loading: "Loading place...",
+        missing_id: "No place id was provided.",
+        load_error: "Unable to load this place from the backend.",
+        category_places: "Places",
+        category_nature: "Nature",
+        category_history_single: "History",
+        category_activities: "Activities",
+        category_culture_single: "Art and culture",
+        category_gastronomie: "Food and drinks",
+        category_accommodation_single: "Accommodation"
+      },
+      ar: {
+        nav_home: "الصفحة الرئيسية",
+        nav_places: "أماكن للزيارة",
+        nav_things: "أشياء للقيام بها",
+        nav_tips: "نصائح السفر",
+        footer_brand_desc: "اكتشف تازة، مناظرها الطبيعية، تراثها ودفء ضيافتها.",
+        footer_quick_links: "روابط سريعة",
+        footer_nav_home: "الصفحة الرئيسية",
+        footer_nav_places: "أماكن للزيارة",
+        footer_nav_things: "أشياء للقيام بها",
+        footer_nav_tips: "نصائح السفر",
+        footer_practical_info: "معلومات عملية",
+        footer_info_map: "الخريطة والمعلومات",
+        footer_info_transport: "النقل",
+        footer_info_weather: "الطقس",
+        footer_info_contact: "تواصل معنا",
+        footer_contact_title: "تواصل",
+        footer_copy: "© 2026 Visit Taza. جميع الحقوق محفوظة.",
+        footer_made: "مصنوع بـ HTML و Tailwind CSS.",
+        info_card_label: "بطاقة المكان",
+        category_label: "الفئة",
+        place_id_label: "المعرف",
+        description_label: "الوصف",
+        description_title: "اكتشف هذا المكان",
+        practical_label: "معلومات عملية",
+        practical_title: "حضّر زيارتك",
+        practical_text: "تحقق من ظروف الزيارة قبل الانطلاق، وخذ معك الماء وأحذية مريحة ووقتا كافيا لاكتشاف المكان بهدوء.",
+        extra_label: "معلومات إضافية",
+        back_to_places: "الرجوع إلى الأماكن",
+        loading: "جاري تحميل المكان...",
+        missing_id: "لم يتم توفير معرف المكان.",
+        load_error: "تعذر تحميل هذا المكان من الخادم.",
+        category_places: "أماكن للزيارة",
+        category_nature: "الطبيعة",
+        category_history_single: "التاريخ",
+        category_activities: "الأنشطة",
+        category_culture_single: "الفن والثقافة",
+        category_gastronomie: "الأكل والمشروبات",
+        category_accommodation_single: "الإقامة"
+      }
+    };
+
+    let currentLang = localStorage.getItem("visitTazaLanguage") || "fr";
+    let currentPlace = null;
+
+    function getCurrentLanguage() {
+      return translations[currentLang] ? currentLang : "fr";
+    }
+
+    function t(key) {
+      const lang = getCurrentLanguage();
+      return (translations[lang] && translations[lang][key]) || translations.fr[key] || key;
+    }
+
+    function getTranslatedText(value) {
+      if (value === null || value === undefined) return "";
+
+      const text = String(value);
+      const parts = text.split("|").map((part) => part.trim());
+
+      if (parts.length < 2) {
+        return text;
+      }
+
+      const fr = parts[0] || "";
+      const en = parts[1] || fr;
+      const ar = parts[2] || fr;
+      const lang = getCurrentLanguage();
+
+      if (lang === "ar") return ar;
+      if (lang === "en") return en;
+
+      return fr;
+    }
+
+    function normalizeCategory(category) {
+      return (category || "")
+        .toString()
+        .trim()
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+    }
+
+    function translateCategory(category) {
+      const cat = normalizeCategory(category);
+      const map = {
+        places: "category_places",
+        place: "category_places",
+        lieux: "category_places",
+        "a visiter": "category_places",
+        ville: "category_places",
+        nature: "category_nature",
+        history: "category_history_single",
+        histoire: "category_history_single",
+        activites: "category_activities",
+        activities: "category_activities",
+        culture: "category_culture_single",
+        "art et culture": "category_culture_single",
+        gastronomie: "category_gastronomie",
+        food: "category_gastronomie",
+        accommodation: "category_accommodation_single",
+        hebergement: "category_accommodation_single",
+        hotel: "category_accommodation_single"
+      };
+
+      return map[cat] ? t(map[cat]) : getTranslatedText(category);
+    }
+
+    function updateLanguageButtons() {
+      document.querySelectorAll(".lang-btn").forEach((button) => {
+        const isActive = button.dataset.lang === getCurrentLanguage();
+
+        button.classList.toggle("bg-darkgreen", isActive);
+        button.classList.toggle("text-white", isActive);
+        button.classList.toggle("hover:bg-olive", isActive);
+
+        button.classList.toggle("border", !isActive);
+        button.classList.toggle("border-darkgreen", !isActive);
+        button.classList.toggle("text-darkgreen", !isActive);
+        button.classList.toggle("hover:border-gold", !isActive);
+        button.classList.toggle("hover:text-gold", !isActive);
+      });
+    }
+
+    function applyLanguage() {
+      currentLang = getCurrentLanguage();
+      localStorage.setItem("visitTazaLanguage", currentLang);
+
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        element.textContent = t(element.dataset.i18n);
+      });
+
+      updateLanguageButtons();
+
+      if (currentPlace) {
+        renderPlace(currentPlace);
+      }
+    }
+
+    function setStatus(message) {
+      document.getElementById("status-section").classList.remove("hidden");
+      document.getElementById("status-message").textContent = message;
+    }
+
+    function renderPlace(place) {
+      const title = getTranslatedText(place.title);
+      const category = translateCategory(place.category);
+      const description = getTranslatedText(place.description);
+      const image = place.image || FALLBACK_IMAGE;
+      const extra = getTranslatedText(place.link || "").trim();
+
+      document.title = `${title || "Details"} - Visit Taza`;
+      document.getElementById("hero-image").style.backgroundImage = `url('${image}')`;
+      document.getElementById("hero-category").textContent = category;
+      document.getElementById("hero-title").textContent = title;
+      document.getElementById("hero-description").textContent = description;
+      document.getElementById("main-image").src = image;
+      document.getElementById("main-image").alt = title;
+      document.getElementById("info-title").textContent = title;
+      document.getElementById("info-category").textContent = category;
+      document.getElementById("info-id").textContent = place.id;
+      document.getElementById("description-text").textContent = description;
+
+      if (extra) {
+        document.getElementById("extra-section").classList.remove("hidden");
+        document.getElementById("extra-text").textContent = extra;
+      } else {
+        document.getElementById("extra-section").classList.add("hidden");
+        document.getElementById("extra-text").textContent = "";
+      }
+    }
+
+    async function loadPlace() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+
+      if (!id) {
+        setStatus(t("missing_id"));
+        return;
+      }
+
+      try {
+        const response = await fetch(`${API_URL}/${id}`);
+
+        if (!response.ok) {
+          throw new Error("Place not found");
+        }
+
+        currentPlace = await response.json();
+        renderPlace(currentPlace);
+      } catch (error) {
+        console.error("Erreur chargement details:", error);
+        setStatus(t("load_error"));
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      applyLanguage();
+      loadPlace();
+
+      document.querySelectorAll(".lang-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          currentLang = translations[button.dataset.lang] ? button.dataset.lang : "fr";
+          applyLanguage();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

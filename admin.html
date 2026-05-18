@@ -91,14 +91,69 @@
 
           <div>
             <label class="mb-2 block font-semibold text-darkgreen" data-i18n="admin_category_label">Catégorie</label>
-            <input
-              type="text"
-              id="category"
-              class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
-              placeholder="Ex: Nature"
-              data-i18n-placeholder="admin_category_placeholder"
-              required
-            >
+            <input type="hidden" id="category" value="Places" required>
+
+            <div id="category-options" class="grid gap-3 rounded-2xl border border-stone-200 bg-beige p-4 sm:grid-cols-2">
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Places" class="h-4 w-4 accent-darkgreen" checked>
+                <span>Places</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Nature" class="h-4 w-4 accent-darkgreen">
+                <span>Nature</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Inspiration" class="h-4 w-4 accent-darkgreen">
+                <span>Inspiration</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Festivals" class="h-4 w-4 accent-darkgreen">
+                <span>Festivals</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Activités" class="h-4 w-4 accent-darkgreen">
+                <span>Activités</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="History" class="h-4 w-4 accent-darkgreen">
+                <span>History</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Religion" class="h-4 w-4 accent-darkgreen">
+                <span>Religion</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Culture" class="h-4 w-4 accent-darkgreen">
+                <span>Culture</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Gastronomie" class="h-4 w-4 accent-darkgreen">
+                <span>Gastronomie</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Morning" class="h-4 w-4 accent-darkgreen">
+                <span>Morning</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Evening" class="h-4 w-4 accent-darkgreen">
+                <span>Evening</span>
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-darkgreen ring-1 ring-stone-200 transition hover:ring-gold">
+                <input type="radio" name="category-choice" value="Accommodation" class="h-4 w-4 accent-darkgreen">
+                <span>Accommodation</span>
+              </label>
+            </div>
           </div>
 
           <div>
@@ -124,15 +179,41 @@
           </div>
 
           <div>
-            <label class="mb-2 block font-semibold text-darkgreen" data-i18n="admin_link_label">Lien</label>
-            <input
-              type="text"
-              id="link"
-              class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
-              placeholder="ex: medina.html"
-              data-i18n-placeholder="admin_link_placeholder"
-              required
-            >
+              <label id="link-label" class="mb-2 block font-semibold text-darkgreen" data-i18n="admin_link_label">
+                À propos
+              </label>
+              <input
+                type="text"
+                id="link"
+                class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none focus:border-gold"
+                placeholder="Ex: informations complémentaires"
+              >
+            <div id="link-helper" class="mt-4 hidden rounded-2xl bg-gold/10 p-4 text-sm leading-6 text-darkgreen ring-1 ring-gold/30"></div>
+          </div>
+
+          <div class="rounded-2xl bg-beige p-5 text-sm leading-7 text-stone-700 ring-1 ring-stone-200">
+            <h4 class="mb-3 font-black text-darkgreen">Exemples rapides</h4>
+
+            <div class="space-y-3">
+              <p>
+                <span class="font-bold text-darkgreen">Hotel:</span>
+                Title: Hôtel Atlas Taza | Atlas Taza Hotel | فندق أطلس تازة<br>
+                Category: Accommodation<br>
+                Link: ابتداءً من 300 درهم / الليلة | تازة - وسط المدينة | 06 00 00 00 00
+              </p>
+
+              <p>
+                <span class="font-bold text-darkgreen">Festival:</span>
+                Category: Festivals<br>
+                Link: Place Mohammed V, Taza | 15 juillet 2026 - 18:00
+              </p>
+
+              <p>
+                <span class="font-bold text-darkgreen">Place:</span>
+                Category: Places<br>
+                Link: leave empty or write extra info
+              </p>
+            </div>
           </div>
 
           <div class="flex flex-wrap gap-3 pt-3">
@@ -200,9 +281,12 @@
   const placeIdInput = document.getElementById("place-id");
   const titleInput = document.getElementById("title");
   const categoryInput = document.getElementById("category");
+  const categoryRadios = document.querySelectorAll('input[name="category-choice"]');
   const descriptionInput = document.getElementById("description");
   const imageInput = document.getElementById("image");
   const linkInput = document.getElementById("link");
+  const linkLabel = document.getElementById("link-label");
+  const linkHelper = document.getElementById("link-helper");
   const tableBody = document.getElementById("places-table");
   const messageBox = document.getElementById("message");
   const submitBtn = document.getElementById("submit-btn");
@@ -210,6 +294,123 @@
   const formTitle = document.getElementById("form-title");
 
   let currentImage = "";
+
+  function normalizeCategoryValue(value) {
+    return (value || "")
+      .toString()
+      .trim()
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  }
+
+  function getCanonicalCategory(category) {
+    const map = {
+      "a visiter": "Places",
+      place: "Places",
+      places: "Places",
+      lieux: "Places",
+      ville: "Places",
+      nature: "Nature",
+      inspiration: "Inspiration",
+      inspirations: "Inspiration",
+      festival: "Festivals",
+      festivals: "Festivals",
+      event: "Festivals",
+      events: "Festivals",
+      evenement: "Festivals",
+      evenements: "Festivals",
+      activite: "Activités",
+      activites: "Activités",
+      activity: "Activités",
+      activities: "Activités",
+      histoire: "History",
+      history: "History",
+      historique: "History",
+      religion: "Religion",
+      culture: "Culture",
+      art: "Culture",
+      "art et culture": "Culture",
+      gastronomie: "Gastronomie",
+      food: "Gastronomie",
+      cuisine: "Gastronomie",
+      morning: "Morning",
+      matin: "Morning",
+      evening: "Evening",
+      soir: "Evening",
+      accommodation: "Accommodation",
+      hebergement: "Accommodation",
+      hotel: "Accommodation"
+    };
+
+    const normalizedCategory = normalizeCategoryValue(category);
+    return map[normalizedCategory] || category || "Places";
+  }
+
+  function setSelectedCategory(category) {
+    const canonicalCategory = getCanonicalCategory(category);
+    const normalizedCategory = normalizeCategoryValue(canonicalCategory);
+    const fallback = document.querySelector('input[name="category-choice"][value="Places"]');
+    let selectedRadio = null;
+
+    categoryRadios.forEach((radio) => {
+      const isSelected = normalizeCategoryValue(radio.value) === normalizedCategory;
+      radio.checked = isSelected;
+
+      if (isSelected) {
+        selectedRadio = radio;
+      }
+    });
+
+    if (!selectedRadio && fallback) {
+      fallback.checked = true;
+      selectedRadio = fallback;
+    }
+
+    categoryInput.value = selectedRadio ? selectedRadio.value : "Places";
+    updateLinkHelper();
+  }
+
+  function updateLinkHelper() {
+    const category = normalizeCategoryValue(categoryInput.value);
+
+    linkLabel.textContent = "À propos";
+    linkHelper.classList.add("hidden");
+    linkHelper.innerHTML = "";
+
+    if (category === "accommodation") {
+      linkInput.placeholder = "Prix | Localisation | Téléphone";
+      linkHelper.classList.remove("hidden");
+      linkHelper.innerHTML = `
+        <p class="font-bold">For Accommodation, Link must be:</p>
+        <p>price | location | phone</p>
+        <p class="mt-2 font-semibold text-gold">Example:</p>
+        <p>ابتداءً من 300 درهم / الليلة | تازة - وسط المدينة | 06 00 00 00 00</p>
+      `;
+      return;
+    }
+
+    if (category === "festivals") {
+      linkInput.placeholder = "Ex: informations complémentaires | Date et heure";
+      linkHelper.classList.remove("hidden");
+      linkHelper.innerHTML = `
+        <p class="font-bold">For Festivals, Link must be:</p>
+        <p>place | date and time</p>
+        <p class="mt-2 font-semibold text-gold">Example:</p>
+        <p>Place Mohammed V, Taza | 15 juillet 2026 - 18:00</p>
+      `;
+      return;
+    }
+
+    linkInput.placeholder = "Lien ou informations complémentaires";
+
+    if (category === "places" || category === "nature" || category === "history") {
+      linkHelper.classList.remove("hidden");
+      linkHelper.innerHTML = `
+        <p>For Places, Nature, and History, the link can be empty or contain extra information because details.html uses the place id automatically.</p>
+      `;
+    }
+  }
 
   function showMessage(text, type = "success") {
     messageBox.textContent = text;
@@ -350,7 +551,7 @@
   function editPlace(place) {
     placeIdInput.value = place.id;
     titleInput.value = place.title || "";
-    categoryInput.value = place.category || "";
+    setSelectedCategory(place.category || "Places");
     descriptionInput.value = place.description || "";
     linkInput.value = place.link || "";
 
@@ -394,15 +595,28 @@
     placeIdInput.value = "";
     currentImage = "";
     form.reset();
+    setSelectedCategory("Places");
 
     submitBtn.textContent = t("admin_add_button");
     formTitle.textContent = t("admin_form_add_title");
     cancelBtn.classList.add("hidden");
   }
 
+  categoryRadios.forEach((radio) => {
+    radio.addEventListener("change", () => {
+      if (radio.checked) {
+        categoryInput.value = radio.value;
+        updateLinkHelper();
+      }
+    });
+  });
+
   cancelBtn.addEventListener("click", resetForm);
 
-  document.addEventListener("DOMContentLoaded", loadPlaces);
+  document.addEventListener("DOMContentLoaded", () => {
+    setSelectedCategory(categoryInput.value || "Places");
+    loadPlaces();
+  });
   document.addEventListener("visitTaza:languageChanged", () => {
     resetForm();
     loadPlaces();

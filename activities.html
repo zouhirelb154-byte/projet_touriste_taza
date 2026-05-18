@@ -440,7 +440,7 @@
     </div>
 
     <!-- Hotels from admin.html -->
-    <div id="accommodation-admin-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div id="accommodation-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       <p class="col-span-full text-center text-stone-600" data-i18n="loading_accommodation">
         Chargement des hébergements...
       </p>
@@ -464,7 +464,6 @@
   categoryKey: 'inspiration_category',
   titleKey: 'inspiration_one_day_title',
   descKey: 'inspiration_one_day_desc',
-  buttonKey: 'activities_more_info',
   link: 'places.html'
 },
 {
@@ -475,7 +474,6 @@
   categoryKey: 'inspiration_category',
   titleKey: 'inspiration_weekend_title',
   descKey: 'inspiration_weekend_desc',
-  buttonKey: 'activities_more_info',
   link: 'friouato.html'
 },
 {
@@ -486,7 +484,6 @@
   categoryKey: 'inspiration_category',
   titleKey: 'inspiration_nature_title',
   descKey: 'inspiration_nature_desc',
-  buttonKey: 'activities_more_info',
   link: 'tazekka.html'
 },
 {
@@ -497,7 +494,6 @@
   categoryKey: 'inspiration_category',
   titleKey: 'inspiration_culture_title',
   descKey: 'inspiration_culture_desc',
-  buttonKey: 'activities_more_info',
   link: 'medina.html'
 },
 {
@@ -508,7 +504,6 @@
   categoryKey: 'inspiration_category',
   titleKey: 'inspiration_family_title',
   descKey: 'inspiration_family_desc',
-  buttonKey: 'activities_more_info',
   link: 'ras-el-ma.html'
 },
 {
@@ -519,7 +514,6 @@
   categoryKey: 'inspiration_category',
   titleKey: 'inspiration_local_title',
   descKey: 'inspiration_local_desc',
-  buttonKey: 'activities_more_info',
   link: 'activities.html#food'
 },
      
@@ -683,7 +677,6 @@ const hashToCategoryMap = {
             <span class="inline-flex rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold" data-i18n="${activity.categoryKey}"></span>
             <h2 class="mt-4 text-2xl font-black text-darkgreen" data-i18n="${activity.titleKey}"></h2>
             <p class="mt-3 text-sm leading-7 text-stone-600" data-i18n="${activity.descKey}"></p>
-            <a href="${activity.link}" class="mt-6 inline-flex rounded-full bg-darkgreen px-5 py-3 text-sm font-semibold text-white transition hover:bg-olive" data-i18n="${activity.buttonKey || 'activities_more_info'}">Plus d'informations</a>
           </div>
         </article>
       `;
@@ -700,6 +693,7 @@ function filterActivities(category) {
   const activitiesSpecialSection = document.getElementById('activities-special');
   const historySection = document.getElementById('history');
   const cultureSection = document.getElementById('culture-section');
+  const accommodationSection = document.getElementById('accommodation-section');
   const resultsGrid = document.getElementById('results-grid');
 
   function hideAllSections() {
@@ -712,6 +706,7 @@ function filterActivities(category) {
     if (activitiesSpecialSection) activitiesSpecialSection.classList.add('hidden');
     if (historySection) historySection.classList.add('hidden');
     if (cultureSection) cultureSection.classList.add('hidden');
+    if (accommodationSection) accommodationSection.classList.add('hidden');
     if (resultsGrid) resultsGrid.innerHTML = '';
   }
 
@@ -766,6 +761,12 @@ function filterActivities(category) {
   else if (category === 'culture') {
     if (cultureSection) {
       cultureSection.classList.remove('hidden');
+    }
+  }
+
+  else if (category === 'accommodation') {
+    if (accommodationSection) {
+      accommodationSection.classList.remove('hidden');
     }
   }
 
@@ -942,7 +943,6 @@ function filterActivities(category) {
 
     const isReverse = index % 2 !== 0;
 
-    const buttonText = isMorning ? t("morning_block_button") : t("evening_block_button");
     const labelText = isMorning ? t("category_morning_single") : t("category_evening_single");
 
     return `
@@ -965,13 +965,6 @@ function filterActivities(category) {
           <p class="text-lg leading-9 text-gray-700 mb-10">
             ${getTranslatedText(item.description)}
           </p>
-
-          <a
-            href="${item.link || "#"}"
-            class="inline-flex items-center justify-center rounded-full bg-[#D6BE7B] px-9 py-4 font-semibold text-[#12372A] shadow-md transition hover:bg-[#12372A] hover:text-white"
-          >
-            ${buttonText}
-          </a>
         </div>
 
         <div class="${isReverse ? "md:order-1" : ""}">
@@ -1073,13 +1066,6 @@ function filterActivities(category) {
           <p class="mt-4 flex-1 leading-8 text-stone-700">
             ${getTranslatedText(item.description)}
           </p>
-
-          <a
-            href="${item.link || "#"}"
-            class="mt-6 inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#D6BE7B] text-[#12372A] hover:bg-[#12372A] hover:text-white"
-          >
-            ${t("dynamic_more_info")}
-          </a>
         </div>
       </article>
     `;
@@ -1208,7 +1194,7 @@ function filterActivities(category) {
             ${getTranslatedText(item.description)}
           </p>
 
-          <!-- مكان وزمان بدل Plus d'informations -->
+          <!-- مكان وزمان -->
           <div class="mt-6 rounded-2xl bg-[#FBF8EF] p-5 text-sm font-semibold text-[#12372A] ring-1 ring-stone-200">
             <p class="flex items-center gap-2">
               <span class="text-[#C8A15A]">📍 ${t("dynamic_place")} :</span>
@@ -1321,13 +1307,6 @@ function filterActivities(category) {
           <p class="mt-4 leading-8 text-stone-700">
             ${getTranslatedText(item.description)}
           </p>
-
-          <a
-            href="${item.link || "#"}"
-            class="mt-6 inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#12372A] text-white hover:bg-[#D6BE7B] hover:text-[#12372A]"
-          >
-            ${t("dynamic_more_info")}
-          </a>
         </div>
       </article>
     `;
@@ -1431,13 +1410,6 @@ function filterActivities(category) {
           <p class="mt-4 leading-8 text-stone-700">
             ${getTranslatedText(item.description)}
           </p>
-
-          <a
-            href="${item.link || "#"}"
-            class="mt-6 inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#12372A] text-white hover:bg-[#D6BE7B] hover:text-[#12372A]"
-          >
-            ${t("dynamic_more_info")}
-          </a>
         </div>
       </article>
     `;
@@ -1544,13 +1516,6 @@ function filterActivities(category) {
           <p class="mt-4 leading-8 text-stone-700">
             ${getTranslatedText(item.description)}
           </p>
-
-          <a
-            href="${item.link || "#"}"
-            class="mt-6 inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-4 min-h-[52px] min-w-[180px] text-sm md:text-base font-bold shadow-md transition duration-300 bg-[#12372A] text-white hover:bg-[#D6BE7B] hover:text-[#12372A]"
-          >
-            ${t("dynamic_more_info")}
-          </a>
         </div>
       </article>
     `;
@@ -1731,7 +1696,7 @@ function filterActivities(category) {
   }
 
   async function loadAccommodationFromAdmin() {
-    const grid = document.getElementById("accommodation-admin-grid");
+    const grid = document.getElementById("accommodation-grid");
 
     if (!grid) return;
 
