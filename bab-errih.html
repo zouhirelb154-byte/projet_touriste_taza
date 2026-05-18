@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bab Errih de Taza - Visit Taza</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkgreen: "#12372A",
+            olive: "#436850",
+            beige: "#FBF8EF",
+            gold: "#C8A15A",
+            surface: "#F7F1E8"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="min-h-screen bg-beige text-stone-900 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur-xl">
+    <div class="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex shrink-0 items-center gap-3">
+        <span class="flex h-12 w-12 items-center justify-center rounded-full bg-darkgreen text-lg font-black text-beige shadow">
+          VT
+        </span>
+        <span>
+          <span class="block text-lg font-semibold tracking-tight text-darkgreen">Visit Taza</span>
+          <span class="block text-xs font-semibold uppercase tracking-[0.32em] text-stone-500">MOROCCO</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="flex flex-1 items-center justify-center gap-12 text-sm font-semibold tracking-wide text-darkgreen">
+        <a href="index.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_home">Accueil</a>
+        <a href="places.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_places">À visiter</a>
+        <a href="activities.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_things">À faire</a>
+        <a href="tips.html" class="transition hover:text-gold hover:underline hover:decoration-gold/70 hover:underline-offset-4" data-i18n="nav_tips">Astuces de voyage</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="flex items-center gap-3">
+        <div class="hidden items-center gap-2 md:flex">
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="ar">
+            AR
+          </button>
+          <button class="lang-btn rounded-full border border-darkgreen px-3 py-2 text-xs font-bold text-darkgreen transition hover:border-gold hover:text-gold" data-lang="en">
+            EN
+          </button>
+          <button class="lang-btn rounded-full bg-darkgreen px-3 py-2 text-xs font-bold text-white transition hover:bg-olive" data-lang="fr">
+            FR
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="relative min-h-[64vh] overflow-hidden bg-darkgreen text-white">
+      <div class="absolute inset-0 bg-[url('assets/images/old-medina.jpg')] bg-cover bg-center"></div>
+      <div class="absolute inset-0 bg-darkgreen/65"></div>
+
+      <div class="relative mx-auto flex min-h-[64vh] max-w-7xl items-end px-4 py-16 sm:px-6 lg:px-8">
+        <div class="max-w-4xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="baberrih_kicker">
+            Patrimoine historique
+          </p>
+
+          <h1 class="mt-5 text-5xl font-black leading-tight sm:text-6xl" data-i18n="baberrih_title">
+            Bab Errih de Taza
+          </h1>
+
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-white/85" data-i18n="baberrih_hero_desc">
+            Une porte historique liée à l'ancienne ville de Taza, témoin de son patrimoine architectural et de sa mémoire urbaine.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Large Image -->
+    <section class="bg-white py-16">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="overflow-hidden rounded-[2rem] shadow-2xl ring-1 ring-stone-200">
+          <img src="assets/images/old-medina.jpg" alt="Bab Errih de Taza" class="h-[28rem] w-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Details -->
+    <section class="bg-beige py-20">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+
+        <article class="rounded-[2rem] bg-white p-8 shadow-lg ring-1 ring-stone-200">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="baberrih_overview_label">
+            Présentation
+          </p>
+          <h2 class="mt-4 text-3xl font-black text-darkgreen" data-i18n="baberrih_overview_title">
+            Une porte de l'ancienne Taza
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-stone-700" data-i18n="baberrih_overview_text">
+            Bab Errih fait partie des repères patrimoniaux associés à l'ancienne médina de Taza. Son nom, son emplacement et son architecture rappellent le rôle des portes dans l'organisation historique de la ville.
+          </p>
+        </article>
+
+        <article class="rounded-[2rem] bg-white p-8 shadow-lg ring-1 ring-stone-200">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="baberrih_history_label">
+            Importance historique
+          </p>
+          <h2 class="mt-4 text-3xl font-black text-darkgreen" data-i18n="baberrih_history_title">
+            Un symbole du patrimoine urbain
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-stone-700" data-i18n="baberrih_history_text">
+            Les portes anciennes de Taza témoignent de l'importance stratégique et culturelle de la ville. Bab Errih reflète cette histoire à travers son lien avec les remparts, les passages et la vie de la médina.
+          </p>
+        </article>
+
+        <article class="rounded-[2rem] bg-white p-8 shadow-lg ring-1 ring-stone-200">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="baberrih_tips_label">
+            Conseils pour les visiteurs
+          </p>
+          <h2 class="mt-4 text-3xl font-black text-darkgreen" data-i18n="baberrih_tips_title">
+            Visiter avec attention
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-stone-700" data-i18n="baberrih_tips_text">
+            Prévoyez une visite à pied, prenez le temps d'observer les détails architecturaux et respectez la tranquillité des quartiers voisins. La lumière du matin ou de fin d'après-midi est idéale pour les photos.
+          </p>
+        </article>
+
+        <article class="rounded-[2rem] bg-white p-8 shadow-lg ring-1 ring-stone-200">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold" data-i18n="baberrih_location_label">
+            Localisation
+          </p>
+          <h2 class="mt-4 text-3xl font-black text-darkgreen" data-i18n="baberrih_location_title">
+            Ancienne médina de Taza
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-stone-700" data-i18n="baberrih_location_text">
+            Bab Errih se situe dans le secteur historique de Taza, à proximité des parcours de découverte de l'ancienne médina et des autres repères patrimoniaux de la ville.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Back Button -->
+    <section class="bg-white py-16">
+      <div class="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+        <a href="places.html" class="inline-flex rounded-full bg-darkgreen px-8 py-4 text-sm font-semibold text-white shadow-lg transition hover:bg-olive" data-i18n="baberrih_back_button">
+          Retour aux lieux
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-white/10 bg-darkgreen text-white">
+    <div class="mx-auto max-w-7xl space-y-12 px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-4">
+          <a href="index.html" class="inline-flex items-center gap-3 text-xl font-black text-white">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-beige text-darkgreen">VT</span>
+            <span>
+              <span class="block text-lg font-semibold text-white">Visit Taza</span>
+              <span class="block text-xs uppercase tracking-[0.32em] text-stone-300">MOROCCO</span>
+            </span>
+          </a>
+          <p class="max-w-sm text-sm leading-7 text-stone-200" data-i18n="footer_brand_desc">
+            Découvrez Taza, ses paysages naturels, son patrimoine et son accueil chaleureux.
+          </p>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold" data-i18n="footer_quick_links">Liens rapides</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="index.html" class="transition hover:text-gold" data-i18n="footer_nav_home">Accueil</a></li>
+            <li><a href="places.html" class="transition hover:text-gold" data-i18n="footer_nav_places">À visiter</a></li>
+            <li><a href="activities.html" class="transition hover:text-gold" data-i18n="footer_nav_things">À faire</a></li>
+            <li><a href="tips.html" class="transition hover:text-gold" data-i18n="footer_nav_tips">Astuces de voyage</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold" data-i18n="footer_practical_info">Informations pratiques</p>
+          <ul class="space-y-3 text-sm leading-7 text-stone-200">
+            <li><a href="map.html" class="transition hover:text-gold" data-i18n="footer_info_map">Carte & Infos</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-i18n="footer_info_transport">Transport</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-i18n="footer_info_weather">Météo</a></li>
+            <li><a href="#" class="transition hover:text-gold" data-i18n="footer_info_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-gold" data-i18n="footer_contact_title">Contact</p>
+          <div class="space-y-3 text-sm leading-7 text-stone-200">
+            <p>Taza, Morocco</p>
+            <p><a href="mailto:contact@visittaza.ma" class="transition hover:text-gold">contact@visittaza.ma</a></p>
+            <p><a href="tel:+212000000000" class="transition hover:text-gold">+212 000 000 000</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-stone-300 sm:flex-row sm:items-center sm:justify-between">
+        <p data-i18n="footer_copy">© 2026 Visit Taza. All rights reserved.</p>
+        <p data-i18n="footer_made">Made with HTML & Tailwind CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script>
+    Object.assign(translations.fr, {
+      baberrih_kicker: "Patrimoine historique",
+      baberrih_title: "Bab Errih de Taza",
+      baberrih_hero_desc: "Une porte historique liée à l'ancienne ville de Taza, témoin de son patrimoine architectural et de sa mémoire urbaine.",
+      baberrih_overview_label: "Présentation",
+      baberrih_overview_title: "Une porte de l'ancienne Taza",
+      baberrih_overview_text: "Bab Errih fait partie des repères patrimoniaux associés à l'ancienne médina de Taza. Son nom, son emplacement et son architecture rappellent le rôle des portes dans l'organisation historique de la ville.",
+      baberrih_history_label: "Importance historique",
+      baberrih_history_title: "Un symbole du patrimoine urbain",
+      baberrih_history_text: "Les portes anciennes de Taza témoignent de l'importance stratégique et culturelle de la ville. Bab Errih reflète cette histoire à travers son lien avec les remparts, les passages et la vie de la médina.",
+      baberrih_tips_label: "Conseils pour les visiteurs",
+      baberrih_tips_title: "Visiter avec attention",
+      baberrih_tips_text: "Prévoyez une visite à pied, prenez le temps d'observer les détails architecturaux et respectez la tranquillité des quartiers voisins. La lumière du matin ou de fin d'après-midi est idéale pour les photos.",
+      baberrih_location_label: "Localisation",
+      baberrih_location_title: "Ancienne médina de Taza",
+      baberrih_location_text: "Bab Errih se situe dans le secteur historique de Taza, à proximité des parcours de découverte de l'ancienne médina et des autres repères patrimoniaux de la ville.",
+      baberrih_back_button: "Retour aux lieux"
+    });
+
+    Object.assign(translations.en, {
+      baberrih_kicker: "Historical heritage",
+      baberrih_title: "Bab Errih Gate of Taza",
+      baberrih_hero_desc: "A historic gate connected to the old city of Taza, reflecting its architectural heritage and urban memory.",
+      baberrih_overview_label: "Overview",
+      baberrih_overview_title: "A gate of old Taza",
+      baberrih_overview_text: "Bab Errih is one of the heritage landmarks associated with the old medina of Taza. Its name, location, and architecture recall the role of gates in the historic organization of the city.",
+      baberrih_history_label: "Historical importance",
+      baberrih_history_title: "A symbol of urban heritage",
+      baberrih_history_text: "The old gates of Taza show the city's strategic and cultural importance. Bab Errih reflects this history through its connection with ramparts, passages, and medina life.",
+      baberrih_tips_label: "Visitor tips",
+      baberrih_tips_title: "Visit with care",
+      baberrih_tips_text: "Plan a walking visit, take time to observe the architectural details, and respect the quiet of nearby neighborhoods. Morning or late-afternoon light is ideal for photos.",
+      baberrih_location_label: "Location",
+      baberrih_location_title: "Old medina of Taza",
+      baberrih_location_text: "Bab Errih is located in the historic area of Taza, close to discovery routes through the old medina and other heritage landmarks of the city.",
+      baberrih_back_button: "Back to places"
+    });
+
+    Object.assign(translations.ar, {
+      baberrih_kicker: "تراث تاريخي",
+      baberrih_title: "باب الريح بتازة",
+      baberrih_hero_desc: "باب تاريخي مرتبط بمدينة تازة القديمة، يعكس تراثها المعماري وذاكرتها الحضرية.",
+      baberrih_overview_label: "نبذة",
+      baberrih_overview_title: "باب من أبواب تازة القديمة",
+      baberrih_overview_text: "يعد باب الريح من المعالم التراثية المرتبطة بالمدينة العتيقة لتازة. يذكر اسمه وموقعه وهندسته بدور الأبواب في التنظيم التاريخي للمدينة.",
+      baberrih_history_label: "الأهمية التاريخية",
+      baberrih_history_title: "رمز من رموز التراث العمراني",
+      baberrih_history_text: "تشهد الأبواب القديمة لتازة على الأهمية الاستراتيجية والثقافية للمدينة. ويعكس باب الريح هذا التاريخ من خلال ارتباطه بالأسوار والممرات وحياة المدينة العتيقة.",
+      baberrih_tips_label: "نصائح للزوار",
+      baberrih_tips_title: "زيارة باحترام وانتباه",
+      baberrih_tips_text: "ينصح بزيارة المكان مشيا، وأخذ الوقت لملاحظة التفاصيل المعمارية، واحترام هدوء الأحياء المجاورة. ضوء الصباح أو آخر النهار مناسب لالتقاط الصور.",
+      baberrih_location_label: "الموقع",
+      baberrih_location_title: "المدينة العتيقة بتازة",
+      baberrih_location_text: "يقع باب الريح في المجال التاريخي لتازة، قرب مسارات اكتشاف المدينة العتيقة ومعالم تراثية أخرى في المدينة.",
+      baberrih_back_button: "العودة إلى الأماكن"
+    });
+  </script>
+</body>
+</html>
